@@ -4,278 +4,239 @@ import CIcon from '@coreui/icons-react'
 const _nav =  [
   {
     _tag: 'CSidebarNavItem',
-    name: 'Dashboard',
+    name: 'Panorama',
     to: '/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
     badge: {
-      color: 'info',
+      color: 'danger',
       text: 'NEW',
     }
   },
+
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Colors',
-    to: '/theme/colors',
-    icon: 'cil-drop',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Typography',
-    to: '/theme/typography',
-    icon: 'cil-pencil',
-  },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Components']
+    _children: ['CATEGORIES']
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Base',
-    route: '/base',
+    name: 'Catégory',
+    route: '/category',
+    icon: 'cil-puzzle',
+    _children: [
+    
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Toutes les Catégories',
+        to: '/category/allcategory',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Ajouter et Modifier',
+        to: '/category/addcategory',
+      },
+
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Archiver Catégories',
+        to: '/category/archivecategory',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Archives des Catégories',
+        to: '/category/archives',
+      },
+  
+    ],
+  },
+
+    {
+    _tag: 'CSidebarNavTitle',
+    _children: ['CLIENTS']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Tous les Clients',
+    route: '/user',
     icon: 'cil-puzzle',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'Breadcrumb',
-        to: '/base/breadcrumbs',
+        name: 'Ajouter Client',
+        to: '/user/adduser',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Cards',
-        to: '/base/cards',
+        name: 'Modifier Client',
+        to: '/user/edituser',
       },
+ 
       {
         _tag: 'CSidebarNavItem',
-        name: 'Carousel',
-        to: '/base/carousels',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Collapse',
-        to: '/base/collapses',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Forms',
-        to: '/base/forms',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Jumbotron',
-        to: '/base/jumbotrons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'List group',
-        to: '/base/list-groups',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Navs',
-        to: '/base/navs',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Navbars',
-        to: '/base/navbars',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Pagination',
-        to: '/base/paginations',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Popovers',
-        to: '/base/popovers',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Progress',
-        to: '/base/progress-bar',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Switches',
-        to: '/base/switches',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Tables',
-        to: '/base/tables',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Tabs',
-        to: '/base/tabs',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Tooltips',
-        to: '/base/tooltips',
-      },
+        name: 'Archives des Clients',
+        to: '/user/archives',
+      },  
+    
     ],
   },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Buttons',
-    route: '/buttons',
-    icon: 'cil-cursor',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Buttons',
-        to: '/buttons/buttons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Brand buttons',
-        to: '/buttons/brand-buttons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Buttons groups',
-        to: '/buttons/button-groups',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Dropdowns',
-        to: '/buttons/button-dropdowns',
-      }
-    ],
-  },
-  {
+
+
+{
     _tag: 'CSidebarNavItem',
-    name: 'Charts',
-    to: '/charts',
-    icon: 'cil-chart-pie'
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Icons',
-    route: '/icons',
-    icon: 'cil-star',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'CoreUI Free',
-        to: '/icons/coreui-icons',
-        badge: {
-          color: 'success',
-          text: 'NEW',
-        },
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'CoreUI Flags',
-        to: '/icons/flags',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'CoreUI Brands',
-        to: '/icons/brands',
-      },
-    ],
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Notifications',
-    route: '/notifications',
-    icon: 'cil-bell',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Alerts',
-        to: '/notifications/alerts',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Badges',
-        to: '/notifications/badges',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Modal',
-        to: '/notifications/modals',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Toaster',
-        to: '/notifications/toaster'
-      }
-    ]
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Widgets',
+    name: 'User Statistics',
     to: '/widgets',
     icon: 'cil-calculator',
     badge: {
-      color: 'info',
+      color: 'success',
       text: 'NEW',
     },
   },
+
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['PAGES']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Toutes les Pages',
+    route: '/page',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Ajouter Page',
+        to: '/page/addpage',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Modifier Pages',
+        to: '/page/editpage',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Creer une Promotion',
+        to: '/page/createpromotion',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Archives des Pages',
+        to: '/page/archives',
+      }, 
+    
+    ],
+  },
+
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Promotions',
+    to: '/promotions',
+    icon: 'cil-calculator',
+    badge: {
+      color: 'primary',
+      text: 'NEW',
+    },
+  },
+
+  
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['PRODUITS']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Tous les Produits',
+    route: '/product',
+    icon: 'cil-puzzle',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Tous les Produits',
+        to: '/product/allproducts',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Ajouter Produit',
+        to: '/product/addproduct',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Modifier Produit',
+        to: '/product/editproduct',
+      },
+ 
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Archives des Produits',
+        to: '/product/archives',
+      },     
+    ],
+  },
+
+
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Nos Revendeurs',
+    to: '/widgets',
+    icon: 'cil-calculator',
+    badge: {
+      color: 'warning',
+      text: 'NEW',
+    },
+  },
+
   {
     _tag: 'CSidebarNavDivider'
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Extras'],
+    _children: ['orders'],
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Pages',
-    route: '/pages',
+    name: 'Active Orders',
+    route: '/orders',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'Login',
-        to: '/login',
+        name: 'In Transit',
+        to: '/orders/activeorders',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Register',
-        to: '/register',
+        name: 'Delivered Orders',
+        to: '/orders/delivered',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Error 404',
-        to: '/404',
+        name: 'Refunds In Progress',
+        to: '/orders/refunds',
       },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Error 500',
-        to: '/500',
-      },
+
     ],
   },
-  {
+
+    {
     _tag: 'CSidebarNavItem',
-    name: 'Disabled',
-    icon: 'cil-ban',
+    name: 'Revenues',
+    to: '/orders/revenue',
+    icon: 'cil-calculator',
     badge: {
       color: 'secondary',
       text: 'NEW',
     },
-    addLinkClass: 'c-disabled',
-    'disabled': true
   },
+
   {
     _tag: 'CSidebarNavDivider',
     className: 'm-2'
   },
   {
     _tag: 'CSidebarNavTitle',
-    _children: ['Labels']
+    _children: ['policies']
   },
   {
     _tag: 'CSidebarNavItem',
-    name: 'Label danger',
+    name: 'Privacy Policy',
     to: '',
     icon: {
       name: 'cil-star',
@@ -283,30 +244,8 @@ const _nav =  [
     },
     label: true
   },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Label info',
-    to: '',
-    icon: {
-      name: 'cil-star',
-      className: 'text-info'
-    },
-    label: true
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Label warning',
-    to: '',
-    icon: {
-      name: 'cil-star',
-      className: 'text-warning'
-    },
-    label: true
-  },
-  {
-    _tag: 'CSidebarNavDivider',
-    className: 'm-2'
-  }
+
+  
 ]
 
 export default _nav
