@@ -1,9 +1,8 @@
-import { CCard } from '@coreui/react';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from 'src/actions';
-import Card from 'src/components/Card';
+import CardOne from 'src/components/Card';
 import Layout from 'src/components/Layout';
 import './style.css';
 
@@ -31,10 +30,10 @@ export default function Orders(props) {
 	};
 
 	return (
-		<Layout >
+		<Layout>
 			<h1 style={{ margin: '3rem', color: '#d16767' }}>Les Achats en Cours</h1>
 			{order.orders.map((orderItem, index) => (
-				<CCard
+				<CardOne
 					style={{
 						margin: '60px auto',
 						color: '#d16767'
@@ -86,7 +85,7 @@ export default function Orders(props) {
 									<div className={`point ${status.isCompleted ? 'active' : ''}`} />
 									<div className="orderInfo">
 										<div className="status">{status.type}</div>
-										<div className="date">{formatDate(status.date)}</div>
+										<div className="statusDate">{formatDate(status.date)}</div>
 									</div>
 								</div>
 							))}
@@ -123,15 +122,14 @@ export default function Orders(props) {
 							}}
 						>
 							<Button
-								className="confirmOrderButton infoButton"
-								variant="info"
+								className="confirmOrderButton btn btn-info"
 								onClick={() => onOrderUpdate(orderItem._id)}
 							>
 								Confirmer
 							</Button>
 						</div>
 					</div>
-				</CCard>
+				</CardOne>
 			))}
 		</Layout>
 	);

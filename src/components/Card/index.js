@@ -6,9 +6,9 @@ import './style.css';
  * @function Card
  **/
 
-const Card = (props) => {
+const CardOne = (props) => {
 	return (
-		<div className="card" {...props}>
+		<div className="cardOne" {...props}>
 			{(props.headerLeft || props.headerRight) && (
 				<div className="cardHeader">
 					{props.headerLeft && (
@@ -31,4 +31,4 @@ const Card = (props) => {
 	);
 };
 
-export default Card;
+export default CardOne;

@@ -1,13 +1,27 @@
 * {
-    font-family: 'Poppins';
-    font-weight: 500;
+	font-family: 'Poppins';
+	font-weight: 500;
+    letter-spacing: 1px;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: 'Oswald';
-    font-weight: 600;
+	font-family: 'Oswald';
+	font-weight: 600;
+}
+
+.text-theme {
+	color: #1693a5;
+    font-weight: bold;
+}
+
+.flexRow {
+    display: flex;
+}
+
+.sb {
+    justify-content: space-between;
 }

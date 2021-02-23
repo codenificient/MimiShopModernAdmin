@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from 'src/actions';
 import Card from 'src/components/Card';
 import Layout from 'src/components/Layout';
-import './style.css';
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);

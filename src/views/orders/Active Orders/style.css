@@ -1,8 +1,7 @@
 .orderTrack {
 	width: calc(100% - 100px);
 	display: inline-flex;
-	margin: 0 3rem;
-
+	margin: 0 4rem;
 }
 
 .card:last-child {
@@ -14,8 +13,8 @@
 	height: 5px;
 	background: #777;
 	position: relative;
-	font-size: 12px;
 }
+
 .orderStatus.active {
 	background: #177c7c;
 }
@@ -33,6 +32,7 @@
 .orderStatus .point.active {
 	background-color: #177c7c;
 }
+
 .orderInfo {
 	height: 60px;
 	display: flex;
@@ -44,16 +44,25 @@
 }
 
 .title {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 }
+
 .value {
 	font-size: 12px;
 	text-transform: capitalize;
 }
 
-.date {
-	width: 65px;
+
+.status {
+	transform: translateX(37%);	
+}
+
+.statusDate {
+	width: 170px;
+	font-size: 10px;
+	padding-top: 10px;
+	transform: translateX(34%);
 }
 
 .selectStatus {

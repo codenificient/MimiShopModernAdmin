@@ -44,31 +44,38 @@ const AddProduct = React.lazy(() => import('./views/products/AddProduct'));
 const ActiveOrders = React.lazy(() => import('./views/orders/Active Orders'));
 const DeliveredOrders = React.lazy(() => import('./views/orders/Delivered Orders'));
 const ArchivedOrders = React.lazy(() => import('./views/orders/Archives'));
+const NewPage = React.lazy(() => import('./views/newpage/NewPage'));
+const AllPages = React.lazy(() => import('./views/newpage/AllPages'));
+const EditPages = React.lazy(() => import('./views/newpage/ModifyPages'));
 
 const routes = [
-	{ path: '/', exact: true, name: 'Home' },
+	{ path: '/', exact: true, name: 'Accueil' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   
   // CATEGORY
-	{ path: '/category', name: 'Category', component: AllCategories, exact: true },
-	{ path: '/category/allcategory', name: 'All Categories', component: AllCategories },
-	{ path: '/category/addcategory', name: 'Add Category', component: AddCategory },
-  { path: '/category/archives', name: 'Archived Categories', component: ArchivedCategory },
+	{ path: '/category', name: 'Catégorie', component: AllCategories, exact: true },
+	{ path: '/category/allcategory', name: 'Toutes Catégories', component: AllCategories },
+	{ path: '/category/addcategory', name: 'Ajouter Catégorie', component: AddCategory },
+  { path: '/category/archives', name: 'Archives des Catégories', component: ArchivedCategory },
 
 
    // PRODUCT
-	{ path: '/product', name: 'Product', component: AllProducts, exact: true },  
+	{ path: '/product', name: 'Produit', component: AllProducts, exact: true },  
 	{ path: '/product/addproduct', name: 'Ajouter Produit', component: AddProduct },
   { path: '/product/allproducts', name: 'Tous les Produits', component: AllProducts },
   
   // ORDERS
-  	{ path: '/orders', name: 'Active Orders', component: ActiveOrders , exact: true },
-  	{ path: '/orders/activeorders', name: 'Orders In Transit', component: ActiveOrders },
-  	{ path: '/orders/delivered', name: 'Delivered Orders', component: DeliveredOrders },
-  { path: '/orders/archives', name: 'Archived Orders', component: ArchivedOrders },
+  	{ path: '/orders', name: 'Achats Actifs', component: ActiveOrders , exact: true },
+  	{ path: '/orders/activeorders', name: 'Achats En Transit', component: ActiveOrders },
+  	{ path: '/orders/delivered', name: 'Achats Deliverés', component: DeliveredOrders },
+  { path: '/orders/archives', name: 'Archives des Achats', component: ArchivedOrders },
     
   // PAGES
-	{ path: '/theme/typography', name: 'Typography', component: Typography },
+  { path: '/page', name: 'Pages', component: AllPages, exact: true },
+	{ path: '/page/allpages', name: 'Toutes les Pages', component: AllPages },
+	{ path: '/page/addpage', name: 'Ajouter une Page', component: NewPage },
+	{ path: '/page/editpage', name: 'Modifier Page', component: EditPages },
+
 	{ path: '/base', name: 'Base', component: Cards, exact: true },
 	{ path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
 	{ path: '/base/cards', name: 'Cards', component: Cards },

@@ -9,7 +9,7 @@ export const generatePublicUrl = (filename) => {
 };
 
 // DEV
-// const baseUrl2 = 'http://localhost:2000';
+// const baseUrl2 = 'http://localhost:4000';
 
 // export const api = `${baseUrl2}/api`;
 

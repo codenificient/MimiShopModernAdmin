@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { createPageAction } from '../../actions';
-import Layout from '../../components/Layout';
-import Input from '../../components/UI/Input';
-import NewModal from '../../components/UI/Modal';
-import linearCategories from '../../helpers/linearCategories';
+import { createPageAction } from 'src/actions';
+import Layout from '../../../components/Layout';
+import Input from '../../../components/UI/Input';
+import NewModal from '../../../components/UI/Modal';
+import linearCategories from '../../../helpers/linearCategories';
 import './style.css';
 
 export default function Page(props) {
@@ -190,11 +190,11 @@ export default function Page(props) {
 	};
 
 	return (
-		<Layout sidebar>
+		<>
 			<h1  style={{ margin: '3rem' }}>Cre&#769;er une nouvelle page</h1>
 			{renderCreatePageModal()}
 			<Button variant="info" className="infoButton" onClick={() => setCreateModal(true)}>Cre&#769;er une Page</Button>
 			{props.children}
-		</Layout>
+		</>
 	);
 }

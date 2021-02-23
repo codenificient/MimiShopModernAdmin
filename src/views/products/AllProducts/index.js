@@ -137,53 +137,8 @@ export default function Products() {
 				</CCol>
 			</CRow>
 
-			// <Tables className="table table-striped" responsive="md">
-			// 	<thead className="thead-light">
-			// 		<tr>
-			// 			<th>Produit</th>
-			// 			<th>Nom du Produit</th>
-			// 			<th>Prix</th>
-			// 			<th>Quantite&#769;</th>
-			// 			<th>Frais de Livraison</th>
-			// 			<th>Cate&#769;gorie</th>
-			// 			{/* <th>Product Pictures</th> */}
-			// 		</tr>
-			// 	</thead>
-			// 	<tbody>
-			// 		{product.products.length > 0 ? (
-			// 			product.products.map((product, index) => (
-			// 				<tr onClick={() => showProductDetailsModal(product)} key={product._id}>
-			// 					<td>{index + 1}</td>
-			// 					<td>{product.name}</td>
-			// 					<td>{formatter.format(product.price)}</td>
-			// 					<td>{product.quantity}</td>
-			// 					<td>{product.deliveryFee ? formatter.format(product.deliveryFee) : 'GRATUIT'}</td>
-			// 					<td>{product.category.name}</td>
-			// 					{/* <td><div className="productImg">
-			// 						<img src={generatePublicUrl(product.productPictures[0].img)} alt={product.productPictures[0].img} />
-			// 					</div>{}</td> */}
-			// 					<td>
-			// 						<Button className="btn-info" onClick={() => showProductDetailsModal(product)}>
-			// 							De&#769;tails
-			// 						</Button>
 
-			// 						<Button
-			// 							className="btn-danger"
-			// 							onClick={() => {
-			// 								const payload = {
-			// 									productId: product._id
-			// 								};
-			// 								dispatch(deleteProductById(payload));
-			// 							}}
-			// 						>
-			// 							Supprimer
-			// 						</Button>
-			// 					</td>
-			// 				</tr>
-			// 			))
-			// 		) : null}
-			// 	</tbody>
-			// </Tables>
+	
 		);
 	};
 
@@ -329,9 +284,7 @@ export default function Products() {
 					<Col md={12}>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
 							<h1 style={{ margin: '3rem' }}>Liste des Produits </h1>
-							<Button variant="info" className="infoButton productBtn" onClick={handleShow}>
-								<IoIosAdd style={{ fontSize: '27px' }} /> <span>Ajouter Produit</span>
-							</Button>
+							
 						</div>
 					</Col>
 				</Row>

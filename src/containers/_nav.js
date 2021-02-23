@@ -1,10 +1,10 @@
-import React from 'react'
 import CIcon from '@coreui/icons-react'
+import React from 'react'
 
 const _nav =  [
   {
     _tag: 'CSidebarNavItem',
-    name: 'Panorama',
+    name: 'Accueil',
     to: '/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
     badge: {
@@ -19,7 +19,7 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Catégory',
+    name: 'Catégorie',
     route: '/category',
     icon: 'cil-puzzle',
     _children: [
@@ -35,11 +35,7 @@ const _nav =  [
         to: '/category/addcategory',
       },
 
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Archiver Catégories',
-        to: '/category/archivecategory',
-      },
+
       {
         _tag: 'CSidebarNavItem',
         name: 'Archives des Catégories',
@@ -82,11 +78,54 @@ const _nav =  [
 
 {
     _tag: 'CSidebarNavItem',
-    name: 'User Statistics',
+    name: 'Statistiques',
     to: '/widgets',
     icon: 'cil-calculator',
     badge: {
       color: 'success',
+      text: 'NEW',
+    },
+  },
+
+    {
+    _tag: 'CSidebarNavDivider'
+  },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['COMMANDES'],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'Active Orders',
+    route: '/orders',
+    icon: 'cil-star',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'In Transit',
+        to: '/orders/activeorders',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Delivered Orders',
+        to: '/orders/delivered',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Refunds In Progress',
+        to: '/orders/refunds',
+      },
+
+    ],
+  },
+
+    {
+    _tag: 'CSidebarNavItem',
+    name: 'Revenues',
+    to: '/orders/revenue',
+    icon: 'cil-calculator',
+    badge: {
+      color: 'secondary',
       text: 'NEW',
     },
   },
@@ -101,6 +140,11 @@ const _nav =  [
     route: '/page',
     icon: 'cil-puzzle',
     _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Toutes les Pages',
+        to: '/page/allpages',
+      },
       {
         _tag: 'CSidebarNavItem',
         name: 'Ajouter Page',
@@ -183,48 +227,7 @@ const _nav =  [
     },
   },
 
-  {
-    _tag: 'CSidebarNavDivider'
-  },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['orders'],
-  },
-  {
-    _tag: 'CSidebarNavDropdown',
-    name: 'Active Orders',
-    route: '/orders',
-    icon: 'cil-star',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'In Transit',
-        to: '/orders/activeorders',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Delivered Orders',
-        to: '/orders/delivered',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Refunds In Progress',
-        to: '/orders/refunds',
-      },
 
-    ],
-  },
-
-    {
-    _tag: 'CSidebarNavItem',
-    name: 'Revenues',
-    to: '/orders/revenue',
-    icon: 'cil-calculator',
-    badge: {
-      color: 'secondary',
-      text: 'NEW',
-    },
-  },
 
   {
     _tag: 'CSidebarNavDivider',
@@ -243,9 +246,7 @@ const _nav =  [
       className: 'text-danger'
     },
     label: true
-  },
-
-  
+  },  
 ]
 
 export default _nav

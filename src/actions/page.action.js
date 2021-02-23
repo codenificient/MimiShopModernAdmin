@@ -26,3 +26,29 @@ export const createPageAction = (form) => {
 		}
 	};
 };
+
+export const getAllPagesAction = (form) => {
+	return async (dispath) => {
+		dispath({ type: pageConstants.GET_ALL_PAGES_REQUEST });
+
+		try {
+			const res = await axiosInstance.get(`/page/allpages`);
+
+			if (res.status === 200) {
+				dispath({
+					type: pageConstants.GET_ALL_PAGES_SUCCESS,
+					payload: { pages: res.data.pages }
+				});
+				console.log(res);
+			} else {
+				dispath({
+					type: pageConstants.CREATE_PAGE_FAILURE,
+					payload: { error: res.data.error }
+				});
+				console.log(res);
+			}
+		} catch (error) {
+			console.log(error);
+		}
+	};
+};

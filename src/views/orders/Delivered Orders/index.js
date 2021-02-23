@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from '../../../actions';
 import Card from '../../../components/Card';
 import Layout from '../../../components/Layout';
-import './style.css';
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
@@ -31,7 +30,7 @@ export default function Orders(props) {
 
 	return (
 		<Layout>
-			<h1 style={{ margin: '3rem', color: '#d16767' }}>Commandes Deja Livrees</h1>
+			<h1 style={{ margin: '3rem', color: '#d16767' }}>Commandes Deja Livrées</h1>
 			{order.orders.map((orderItem, index) => (
 				<Card
 					style={{
@@ -86,7 +85,7 @@ export default function Orders(props) {
 									<div className={`point ${status.isCompleted ? 'active' : ''}`} />
 									<div className="orderInfo">
 										<div className="status">{status.type}</div>
-										<div className="date">{formatDate(status.date)}</div>
+										<div className="statusDate">{formatDate(status.date)}</div>
 									</div>
 								</div>
 							))}

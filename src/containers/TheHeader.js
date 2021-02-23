@@ -56,13 +56,13 @@ const TheHeader = () => {
 
       <CHeaderNav className="d-md-down-none mr-auto">
         <CHeaderNavItem className="px-3" >
-          <CHeaderNavLink to="/dashboard">Dashboard</CHeaderNavLink>
+          <CHeaderNavLink to="/dashboard">Accueil</CHeaderNavLink>
         </CHeaderNavItem>
         <CHeaderNavItem  className="px-3">
-          <CHeaderNavLink to="/users">Users</CHeaderNavLink>
+          <CHeaderNavLink to="/users">Clients</CHeaderNavLink>
         </CHeaderNavItem>
         <CHeaderNavItem className="px-3">
-          <CHeaderNavLink>Settings</CHeaderNavLink>
+          <CHeaderNavLink>Paramètres</CHeaderNavLink>
         </CHeaderNavItem>
       </CHeaderNav>
 
@@ -87,10 +87,10 @@ const TheHeader = () => {
               aria-current="page" 
               to="/dashboard"
             >
-              <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Dashboard
+              <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Accueil
             </CLink>
             <CLink className="c-subheader-nav-link" href="#">
-              <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
+              <CIcon name="cil-settings" alt="Settings" />&nbsp;Paramètres
             </CLink>
           </div>
       </CSubheader>

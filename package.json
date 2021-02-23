@@ -35,7 +35,7 @@
     "classnames": "^2.2.6",
     "core-js": "^3.8.1",
     "enzyme": "^3.11.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-app-polyfill": "^2.0.0",
@@ -62,9 +62,7 @@
     "eject": "react-scripts eject",
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
   },
-  "bugs": {
-    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
-  },
+
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -83,7 +81,5 @@
     ]
   },
   "engines": {
-    "node": ">=10",
-    "npm": ">=6"
-  }
+    "node": "12.x"  }
 }

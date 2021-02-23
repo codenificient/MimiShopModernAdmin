@@ -20,8 +20,8 @@ const changeState = (state = initialState, { type, ...rest }) => {
 };
 
 const rootReducer = combineReducers({
-	nav: changeState,
 	auth: authReducer,
+	nav: changeState,
 	user: userReducer,
 	category: categoryReducer,
 	product: productReducer,

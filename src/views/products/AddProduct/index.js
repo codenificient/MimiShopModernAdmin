@@ -86,8 +86,7 @@ export default function Products() {
 						<th>Quantite&#769;</th>
 						<th>Frais de Livraison</th>
 						<th>Cate&#769;gorie</th>
-						<th>Actions</th>
-						{/* <th>Product Pictures</th> */}
+						<th>Actions</th>					
 					</tr>
 				</thead>
 				<tbody>
