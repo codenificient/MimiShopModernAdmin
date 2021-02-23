@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { getInitialDataAction, isUserLoggedIn } from './actions';
 import './app.css';
-import Signin from './containers/Signin';
 import Signup from './containers/Signup';
 import './scss/style.scss';
 
@@ -44,7 +43,7 @@ function App() {
 		<Router>
 			<React.Suspense fallback={loading}>
 				<Switch>
-					<Route exact path="/login" name="Login Page" render={(props) => <Signin {...props} />} />
+					<Route exact path="/login" name="Login Page" render={(props) => <Login {...props} />} />
 					<Route exact path="/register" name="Register Page" render={(props) => <Register {...props} />} />
 					<Route
 						exact
