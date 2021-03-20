@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { getInitialDataAction, isUserLoggedIn } from './actions';
 import './app.css';
+import PrivateRoute from './components/HOC/PrivateRoute';
 import './scss/style.scss';
 
 const loading = (
@@ -51,7 +52,7 @@ function App() {
 						render={(props) => <Category {...props} />}
 					/>
 					<Route exact path="/500" name="Page 500" render={(props) => <Page500 {...props} />} />
-					<Route path="/" name="Home" render={(props) => <TheLayout {...props} />} />
+					<PrivateRoute path="/" name="Home" component={(props) => <TheLayout {...props} />} />
 				</Switch>
 			</React.Suspense>
 		</Router>
