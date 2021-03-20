@@ -20,13 +20,13 @@ import { login } from 'src/actions';
 
 const Login = () => {
 	const [ email, setEmail ] = useState('');
-  const [password, setPassword] = useState('');
-  
+	const [ password, setPassword ] = useState('');
+
 	// eslint-disable-next-line
 	const [ error, setError ] = useState('');
 	const auth = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  
+	const dispatch = useDispatch();
+
 	const userLogin = (e) => {
 		e.preventDefault();
 		const user = {
@@ -51,14 +51,20 @@ const Login = () => {
 								<CCardBody>
 									<CForm onSubmit={userLogin}>
 										<h1>Login</h1>
-										<p className="text-muted">Sign In to your account</p>
+										<p className="text-muted">Connectez vous à votre compte</p>
 										<CInputGroup className="mb-3">
 											<CInputGroupPrepend>
 												<CInputGroupText>
 													<CIcon name="cil-user" />
 												</CInputGroupText>
 											</CInputGroupPrepend>
-											<CInput type="text" placeholder="Username" autoComplete="username" />
+											<CInput
+												type="email"
+												placeholder="Votre Email"
+												value={email}
+												onChange={(e) => setEmail(e.target.value)}
+												autoComplete="email"
+											/>
 										</CInputGroup>
 										<CInputGroup className="mb-4">
 											<CInputGroupPrepend>
@@ -68,7 +74,9 @@ const Login = () => {
 											</CInputGroupPrepend>
 											<CInput
 												type="password"
-												placeholder="Password"
+												placeholder="Mot de Passe"
+												value={password}
+												onChange={(e) => setPassword(e.target.value)}
 												autoComplete="current-password"
 											/>
 										</CInputGroup>
@@ -91,12 +99,12 @@ const Login = () => {
 								<CCardBody className="text-center">
 									<div>
 										<h2>Créer Compte</h2>
-										<p>
+										<p className="mt-5 mb-5">
 											Si c'est votre première fois, veuillez créer un compte pour utiliser notre
 											service.
 										</p>
 										<Link to="/register">
-											<CButton color="primary" className="mt-3" active tabIndex={-1}>
+											<CButton color="primary" className="mt-1" active tabIndex={-1}>
 												Nouveau Compte!
 											</CButton>
 										</Link>

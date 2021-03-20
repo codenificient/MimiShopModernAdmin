@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { getInitialDataAction, isUserLoggedIn } from './actions';
 import './app.css';
-import Signup from './containers/Signup';
 import './scss/style.scss';
 
 const loading = (
@@ -53,7 +52,6 @@ function App() {
 					/>
 					<Route exact path="/500" name="Page 500" render={(props) => <Page500 {...props} />} />
 					<Route path="/" name="Home" render={(props) => <TheLayout {...props} />} />
-					<Route path="/signup" component={Signup} />
 				</Switch>
 			</React.Suspense>
 		</Router>

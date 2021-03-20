@@ -23,6 +23,8 @@
     "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.17",
+    "@amcharts/amcharts4-geodata": "^4.1.19",
     "@coreui/chartjs": "^2.0.0",
     "@coreui/coreui": "^3.4.0",
     "@coreui/icons": "^2.0.0-rc.0",
@@ -62,7 +64,6 @@
     "eject": "react-scripts eject",
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
   },
-
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -81,5 +82,6 @@
     ]
   },
   "engines": {
-    "node": "15.x"  }
+    "node": "15.x"
+  }
 }

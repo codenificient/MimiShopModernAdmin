@@ -180,18 +180,16 @@ const Category = () => {
 		<CRow>
 			<CCol xs="12">
 				<CCard>
-					<CCardHeader>
-						Modifier Les Catégories
-						<DocsLink name="CBreadcrumb" />
-						</CCardHeader>
-						<CRow>
+			
+						<CRow style={{ background: 	'#67dcbb',borderRadius: '5px' }}>
 							<CCol md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '3rem' }}>Ajouter ou Modifier les Cate&#769;gories</h1>
+									<h1 style={{ margin: '1rem' }}>Ajouter ou Modifier les Cate&#769;gories</h1>
 								</div>
 							</CCol>
 						</CRow>
-								<CRow>
+						
+						<CRow className="mt-5">
 							<CCol md={12}>
 								<CButton className="btn-pill btn-warning ml-5" onClick={handleShow}>
 									<FaPlusCircle style={{ fontSize: '27px' }} /> <span>Ajouter Cate&#769;gorie</span>
@@ -207,7 +205,7 @@ const Category = () => {
 							</CCol>
 						</CRow>
 
-										<CRow className="showCats ml-5">
+						<CRow className="showCats ml-5">
 							<CCol md={12}>
 								<CheckboxTree
 									nodes={renderCategories(category.categories)}
