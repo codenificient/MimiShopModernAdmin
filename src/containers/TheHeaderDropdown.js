@@ -9,6 +9,7 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
+
 const TheHeaderDropdown = () => {
   return (
     <CDropdown
@@ -19,9 +20,9 @@ const TheHeaderDropdown = () => {
       <CDropdownToggle className="c-header-nav-link" caret={false}>
         <div className="c-avatar">
           <CImg
-            src={'avatars/6.jpg'}
+            src={'/avatars/2.jpg'}
             className="c-avatar-img"
-            alt="admin@bootstrapmaster.com"
+            alt="admin@mimishopouaga.com"
           />
         </div>
       </CDropdownToggle>

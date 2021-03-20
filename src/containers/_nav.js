@@ -82,7 +82,7 @@ const _nav =  [
     to: '/widgets',
     icon: 'cil-calculator',
     badge: {
-      color: 'success',
+      color: 'warning',
       text: 'NEW',
     },
   },
@@ -125,7 +125,7 @@ const _nav =  [
     to: '/orders/revenue',
     icon: 'cil-calculator',
     badge: {
-      color: 'secondary',
+      color: 'success',
       text: 'NEW',
     },
   },
@@ -226,27 +226,6 @@ const _nav =  [
       text: 'NEW',
     },
   },
-
-
-
-  {
-    _tag: 'CSidebarNavDivider',
-    className: 'm-2'
-  },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['policies']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Privacy Policy',
-    to: '',
-    icon: {
-      name: 'cil-star',
-      className: 'text-danger'
-    },
-    label: true
-  },  
 ]
 
 export default _nav

@@ -12,7 +12,7 @@ const TheFooter = () => {
 				<span className="ml-1">&copy; 2019 - {currentYear} * All Rights Reserved</span>
 			</div>
 			<div className="mfs-auto">
-				<span className="mr-1">Vos données</span>
+				<span className="mr-1">Reviser notre</span>
 				<a href="https://coreui.io/react" target="_blank" rel="noopener noreferrer">
 					Politique de Confidentialité
 				</a>
