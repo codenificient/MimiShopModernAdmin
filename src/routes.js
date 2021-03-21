@@ -17,6 +17,7 @@ const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 const AllProducts = React.lazy(() => import('./views/products/AllProducts'));
 const AddProduct = React.lazy(() => import('./views/products/AddProduct'));
+const EditProduct = React.lazy(() => import('./views/products/ModifyProduct'));
 const ActiveOrders = React.lazy(() => import('./views/orders/Active Orders'));
 const DeliveredOrders = React.lazy(() => import('./views/orders/Delivered Orders'));
 const ArchivedOrders = React.lazy(() => import('./views/orders/Archives'));
@@ -39,6 +40,7 @@ const routes = [
 	{ path: '/product', name: 'Produit', component: AllProducts, exact: true },  
 	{ path: '/product/addproduct', name: 'Ajouter Produit', component: AddProduct },
   { path: '/product/allproducts', name: 'Tous les Produits', component: AllProducts },
+  { path: '/product/editproduct', name: 'Tous les Produits', component: EditProduct },
   
   // ORDERS
   	{ path: '/orders', name: 'Achats Actifs', component: ActiveOrders , exact: true },
