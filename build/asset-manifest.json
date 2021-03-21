@@ -14,13 +14,13 @@
     "static/js/4.6ae92771.chunk.js": "/MimiShopModernAdmin/static/js/4.6ae92771.chunk.js",
     "static/js/4.6ae92771.chunk.js.map": "/MimiShopModernAdmin/static/js/4.6ae92771.chunk.js.map",
     "static/css/5.202fb9a6.chunk.css": "/MimiShopModernAdmin/static/css/5.202fb9a6.chunk.css",
-    "static/js/5.232996e2.chunk.js": "/MimiShopModernAdmin/static/js/5.232996e2.chunk.js",
-    "static/js/5.232996e2.chunk.js.map": "/MimiShopModernAdmin/static/js/5.232996e2.chunk.js.map",
+    "static/js/5.f86ea044.chunk.js": "/MimiShopModernAdmin/static/js/5.f86ea044.chunk.js",
+    "static/js/5.f86ea044.chunk.js.map": "/MimiShopModernAdmin/static/js/5.f86ea044.chunk.js.map",
     "main.css": "/MimiShopModernAdmin/static/css/main.ea7032fe.chunk.css",
-    "main.js": "/MimiShopModernAdmin/static/js/main.c7ccd228.chunk.js",
-    "main.js.map": "/MimiShopModernAdmin/static/js/main.c7ccd228.chunk.js.map",
-    "runtime-main.js": "/MimiShopModernAdmin/static/js/runtime-main.1f466c64.js",
-    "runtime-main.js.map": "/MimiShopModernAdmin/static/js/runtime-main.1f466c64.js.map",
+    "main.js": "/MimiShopModernAdmin/static/js/main.19ed1326.chunk.js",
+    "main.js.map": "/MimiShopModernAdmin/static/js/main.19ed1326.chunk.js.map",
+    "runtime-main.js": "/MimiShopModernAdmin/static/js/runtime-main.fc86b20d.js",
+    "runtime-main.js.map": "/MimiShopModernAdmin/static/js/runtime-main.fc86b20d.js.map",
     "xlsx.js": "/MimiShopModernAdmin/static/js/xlsx.fced38d2.chunk.js",
     "xlsx.js.map": "/MimiShopModernAdmin/static/js/xlsx.fced38d2.chunk.js.map",
     "static/js/9.c0322a13.chunk.js": "/MimiShopModernAdmin/static/js/9.c0322a13.chunk.js",
@@ -68,8 +68,8 @@
     "static/js/24.57ada0c0.chunk.js.map": "/MimiShopModernAdmin/static/js/24.57ada0c0.chunk.js.map",
     "static/js/25.dbf02402.chunk.js": "/MimiShopModernAdmin/static/js/25.dbf02402.chunk.js",
     "static/js/25.dbf02402.chunk.js.map": "/MimiShopModernAdmin/static/js/25.dbf02402.chunk.js.map",
-    "static/js/26.4473764c.chunk.js": "/MimiShopModernAdmin/static/js/26.4473764c.chunk.js",
-    "static/js/26.4473764c.chunk.js.map": "/MimiShopModernAdmin/static/js/26.4473764c.chunk.js.map",
+    "static/js/26.1b35d895.chunk.js": "/MimiShopModernAdmin/static/js/26.1b35d895.chunk.js",
+    "static/js/26.1b35d895.chunk.js.map": "/MimiShopModernAdmin/static/js/26.1b35d895.chunk.js.map",
     "static/js/27.f3898de8.chunk.js": "/MimiShopModernAdmin/static/js/27.f3898de8.chunk.js",
     "static/js/27.f3898de8.chunk.js.map": "/MimiShopModernAdmin/static/js/27.f3898de8.chunk.js.map",
     "static/js/28.23b9858c.chunk.js": "/MimiShopModernAdmin/static/js/28.23b9858c.chunk.js",
@@ -124,9 +124,9 @@
     "static/media/shopLogo7.95d002c7.png": "/MimiShopModernAdmin/static/media/shopLogo7.95d002c7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f466c64.js",
+    "static/js/runtime-main.fc86b20d.js",
     "static/js/9.c0322a13.chunk.js",
     "static/css/main.ea7032fe.chunk.css",
-    "static/js/main.c7ccd228.chunk.js"
+    "static/js/main.19ed1326.chunk.js"
   ]
 }

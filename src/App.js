@@ -43,16 +43,35 @@ function App() {
 		<Router>
 			<React.Suspense fallback={loading}>
 				<Switch>
-					<Route exact path="/login" name="Login Page" render={(props) => <Login {...props} />} />
-					<Route exact path="/register" name="Register Page" render={(props) => <Register {...props} />} />
 					<Route
 						exact
-						path="/category/allcategories"
+						path="/MimiShopModernAdmin/login"
+						name="Login Page"
+						render={(props) => <Login {...props} />}
+					/>
+					<Route
+						exact
+						path="/MimiShopModernAdmin/register"
+						name="Register Page"
+						render={(props) => <Register {...props} />}
+					/>
+					<Route
+						exact
+						path="/MimiShopModernAdmin/category/allcategories"
 						name="Category"
 						render={(props) => <Category {...props} />}
 					/>
-					<Route exact path="/500" name="Page 500" render={(props) => <Page500 {...props} />} />
-					<PrivateRoute path="/" name="Home" component={(props) => <TheLayout {...props} />} />
+					<Route
+						exact
+						path="/MimiShopModernAdmin/500"
+						name="Page 500"
+						render={(props) => <Page500 {...props} />}
+					/>
+					<PrivateRoute
+						path="/MimiShopModernAdmin/"
+						name="Home"
+						component={(props) => <TheLayout {...props} />}
+					/>
 				</Switch>
 			</React.Suspense>
 		</Router>
