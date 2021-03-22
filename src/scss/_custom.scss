@@ -47,6 +47,11 @@ thead .thead-light,
 .c-header .c-header-nav .c-header-nav-link {
 	color: #ebedef;
 }
+.c-subheader .breadcrumb .breadcrumb-item:hover,
+.c-subheader .c-subheader-nav .c-subheader-nav-link:hover,
+.c-header .c-header-nav .c-header-nav-link:hover {
+	color: salmon;
+}
 
 .c-header .c-header-toggler-icon {
 	background-color: #09eaf2;

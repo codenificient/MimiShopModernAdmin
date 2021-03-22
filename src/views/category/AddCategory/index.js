@@ -1,4 +1,4 @@
-import { CButton, CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react';
+import { CButton, CCard, CCardBody, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import CheckboxTree from 'react-checkbox-tree';
@@ -11,8 +11,6 @@ import {
 	IoIosCheckboxOutline
 } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
-import { TheFooter, TheHeader, TheSidebar } from 'src/containers';
-import { DocsLink } from 'src/reusable';
 import { addCategoryAction, deleteCategoriesAction, updateCategoriesAction } from '../../../actions';
 import '../style.css';
 import AddCategoriesModal from '../Subcomponents/AddCategoriesModal';
@@ -230,6 +228,7 @@ const Category = () => {
 							show={show}
 							handleClose={handleClose}
 							modalTitle={`Ajouter Nouvelle Catégorie`}
+							size="lg"
 							handleShow={handleShow}
 							handleSubmit={handleSubmit}
 							categoryName={categoryName}
