@@ -22,9 +22,9 @@ const ModifyProduct = React.lazy(() => import('./views/products/ModifyProduct'))
 const AddProduct = React.lazy(() => import('./views/products/AddProduct'));
 const AllProducts = React.lazy(() => import('./views/products/AllProducts'));
 // ORDERS
-const ActiveOrders = React.lazy(() => import('./views/orders/Active Orders'));
-const DeliveredOrders = React.lazy(() => import('./views/orders/Delivered Orders'));
-const ArchivedOrders = React.lazy(() => import('./views/orders/Archives'));
+const ActiveOrders = React.lazy(() => import('./views/orders/ActiveOrders'));
+const DeliveredOrders = React.lazy(() => import('./views/orders/DeliveredOrders'));
+const ArchivedOrders = React.lazy(() => import('./views/orders/ArchivedOrders'));
 // NEW PAGES
 const NewPage = React.lazy(() => import('./views/newpage/NewPage'));
 const AllPages = React.lazy(() => import('./views/newpage/AllPages'));
