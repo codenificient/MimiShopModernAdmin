@@ -31,7 +31,7 @@ export default function Page(props) {
 				banners: banners[0].img,
 				products: products[0].img
 			});
-			console.table({ options });
+			// console.table({ options });
 		}
 		return options;
 	};
