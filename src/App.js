@@ -20,6 +20,7 @@ const Login = React.lazy(() => import('./views/pages/login/Login'));
 const Register = React.lazy(() => import('./views/pages/register/Register'));
 const Category = React.lazy(() => import('./views/category/AddCategory'));
 const NewCategory = React.lazy(() => import('./views/category/AddCategory'));
+const ActiveOrders = React.lazy(() => import('./views/orders/Active Orders'));
 const Page500 = React.lazy(() => import('./views/pages/page500/Page500'));
 
 function App() {
@@ -55,12 +56,19 @@ function App() {
 						name="Register Page"
 						render={(props) => <Register {...props} />}
 					/>
-					<Route
+					<PrivateRoute
 						exact
 						path="/category/allcategories"
 						name="Category"
 						render={(props) => <Category {...props} />}
 					/>
+					<PrivateRoute
+						exact
+						path="/orders/activeorders"
+						name="Orders"
+						render={(props) => <ActiveOrders {...props} />}
+					/>
+
 					<Route
 						exact
 						path="/500"

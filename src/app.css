@@ -1,7 +1,7 @@
 * {
 	font-family: 'Poppins';
 	font-weight: 500;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 h1,
@@ -15,13 +15,24 @@ h5 {
 
 .text-theme {
 	color: #1693a5;
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .flexRow {
-    display: flex;
+	display: flex;
+}
+
+.welcome-text {
+	font-family: 'Oswald';
+	align-items: start;
+	justify-content: center;
+	margin-bottom: 7rem;
 }
 
 .sb {
-    justify-content: space-between;
+	justify-content: space-between;
+}
+
+.infoButton {
+	margin: 0 0 0 20px;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Col, Container, Row, Table } from 'react-bootstrap';
-import { IoIosAdd } from 'react-icons/io';
+import { MdAddCircle } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { addProductAction, deleteProductById } from '../../../actions';
 import Layout from '../../../components/Layout';
@@ -84,7 +84,7 @@ export default function Products() {
 						<th>Nom du Produit</th>
 						<th>Prix</th>
 						<th>Quantite&#769;</th>
-						<th>Frais de Livraison</th>
+						<th>Livraison</th>
 						<th>Cate&#769;gorie</th>
 						<th>Actions</th>					
 					</tr>
@@ -135,6 +135,7 @@ export default function Products() {
 				modalTitle={`Ajouter Nouveau Produit`}
 				handleShow={handleShow}
 				handleSubmit={handleSubmit}
+				size='lg'
 			>
 				<Input
 					label={`Nom Produit `}
@@ -268,9 +269,9 @@ export default function Products() {
 				<Row>
 					<Col md={12}>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-							<h1 style={{ margin: '3rem' }}>Liste des Produits </h1>
-							<Button variant="info" className="infoButton productBtn" onClick={handleShow}>
-								<IoIosAdd style={{ fontSize: '27px' }} /> <span>Ajouter Produit</span>
+							<h1 style={{ margin: '3rem', color: 'white' }}>Produits Disponibles</h1>
+							<Button variant="success" className="infoButton productBtn" onClick={handleShow}>
+								<MdAddCircle style={{ fontSize: '27px' }} /> <span>Ajouter Produit</span>
 							</Button>
 						</div>
 					</Col>

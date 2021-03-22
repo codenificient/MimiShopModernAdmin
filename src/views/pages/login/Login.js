@@ -42,15 +42,19 @@ const Login = () => {
 	}
 
 	return (
-		<div className="c-app c-default-layout flex-row align-items-center">
+		<div className="c-app c-default-layout darkenBg flex-row align-items-center">
 			<CContainer>
+				<CRow className="welcome-text text-main">
+					<h1>Bienvenu à MimiShop Admin</h1>
+				</CRow>
+
 				<CRow className="justify-content-center">
 					<CCol md="8">
 						<CCardGroup>
 							<CCard className="p-4">
 								<CCardBody>
 									<CForm onSubmit={userLogin}>
-										<h1>Login</h1>
+										<h1>Connection</h1>
 										<p className="text-muted">Connectez vous à votre compte</p>
 										<CInputGroup className="mb-3">
 											<CInputGroupPrepend>
@@ -88,7 +92,7 @@ const Login = () => {
 											</CCol>
 											<CCol xs="6" className="text-right">
 												<CButton color="link" className="px-0">
-													Forgot password?
+													Besoin d'aide?
 												</CButton>
 											</CCol>
 										</CRow>

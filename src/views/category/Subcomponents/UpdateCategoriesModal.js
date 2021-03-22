@@ -73,7 +73,7 @@ const UpdateCategoriesModal = (props) => {
 				))}
 			<Row>
 				<Col>
-					<h5>Cate&#769;gories Re&#769;pandues</h5>
+					<h5>Cate&#769;gories Se&#769;lectionne&#769;es</h5>
 				</Col>
 			</Row>
 			{checkedArray.length > 0 &&

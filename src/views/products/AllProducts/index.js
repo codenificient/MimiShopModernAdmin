@@ -76,12 +76,12 @@ export default function Products() {
 		for (let product of products) {
 			let { _id, name, price, quantity, category } = product;
 			options.push({
-				id: _id.toString().substring(0, 9),
-				name: name,
-				price: price,
-				quantity: quantity,
-				category: category.name,
-				status: quantity % 3 == 1 ? 'Active' : quantity % 2 == 1 ? 'Inactive' : quantity % 5 == 0 ? 'Archived' : 'Pending'
+				ID: _id.toString().substring(0, 9),
+				NAME: name,
+				PRICE: price,
+				QUANTITY: quantity,
+				CATEGORY: category.name,
+				STATUS: quantity % 3 == 1 ? 'Active' : quantity % 2 == 1 ? 'Inactive' : quantity % 5 == 0 ? 'Archived' : 'Pending'
 			});
 			console.table({ options });
 		}
@@ -99,18 +99,20 @@ export default function Products() {
 			case 'Active':
 				return 'success';
 			case 'Inactive':
-				return 'secondary';
-			case 'Pending':
 				return 'warning';
+			case 'Pending':
+				return 'primary';
 			case 'Banned':
 				return 'danger';
 			default:
-				return 'primary';
+				return 'danger';
 		}
 	};
 
+
 	const renderProducts = () => {
-		const fields = [ 'id', 'name', 'price', 'quantity', 'category', 'status' ];
+		const fields = [ 'ID', 'NAME', 'PRICE', 'QUANTITY', 'CATEGORY', 'status' ];
+
 
 		return (
 			<CRow>
@@ -127,7 +129,7 @@ export default function Products() {
 								scopedSlots={{
 									status: (item) => (
 										<td>
-											<CBadge color={getBadge(item.status)}>{item.status}</CBadge>
+											<CBadge color={getBadge(item.STATUS)}>{item.STATUS}</CBadge>
 										</td>
 									)
 								}}
@@ -135,10 +137,7 @@ export default function Products() {
 						</CCardBody>
 					</CCard>
 				</CCol>
-			</CRow>
-
-
-	
+			</CRow>	
 		);
 	};
 
@@ -283,7 +282,7 @@ export default function Products() {
 				<Row>
 					<Col md={12}>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-							<h1 style={{ margin: '3rem' }}>Liste des Produits </h1>
+							<h1 style={{ margin: '3rem', color: 'white' }}>Liste des Produits </h1>
 							
 						</div>
 					</Col>
@@ -294,6 +293,9 @@ export default function Products() {
 						<ul>{renderProducts()}</ul>
 					</Col>
 				</Row>
+
+	
+
 			</Container>
 			{renderAddProductModal()}
 			{renderProductDetailModal()}

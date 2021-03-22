@@ -6,6 +6,7 @@ import Layout from '../../../components/Layout';
 import Input from '../../../components/UI/Input';
 import NewModal from '../../../components/UI/Modal';
 import linearCategories from '../../../helpers/linearCategories';
+import { MdAddCircle } from 'react-icons/md';
 import './style.css';
 
 export default function Page(props) {
@@ -191,9 +192,10 @@ export default function Page(props) {
 
 	return (
 		<>
-			<h1  style={{ margin: '3rem' }}>Cre&#769;er une nouvelle page</h1>
+			<h1  style={{ margin: '3rem', color: 'white' }}>Cre&#769;er une nouvelle page</h1>
 			{renderCreatePageModal()}
-			<Button variant="info" className="infoButton" onClick={() => setCreateModal(true)}>Cre&#769;er une Page</Button>
+
+			<Button variant="success" className="addButton" onClick={() => setCreateModal(true)}><MdAddCircle /> Cre&#769;er une Page</Button>
 			{props.children}
 		</>
 	);

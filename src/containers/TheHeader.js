@@ -16,6 +16,7 @@ import mimiGold from '../assets/icons/golden.png'
 
 // routes config
 import routes from '../routes'
+import { signout } from '../actions';
 
 import { 
   TheHeaderDropdown,
@@ -27,7 +28,13 @@ import {
 const TheHeader = () => {
   const dispatch = useDispatch()
   const sidebarShow = useSelector(state => state.nav.sidebarShow)
+	const auth = useSelector((state) => state.auth);
 
+  const logout = (e) => {
+    e.preventDefault();
+		dispatch(signout());
+  };
+  
   const toggleSidebar = () => {
     const val = [true, 'responsive'].includes(sidebarShow) ? false : 'responsive'
     dispatch({type: 'set', sidebarShow: val})
@@ -88,9 +95,10 @@ const TheHeader = () => {
               to="/dashboard"
             >
               <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Accueil
-            </CLink>
-            <CLink className="c-subheader-nav-link" href="#">
-              <CIcon name="cil-settings" alt="Settings" />&nbsp;Paramètres
+          </CLink>
+          
+            <CLink className="c-subheader-nav-link" onClick={logout}>
+              <CIcon name="cil-settings" alt="Logout" />&nbsp;Déconnection
             </CLink>
           </div>
       </CSubheader>
