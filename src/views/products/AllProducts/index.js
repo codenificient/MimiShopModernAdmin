@@ -65,7 +65,7 @@ const AllProduct = () => {
 // 		}, [])
 // }
 	
-	const createProducts = (arr = []) => {
+	const createProductList = (arr = []) => {
 		const result = new Map();
 		arr.forEach(elem => {
 			let item = result.get(elem.category) || { category: elem.category, value: 7, products: [] };
@@ -79,7 +79,7 @@ const AllProduct = () => {
 		return Array.from(result.values());
 	}
 	
-	const productsByCategory = createProducts(productList);
+	const productsByCategory = createProductList(productList);
 
 	// console.log({ productsByCategory });
 
