@@ -9,6 +9,16 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
+// IMPORT AVATARS
+import avaOne from '../assets/avatars/1.jpg'
+import avaTwo from '../assets/avatars/2.jpg'
+import avaThree from '../assets/avatars/3.jpg'
+import avaFour from '../assets/avatars/4.jpg'
+import avaFive from '../assets/avatars/5.jpg'
+import avaSix from '../assets/avatars/6.jpg'
+import avaSeven from '../assets/avatars/7.jpg'
+
+
 const TheHeaderDropdownMssg = () => {
   const itemsCount = 7
   return (
@@ -33,7 +43,7 @@ const TheHeaderDropdownMssg = () => {
             <div className="pt-3 mr-3 float-left">
               <div className="c-avatar">
                 <CImg
-                  src={'/avatars/7.jpg'}
+                  src={avaSeven}
                   className="c-avatar-img"
                   alt="admin@bootstrapmaster.com"
                 />
@@ -58,7 +68,7 @@ const TheHeaderDropdownMssg = () => {
             <div className="pt-3 mr-3 float-left">
               <div className="c-avatar">
                 <CImg
-                  src={'/avatars/6.jpg'}
+                  src={avaSix}
                   className="c-avatar-img"
                   alt="admin@bootstrapmaster.com"
                 />
@@ -80,7 +90,7 @@ const TheHeaderDropdownMssg = () => {
             <div className="pt-3 mr-3 float-left">
               <div className="c-avatar">
                 <CImg
-                  src={'/avatars/5.jpg'}
+                  src={avaFive}
                   className="c-avatar-img"
                   alt="admin@bootstrapmaster.com"
                 />
@@ -102,7 +112,7 @@ const TheHeaderDropdownMssg = () => {
             <div className="pt-3 mr-3 float-left">
               <div className="c-avatar">
                 <CImg
-                  src={'/avatars/4.jpg'}
+                  src={avaFour}
                   className="c-avatar-img"
                   alt="admin@bootstrapmaster.com"
                 />

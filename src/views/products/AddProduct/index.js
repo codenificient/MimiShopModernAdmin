@@ -257,8 +257,15 @@ export default function Products() {
 								</div>
 							))}
 						</div>
+						<div style={{ display: 'flex' }}>
+				
+						</div>
+
+
 					</Col>
+					
 				</Row>
+			
 			</NewModal>
 		);
 	};

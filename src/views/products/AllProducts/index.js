@@ -270,6 +270,12 @@ export default function Products() {
 								</div>
 							))}
 						</div>
+
+						<div style={{ display: 'flex' }}>
+						<input type="file" name={productPictures} onChange={handleProductImage} />
+								</div>
+					
+					
 					</Col>
 				</Row>
 			</NewModal>

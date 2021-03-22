@@ -94,7 +94,7 @@ const ModifyProduct = () => {
 						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
 							<CCol md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Toutes les Cate&#769;gories</h1>
+									<h1 style={{ margin: '1rem', color: '#333' }}>Modifier les Produits</h1>
 								</div>
 							</CCol>
 						</CRow>

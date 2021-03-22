@@ -14,6 +14,14 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
+// IMPORT AVATARS
+import avaOne from '../../assets/avatars/1.jpg'
+import avaTwo from '../../assets/avatars/2.jpg'
+import avaThree from '../../assets/avatars/3.jpg'
+import avaFour from '../../assets/avatars/4.jpg'
+import avaFive from '../../assets/avatars/5.jpg'
+import avaSix from '../../assets/avatars/6.jpg'
+
 import MainChartExample from '../charts/MainChartExample.js'
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
@@ -335,7 +343,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'../../avatars/1.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaOne} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-success"></span>
                       </div>
                     </td>
@@ -370,7 +378,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'/avatars/2.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaTwo} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-danger"></span>
                       </div>
                     </td>
@@ -406,7 +414,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'/avatars/3.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaThree} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-warning"></span>
                       </div>
                     </td>
@@ -441,7 +449,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'/avatars/4.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaFour} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-secondary"></span>
                       </div>
                     </td>
@@ -476,7 +484,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'/avatars/5.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaFive} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-success"></span>
                       </div>
                     </td>
@@ -511,7 +519,7 @@ const Dashboard = () => {
                   <tr>
                     <td className="text-center">
                       <div className="c-avatar">
-                        <img src={'/avatars/6.jpg'} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
+                        <img src={avaSix} className="c-avatar-img" alt="admin@bootstrapmaster.com" />
                         <span className="c-avatar-status bg-danger"></span>
                       </div>
                     </td>
