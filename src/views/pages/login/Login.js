@@ -108,7 +108,7 @@ const Login = () => {
 											service.
 										</p>
 										<Link to="/register">
-											<CButton color="primary" className="mt-1" active tabIndex={-1}>
+											<CButton className="mt-1 btn-behance cib-youtube" active tabIndex={-1}>
 												Nouveau Compte!
 											</CButton>
 										</Link>
