@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        ".idea": true,
+        ".ini": true,
+        ".vscode": true,
+        ".xml": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
+    }
+}
