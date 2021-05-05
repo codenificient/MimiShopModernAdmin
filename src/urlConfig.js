@@ -22,3 +22,11 @@ export const formatter = new Intl.NumberFormat('fr-FR', {
 	currency: 'XOF',
 	minimumFractionDigits: 0
 });
+
+export 	const formatDate = (date) => {
+		if (date) {
+			const d = new Date(date);
+			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
+		}
+		return '';
+	};

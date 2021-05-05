@@ -59,6 +59,7 @@ const routes = [
 	{ path: '/page/addpage', name: 'Ajouter une Page', component: NewPage },
 	{ path: '/page/editpage', name: 'Modifier Page', component: EditPages },
 
+	// EXTRAS
 	{ path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
 	{ path: '/base/collapses', name: 'Collapse', component: Collapses },
 	{ path: '/charts', name: 'Charts', component: Charts },

@@ -18,9 +18,9 @@ const ModifyProduct = () => {
 				QUANTITY: quantity,
 				CATEGORY: category.name,
 				STATUS:
-					quantity % 3 == 1
+					quantity % 3 === 1
 						? 'Active'
-						: quantity % 2 == 1 ? 'Inactive' : quantity % 5 == 0 ? 'Archived' : 'Pending'
+						: quantity % 2 === 1 ? 'Inactive' : quantity % 5 === 0 ? 'Archived' : 'Pending'
 			});
 			// console.table({ options });
 		}
@@ -77,7 +77,7 @@ const ModifyProduct = () => {
 				<Row>
 					<Col md={12}>
 						<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-							<h1 style={{ margin: '3rem', color: 'white' }}>Modifier les Produits</h1>
+							<h1 style={{ margin: '3rem', color: 'white' }}>Modifier totallement les Produits</h1>
 						</div>
 					</Col>
 				</Row>

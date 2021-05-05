@@ -62,12 +62,12 @@ function App() {
 						name="Category"
 						render={(props) => <Category {...props} />}
 					/>
-					<PrivateRoute
+					{/* <PrivateRoute
 						exact
 						path="/orders/activeorders"
-						name="Orders"
+						name="Active Orders"
 						render={(props) => <ActiveOrders {...props} />}
-					/>
+					/> */}
 
 					<Route
 						exact

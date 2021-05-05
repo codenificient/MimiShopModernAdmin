@@ -3,13 +3,12 @@ import * as am4plugins_forceDirected from '@amcharts/amcharts4/plugins/forceDire
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import { CCard, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import './chart.css';
 
 const AllProduct = () => {
 	const category = useSelector((state) => state.category);
 	const product = useSelector((state) => state.product);
-	const dispatch = useDispatch();
 	const [ show, setShow ] = useState(true);
 
 	const renderCategories = (categories, options = []) => {
@@ -32,11 +31,11 @@ const AllProduct = () => {
 		let productCategories = [];
 		for (let prod of products) {
 			categoryList.map((cate) => {
-				if (cate.name == prod.category.name) {
+				if (cate.name === prod.category.name) {
 					productCategories.push({
 						category: cate.name,
 						value: 1,
-						products: prod.category.name == cate.name ? [ prod.name ] : []
+						products: prod.category.name === cate.name ? [ prod.name ] : []
 					});
 				}
 			});
