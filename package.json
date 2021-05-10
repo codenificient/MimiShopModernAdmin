@@ -52,7 +52,7 @@
 		"deploy": "gh-pages -d build",
 		"start": "set PORT=4000 && react-scripts start",
 		"build": "react-scripts build",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install --legacy-peer-deps  && npm run build",
+    "heroku-postbuild": "npm install --only=dev && npm install --legacy-peer-deps  && npm run build",
 		"test": "react-scripts test",
 		"test:cov": "npm test -- --coverage --watchAll=false",
 		"test:debug": "react-scripts --inspect-brk test --runInBand",
