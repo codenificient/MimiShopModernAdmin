@@ -84,7 +84,7 @@ export default function Page(props) {
 
 	return (
 		<React.Fragment>
-			<h1 style={{ margin: '3rem' }}>Toutes les page</h1>
+			<h1 style={{ margin: '3rem' }}>TOUTES LES PAGE</h1>
 
 			<CCard>
 				<CCardBody>

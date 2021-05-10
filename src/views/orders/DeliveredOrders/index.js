@@ -10,9 +10,8 @@ import '../ActiveOrders/style.css'
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
 	const dispatch = useDispatch();
-	const [ type, setType ] = useState('');
-	let [ orderAddress, setOrderAddress ] = useState('');
-
+	const [type, setType] = useState('');
+	
 	const onOrderUpdate = (orderId) => {
 		// alert(orderId);
 		const payload = {
@@ -26,7 +25,7 @@ export default function Orders(props) {
 
 	return (
 		<Layout>
-			<h1 style={{ margin: '3rem', color: '#d16767' }}>Commandes Deja Livrées</h1>
+			<h1 style={{ margin: '3rem', color: '#d16767' }}>COMMANDES DEJA LIVRÉES</h1>
 			{order.orders &&
 				order.orders.map((orderItem, index) => (
 					<Card
@@ -80,11 +79,7 @@ export default function Orders(props) {
 							<div className="orderTrack">
 								{ orderItem.orderStatus[3].date &&
 									`Commande livrée le ${formatDate(orderItem.orderStatus[3].date)}`}
-							</div>
-
-
-				
-			
+							</div>		
 
 						</div>
 					</Card>

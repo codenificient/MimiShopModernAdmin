@@ -26,7 +26,7 @@ export default function Orders(props) {
 
 	return (
 		<Layout>
-			<h1 style={{ margin: '3rem' }}>Status des Achats</h1>
+			<h1 style={{ margin: '3rem' }}>STATUS DES ACHATS</h1>
 			{order.orders.map((orderItem, index) => (
 				<Card
 				style = {{
@@ -85,7 +85,7 @@ export default function Orders(props) {
 							))}
 						</div>
 
-						{/* select input to apply order action */}
+						{/* SELECT INPUT TO APPLY ORDER ACTION */}
 						<div
 							style={{
 								paddingLeft: '50px',
@@ -107,7 +107,8 @@ export default function Orders(props) {
 								})}
 							</select>
 						</div>
-						{/* button to confirm action */}
+
+						{/* BUTTON TO CONFIRM ACTION */}
 
 						<div
 							style={{
