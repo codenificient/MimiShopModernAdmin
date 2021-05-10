@@ -1,7 +1,7 @@
 .orderTrack {
-	width: calc(100% - 100px);
+	width: calc(100% - 50px);
 	display: inline-flex;
-	margin: 0 4rem;
+	margin: 0 1rem;
 }
 
 .card:last-child {
@@ -16,7 +16,7 @@
 }
 
 .orderStatus.active {
-	background: #177c7c;
+	background: #26a541;
 }
 .orderStatus:last-child {
 	width: 0;
@@ -30,7 +30,7 @@
 	top: -5px;
 }
 .orderStatus .point.active {
-	background-color: #177c7c;
+	background-color: #26a541;
 }
 
 .orderInfo {
@@ -72,7 +72,7 @@
 }
 
 .statusUpdate {
-	width: 30%;
+	width: 20%;
 }
 
 .deliveryInfo {

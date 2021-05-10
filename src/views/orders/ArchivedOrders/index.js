@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from 'src/actions';
 import Card from 'src/components/Card';
 import Layout from 'src/components/Layout';
+import { formatDate } from 'src/urlConfig';
+import '../ActiveOrders/style.css'
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
@@ -20,13 +22,7 @@ export default function Orders(props) {
 		dispatch(updateOrderAction(payload));
 	};
 
-	const formatDate = (date) => {
-		if (date) {
-			const d = new Date(date);
-			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
-		}
-		return '';
-	};
+
 
 	return (
 		<Layout>

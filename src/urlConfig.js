@@ -29,4 +29,9 @@ export 	const formatDate = (date) => {
 			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
 		}
 		return '';
-	};
+};
+	
+export const shorten = (str, maxLen, separator = ' ') => {
+	if (str.length <= maxLen) return str;
+	return str.substr(0, str.lastIndexOf(separator, maxLen));
+};

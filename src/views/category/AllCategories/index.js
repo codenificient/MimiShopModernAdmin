@@ -16,7 +16,7 @@ const Category = () => {
 		for (let category of categories) {
 			myCategories.push({
 				name: category.name,
-				value: category.children.length > 0 ? 3 : 2,
+				value: category.children.length > 0 ? 0.3 : 0.2,
 				children: category.children.length > 0 && renderCategories(category.children)
 			});
 		}

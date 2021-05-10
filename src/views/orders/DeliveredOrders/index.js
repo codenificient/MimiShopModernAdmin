@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import { formatDate, formatter, shorten } from 'src/urlConfig';
 import { updateOrderAction } from '../../../actions';
 import Card from '../../../components/Card';
 import Layout from '../../../components/Layout';
+import '../ActiveOrders/style.css'
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
@@ -20,13 +22,7 @@ export default function Orders(props) {
 		dispatch(updateOrderAction(payload));
 	};
 
-	const formatDate = (date) => {
-		if (date) {
-			const d = new Date(date);
-			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
-		}
-		return '';
-	};
+
 
 	return (
 		<Layout>
@@ -36,7 +32,8 @@ export default function Orders(props) {
 					<Card
 						style={{
 							margin: '60px auto',
-							color: '#d16767'
+							color: 'white',
+							background: '#23242D'
 						}}
 						key={index}
 						headerLeft={`DELIVREE DE COMMANDE - ${orderItem._id}`}
@@ -51,17 +48,17 @@ export default function Orders(props) {
 							}}
 						>
 							<div>
-								<div className="title">Items</div>
+								<div className="title">Articles</div>
 								{orderItem.items.map((item, index) => (
 									<div className="value" key={index}>
-										{item.productId.name}
+										{shorten(item.productId.name, 55)}
 									</div>
 								))}
 							</div>
 							<div>
-								<span className="title">Montant Total</span>
+								<span className="title">Facture</span>
 								<br />
-								<span className="value">{orderItem.totalAmount}</span>
+								<span className="value">{formatter.format(orderItem.totalAmount)}</span>
 							</div>
 							<div>
 								<span className="title">Type de Paiement</span> <br />
@@ -81,55 +78,14 @@ export default function Orders(props) {
 							}}
 						>
 							<div className="orderTrack">
-								{orderItem.orderStatus.map((status) => (
-									<div className={`orderStatus ${status.isCompleted ? 'active' : ''}`}>
-										<div className={`point ${status.isCompleted ? 'active' : ''}`} />
-										<div className="orderInfo">
-											<div className="status">{status.type}</div>
-											<div className="statusDate">{formatDate(status.date)}</div>
-										</div>
-									</div>
-								))}
+								{ orderItem.orderStatus[3].date &&
+									`Commande livrée le ${formatDate(orderItem.orderStatus[3].date)}`}
 							</div>
 
-							{/* select input to apply order action */}
-							<div
-								style={{
-									paddingLeft: '50px',
-									boxSizing: 'border-box'
-								}}
-							>
-								<select onChange={(e) => setType(e.target.value)}>
-									<option value={''}>Mise à Jour du Status</option>
-									{orderItem.orderStatus.map((status) => {
-										return (
-											<React.Fragment>
-												{!status.isCompleted ? (
-													<option key={status.type} value={status.type}>
-														{status.type}
-													</option>
-												) : null}
-											</React.Fragment>
-										);
-									})}
-								</select>
-							</div>
-							{/* button to confirm action */}
 
-							<div
-								style={{
-									paddingLeft: '40px',
-									boxSizing: 'border-box'
-								}}
-							>
-								<Button
-									className="confirmOrderButton infoButton"
-									variant="info"
-									onClick={() => onOrderUpdate(orderItem._id)}
-								>
-									Confirmer
-								</Button>
-							</div>
+				
+			
+
 						</div>
 					</Card>
 				))}

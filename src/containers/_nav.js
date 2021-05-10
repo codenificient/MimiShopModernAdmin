@@ -96,13 +96,13 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Active Orders',
+    name: 'Achats Actifs',
     route: '/orders',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'In Transit',
+        name: 'En Transit',
         to: '/orders/activeorders',
       },
       {

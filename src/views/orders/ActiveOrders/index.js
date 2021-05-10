@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from 'src/actions';
 import CardOne from 'src/components/Card';
 import Layout from 'src/components/Layout';
+import { formatDate, formatter, shorten } from 'src/urlConfig';
 import './style.css';
 
 export default function Orders(props) {
@@ -21,13 +22,6 @@ export default function Orders(props) {
 		dispatch(updateOrderAction(payload));
 	};
 
-	const formatDate = (date) => {
-		if (date) {
-			const d = new Date(date);
-			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
-		}
-		return '';
-	};
 
 	return (
 		<Layout>
@@ -37,7 +31,8 @@ export default function Orders(props) {
 					<CardOne
 						style={{
 							margin: '60px auto',
-							color: '#d16767'
+							color: 'white',
+							background: '#23242D'
 						}}
 						key={index}
 						headerLeft={`ACTIVES DE COMMANDE - ${orderItem._id}`}
@@ -51,17 +46,17 @@ export default function Orders(props) {
 							}}
 						>
 							<div>
-								<div className="title">Items</div>
+								<div className="title">Articles</div>
 								{ orderItem.items.map((item, index) => (
 									<div className="value" key={index}>
-										{item.productId.name}
+										{shorten(item.productId.name, 50)}
 									</div>
 								))}
 							</div>
 							<div>
-								<span className="title">Montant Total</span>
+								<span className="title">Facture</span>
 								<br />
-								<span className="value">{orderItem.totalAmount}</span>
+								<span className="value">{formatter.format(orderItem.totalAmount)}</span>
 							</div>
 							<div>
 								<span className="title">Type de Paiement</span> <br />
