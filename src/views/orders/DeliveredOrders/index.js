@@ -76,7 +76,7 @@ export default function Orders(props) {
 								alignItems: 'center'
 							}}
 						>
-							<div className="orderTrack">
+							<div className="orderTrack textCenter">
 								{ orderItem.orderStatus[3].date &&
 									`Commande livrée le ${formatDate(orderItem.orderStatus[3].date)}`}
 							</div>		
