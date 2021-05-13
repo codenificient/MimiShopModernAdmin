@@ -36,3 +36,7 @@ h5 {
 .infoButton {
 	margin: 0 0 0 20px;
 }
+
+.sa {
+	justify-content: space-around;
+}

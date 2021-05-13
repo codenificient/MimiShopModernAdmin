@@ -51,25 +51,30 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: 'Tous les Clients',
-    route: '/user',
+    name: 'Clients',
+    route: '/users',
     icon: 'cil-puzzle',
     _children: [
       {
         _tag: 'CSidebarNavItem',
+        name: 'Tous les Clients',
+        to: '/users/allusers',
+      },
+      {
+        _tag: 'CSidebarNavItem',
         name: 'Ajouter Client',
-        to: '/user/adduser',
+        to: '/users/adduser',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Modifier Client',
-        to: '/user/edituser',
+        to: '/users/edituser',
       },
  
       {
         _tag: 'CSidebarNavItem',
         name: 'Archives des Clients',
-        to: '/user/archives',
+        to: '/users/archives',
       },  
     
     ],
@@ -102,17 +107,17 @@ const _nav =  [
     _children: [
       {
         _tag: 'CSidebarNavItem',
-        name: 'In Transit',
+        name: 'En Transite',
         to: '/orders/activeorders',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Delivered Orders',
+        name: 'Achats Livrés',
         to: '/orders/delivered',
       },
       {
         _tag: 'CSidebarNavItem',
-        name: 'Refunds In Progress',
+        name: 'Remboursements',
         to: '/orders/refunds',
       },
 

@@ -16,7 +16,7 @@ const Category = () => {
 		for (let category of categories) {
 			myCategories.push({
 				name: category.name,
-				value: category.children.length > 0 ? 3 : 2,
+				value: category.children.length > 0 ? 0.2 : 0.1,
 				children: category.children.length > 0 && renderCategories(category.children)
 			});
 		}
@@ -25,7 +25,7 @@ const Category = () => {
 
 	const categoryList = renderCategories(category.categories);
 
-	console.log({ categoryList });
+	// console.log({ categoryList });
 
 	am4core.useTheme(am4themes_animated);
 	// Themes end

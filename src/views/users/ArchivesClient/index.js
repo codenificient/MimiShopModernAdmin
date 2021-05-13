@@ -22,7 +22,6 @@ export default function Orders(props) {
 		dispatch(updateOrderAction(payload));
 	};
 
-
 	return (
 		<Layout>
 			<h1 style={{ margin: '3rem', color: '#d16767' }}>LES ACHATS EN COURS</h1>
@@ -47,7 +46,7 @@ export default function Orders(props) {
 						>
 							<div>
 								<div className="title">Articles</div>
-								{ orderItem.items.map((item, index) => (
+								{orderItem.items.map((item, index) => (
 									<div className="value" key={index}>
 										{shorten(item.productId.name, 50)}
 									</div>

@@ -8,15 +8,20 @@ const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
 const Charts = React.lazy(() => import('./views/charts/Charts'));
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
+
 // CATEGORIES
 const AllCategories = React.lazy(() => import('./views/category/AllCategories'));
 const AddCategory = React.lazy(() => import('./views/category/AddCategory'));
 const ArchivedCategory = React.lazy(() => import('./views/category/Archives'));
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
+
 // USERS
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
+const AjouterClient = React.lazy(() => import('./views/users/AjouterClient'));
+const ModifierClient = React.lazy(() => import('./views/users/ModifierClient'));
+const ArchivesClient = React.lazy(() => import('./views/users/ArchivesClient'));
 // PRODUCTS
 const ModifyProduct = React.lazy(() => import('./views/products/ModifyProduct'));
 const AddProduct = React.lazy(() => import('./views/products/AddProduct'));
@@ -49,7 +54,7 @@ const routes = [
 
 	// ORDERS
 	{ path: '/orders', name: 'Achats Actifs', component: ActiveOrders, exact: true },
-	{ path: '/orders/activeorders', name: 'Achats En Transit', component: ActiveOrders },
+	{ path: '/orders/activeorders', name: 'Achats En Transite', component: ActiveOrders },
 	{ path: '/orders/delivered', name: 'Achats Deliverés', component: DeliveredOrders },
 	{ path: '/orders/archives', name: 'Archives des Achats', component: ArchivedOrders },
 
@@ -66,8 +71,15 @@ const routes = [
 	{ path: '/notifications/modals', name: 'Modals', component: Modals },
 	{ path: '/notifications/toaster', name: 'Toaster', component: Toaster },
 	{ path: '/widgets', name: 'Widgets', component: Widgets },
-	{ path: '/users', exact: true, name: 'Users', component: Users },
-	{ path: '/users/:id', exact: true, name: 'User Details', component: User }
+
+
+	// USERS
+	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },
+	{ path: '/users/allusers', name: 'Tous les Clients', component: Users },
+	{ path: '/users/adduser',  name: 'Ajouter un Client', component: AjouterClient },
+	{ path: '/users/edituser/:id',  name: 'Modifer Client', component: ModifierClient },
+	{ path: '/users/:id',  name: 'Détailles de Client', component: User },
+	{ path: '/users/archives', name: 'Archives de Client', component: ArchivesClient },
 ];
 
 export default routes;

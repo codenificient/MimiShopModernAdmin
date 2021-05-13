@@ -2,7 +2,7 @@ import React from 'react'
 import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-import usersData from './UsersData'
+import usersData from '../Users/UsersData'
 
 const User = ({match}) => {
   const user = usersData.find( user => user.id.toString() === match.params.id)
@@ -17,7 +17,7 @@ const User = ({match}) => {
             User id: {match.params.id}
           </CCardHeader>
           <CCardBody>
-              <table className="table table-striped table-hover">
+              <table className="table table-striped table-hover table-editable">
                 <tbody>
                   {
                     userDetails.map(([key, value], index) => {
