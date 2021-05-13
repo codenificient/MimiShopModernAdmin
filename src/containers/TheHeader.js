@@ -58,15 +58,15 @@ const TheHeader = () => {
         onClick={toggleSidebar}
       />
       <CHeaderBrand className="mx-auto d-lg-none" to="/">
-        <CIcon name="logo" src={mimiGold} height="48" alt="Logo"/>
+        <CIcon name="logo" src={mimiGold} alt="Logo"/>
       </CHeaderBrand>
 
       <CHeaderNav className="d-md-down-none mr-auto">
         <CHeaderNavItem className="px-3" >
-          <CHeaderNavLink to="/dashboard">Accueil</CHeaderNavLink>
+          <CHeaderNavLink to="/profile">Profile</CHeaderNavLink>
         </CHeaderNavItem>
         <CHeaderNavItem  className="px-3">
-          <CHeaderNavLink to="/users">Clients</CHeaderNavLink>
+          <CHeaderNavLink to="/partners">Parténaires</CHeaderNavLink>
         </CHeaderNavItem>
         <CHeaderNavItem className="px-3">
           <CHeaderNavLink to="/settings">Paramètres</CHeaderNavLink>
@@ -86,19 +86,13 @@ const TheHeader = () => {
           routes={routes} 
         />
           <div className="d-md-down-none mfe-2 c-subheader-nav">
-            <CLink className="c-subheader-nav-link"href="#">
-              <CIcon name="cil-speech" alt="Settings" />
+            <CLink className="c-subheader-nav-link" href="/messages">
+              <CIcon name="cil-speech" alt="Settings" />&nbsp;&nbsp;Messages
             </CLink>
-            <CLink 
-              className="c-subheader-nav-link" 
-              aria-current="page" 
-              to="/dashboard"
-            >
-              <CIcon name="cil-graph" alt="Dashboard" />&nbsp;Accueil
-          </CLink>
+         
           
             <CLink className="c-subheader-nav-link" onClick={logout}>
-              <CIcon name="cil-settings" alt="Logout" />&nbsp;Déconnection
+              <CIcon name="cil-settings" alt="Logout" />&nbsp;&nbsp;Déconnection
             </CLink>
           </div>
       </CSubheader>
