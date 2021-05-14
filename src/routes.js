@@ -8,8 +8,6 @@ const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
 const Charts = React.lazy(() => import('./views/charts/Charts'));
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Messages = React.lazy(() => import('./views/email/Messages'));
-const Outbox = React.lazy(() => import('./views/email/Out'));
-const MsgArchives = React.lazy(() => import('./views/email/Archive'));
 const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
 
 // CATEGORIES
@@ -85,11 +83,6 @@ const routes = [
 
 	// MESSAGES
 	{ path: '/messages', name: 'Messages', component: Messages, exact: true },
-	{ path: '/messages/inbox', name: 'Messages', component: Messages },
-	{ path: '/messages/sent', name: 'Messages', component: Messages },
-	{ path: '/messages/archives', name: 'Messages', component: MsgArchives },
-
-
 
 	// USERS
 	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },
