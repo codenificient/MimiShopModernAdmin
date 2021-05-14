@@ -19,7 +19,7 @@ export const createPageAction = (form) => {
 					type: pageConstants.CREATE_PAGE_FAILURE,
 					payload: { error: res.data.error }
 				});
-				console.log(res);
+				// console.log(res);
 			}
 		} catch (error) {
 			console.log(error);
@@ -45,7 +45,7 @@ export const getAllPagesAction = (form) => {
 					type: pageConstants.CREATE_PAGE_FAILURE,
 					payload: { error: res.data.error }
 				});
-				console.log(res);
+				// console.log(res);
 			}
 		} catch (error) {
 			console.log(error);

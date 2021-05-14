@@ -13,7 +13,7 @@ const getAllCategoriesAction = () => {
 				type: categoryConstants.GET_ALL_CATEGORIES_SUCCESS,
 				payload: { categories: categoryList }
 			});
-			console.log(res);
+			// console.log(res);
 		} else {
 			dispatch({
 				type: categoryConstants.GET_ALL_CATEGORIES_FAILURE,

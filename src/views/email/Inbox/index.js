@@ -4,13 +4,13 @@ import { useSelector } from 'react-redux';
 import Input from 'src/components/UI/Input';
 import './style.css';
 
-export default function MessageArchive(props) {
+export default function Inbox(props) {
 	const allpages = useSelector((state) => state.page.allpages);
 
 	return (
 		<React.Fragment>
 			<h2 className="textLight" style={{ margin: '3rem' }}>
-				Archives de Messages
+				Nouveau Couriel
 			</h2>
 
 			<CCard>

@@ -1,7 +1,3 @@
-.listImagesContainer .row {
-	display: block;
-}
-
-.listImages {
-	display: block;
+.active {
+	color: burlywood;
 }

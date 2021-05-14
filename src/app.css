@@ -24,9 +24,14 @@ h5 {
 
 .welcome-text {
 	font-family: 'Oswald';
+
 	align-items: start;
 	justify-content: center;
 	margin-bottom: 7rem;
+}
+
+.textLight {
+	color: #b9b9b9;
 }
 
 .sb {
