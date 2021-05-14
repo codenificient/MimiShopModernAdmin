@@ -1,3 +1,5 @@
-.active {
-	color: burlywood;
+.btn220 {
+	height: 50px;
+	width: 220px;
+	transform: translateY(25%);
 }

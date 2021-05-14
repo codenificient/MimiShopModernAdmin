@@ -9,7 +9,7 @@ export default function MessageArchive(props) {
 
 	return (
 		<React.Fragment>
-			<h2 className="textLight" style={{ margin: '3rem' }}>
+			<h2 className="textLight" style={{ margin: '1rem' }}>
 				Archives de Messages
 			</h2>
 

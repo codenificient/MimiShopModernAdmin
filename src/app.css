@@ -24,7 +24,6 @@ h5 {
 
 .welcome-text {
 	font-family: 'Oswald';
-
 	align-items: start;
 	justify-content: center;
 	margin-bottom: 7rem;
@@ -44,4 +43,29 @@ h5 {
 
 .sa {
 	justify-content: space-around;
+}
+
+.btn120 {
+	width: 120px;
+}
+
+.h30 {
+	height: 30px;
+}
+
+.floatRight {
+	right: 3rem;
+	padding-top: 1rem;
+	position: absolute;
+}
+.floatLeft {
+	position: absolute;
+	padding-top: 1rem;
+	left: 4rem;
+}
+
+.anchorLeft {
+	position: absolute;
+	left: 2rem;
+	transform: translateY(260%);
 }

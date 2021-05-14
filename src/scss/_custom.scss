@@ -38,9 +38,15 @@ thead .thead-light,
 	background-color: #1d1d1d;
 }
 
-.bgClear {
-	background-color: #ffffff00;
+.lightenBg {
+	background-color: #f3f3f300;
 }
+
+.normalBg {
+	background-color: #23242d;
+}
+
+
 
 .card {
 	border: none;
@@ -77,4 +83,8 @@ table {
 
 table th .thead-light {
     background-color: #157b80;
+}
+
+.no-border {
+	border: none;
 }

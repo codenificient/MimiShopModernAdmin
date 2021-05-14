@@ -1,0 +1,6 @@
+.c-message-headers {
+	width: 100%;
+	display: block;
+	justify-content: space-between;
+    position: relative;
+}

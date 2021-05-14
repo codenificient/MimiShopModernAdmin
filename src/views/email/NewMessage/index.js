@@ -1,4 +1,4 @@
-import { CCard, CCardBody, CCardFooter } from '@coreui/react';
+import { CButton, CButtonGroup, CCard, CCardBody, CCardFooter } from '@coreui/react';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Input from 'src/components/UI/Input';
@@ -9,15 +9,15 @@ export default function NewMessage(props) {
 
 	return (
 		<React.Fragment>
-			<h2 className="textLight" style={{ margin: '3rem' }}>
+			<h2 className="textLight" style={{ margin: '1rem' }}>
 				Nouveau Couriel
 			</h2>
 
 			<CCard>
 				<CCardBody>
-					<Input type="email" label="Receiver" placeholder="email du destinataire" />
-					<Input type="text" label="Subject" placeholder="sujet du couriel" />
-					<label>Message</label>
+					<Input type="email" label="Destinataire" placeholder="email du destinataire" />
+					<Input type="text" label="Sujet" placeholder="sujet du couriel" />
+					<label>Méssage</label>
 					<br />
 					<textarea
 						type="text"
@@ -28,8 +28,12 @@ export default function NewMessage(props) {
 					/>
 				</CCardBody>
 
-				<CCardFooter className="darkenBg" align="center">
-					Created By
+				<CCardFooter className="normalBg sb no-border" align="center">
+					<CButtonGroup className="sb">
+						<CButton className="mr-4 btn120" color="primary">Envoyer</CButton>
+						<CButton className="mr-4 btn120" color="dark">Brouillon</CButton>
+						<CButton className="mr-4 btn120" color="danger">Supprimer</CButton>
+					</CButtonGroup>
 				</CCardFooter>
 			</CCard>
 		</React.Fragment>

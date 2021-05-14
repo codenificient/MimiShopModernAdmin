@@ -1,65 +1,57 @@
-import {
-	CCard,
-	CCardBody,
-	CCardFooter,
-	CCardHeader,
-	CNav,
-	CNavItem,
-	CNavLink,
-	CTabContent,
-	CTabPane
-} from '@coreui/react';
+import { CCard, CCardBody, CButtonGroup, CCardHeader } from '@coreui/react';
 import React, { useState } from 'react';
+import MessageArchive from '../Archive';
+import Inbox from '../Inbox';
+import NewMessage from '../NewMessage';
+import OutgoingMessages from '../Out';
 import './style.css';
 
 export default function Messages(props) {
-  const [activeKey, setActiveKey] = useState(1);
-  console.log({ activeKey });
+	const [ activeKey, setActiveKey ] = useState(1);
+	// console.log({ activeKey });
+
 	return (
 		<CCard>
-			<CCardHeader className="bgClear">
-				<CNav variant="pills">
-					<CNavItem>
-						<CNavLink active={activeKey == 1} onClick={() => setActiveKey(1)}>
+			<CCardHeader className="lightenBg c-header-nav-item">
+				<ul class="nav nav-tabs" style={{ borderBottom: 'none' }}>
+					<li class="nav-item">
+						<button class="nav-link btn220 active btn-info" data-toggle="tab" href="#home">
 							Boite de Reception
-						</CNavLink>
-					</CNavItem>
-					<CNavItem>
-						<CNavLink  active={activeKey == 2} onClick={() => setActiveKey(2)}>
-							Nouveau Message
-						</CNavLink>
-					</CNavItem>
-					<CNavItem>
-						<CNavLink active={activeKey == 3} onClick={() => setActiveKey(3)}>
+						</button>
+					</li>
+					<li class="nav-item ml-3">
+						<button class="nav-link btn-success btn220" data-toggle="tab" href="#menu1">
+							Nouveau Méssage
+						</button>
+					</li>
+					<li class="nav-item ml-3">
+						<button class="nav-link btn-primary btn220" data-toggle="tab" href="#menu2">
 							Messages Envoyés
-						</CNavLink>
-					</CNavItem>
-					<CNavItem>
-						<CNavLink  active={activeKey == 4} color="danger" onClick={() => setActiveKey(4)}>
-							Archives des Messages
-						</CNavLink>
-					</CNavItem>
-				</CNav>
+						</button>
+					</li>
+					<li class="nav-item ml-3">
+						<button class="nav-link  btn-warning btn220" data-toggle="tab" href="#menu3">
+							Archives de Messages
+						</button>
+					</li>
+				</ul>
 			</CCardHeader>
 			<CCardBody>
-				<CTabContent>
-					<CTabPane visible={activeKey == 1}>
-						<h1>Inbox</h1>
-					</CTabPane>
-					<CTabPane visible={activeKey == 2}>
-						<h1>New message</h1>
-					</CTabPane>
-					<CTabPane visible={activeKey == 3}>
-						<h1>Outgoing</h1>
-					</CTabPane>
-					<CTabPane visible={activeKey == 4}>
-						<h1>Archives</h1>
-					</CTabPane>
-				</CTabContent>
+				<div class="tab-content">
+					<div id="home" class="container tab-pane active">
+						<Inbox />
+					</div>
+					<div id="menu1" class="container tab-pane fade">
+						<NewMessage />
+					</div>
+					<div id="menu2" class="container tab-pane fade">
+						<OutgoingMessages />
+					</div>
+					<div id="menu3" class="container tab-pane fade">
+						<MessageArchive />
+					</div>
+				</div>
 			</CCardBody>
-			<CCardFooter className="bgClear" align="center">
-				Created By
-			</CCardFooter>
 		</CCard>
 	);
 }
