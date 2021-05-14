@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/views/products/AllProducts/chart.css"],"names":[],"mappings":"AAAA,UACE,UAAW,CACX,cAAe,CACf,WACF","file":"41.12c32d25.chunk.css","sourcesContent":["#chartdiv {\r\n  width: 100%;\r\n  max-width: 100%;\r\n  height: 81vh;\r\n}\r\n"]}

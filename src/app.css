@@ -45,6 +45,14 @@ h5 {
 	justify-content: space-around;
 }
 
+.btn200 {
+	width: 200px;
+}
+
+.btn180 {
+	width: 180px;
+}
+
 .btn120 {
 	width: 120px;
 }
@@ -64,8 +72,22 @@ h5 {
 	left: 4rem;
 }
 
+.floatCenter {
+	position: absolute;
+	padding-top: 1rem;
+	left: 38%;
+}
+
 .anchorLeft {
 	position: absolute;
 	left: 2rem;
 	transform: translateY(260%);
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.accent {
+	color: #1693a5;
 }
