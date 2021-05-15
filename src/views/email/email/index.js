@@ -21,7 +21,7 @@ function Email(props) {
 								<span className="floatLeft bold accent">
 									{props.direction} {msg.name}
 								</span>
-								<span className="floatCenter bold accent">Sujet: {msg.subject}</span>
+								<span className="floatCenter38 bold accent">Sujet: {msg.subject}</span>
 								<span className="floatRight bold accent">{msg.date}</span>
 								<div className="flexRow p-5">{msg.body}</div>
 							</div>

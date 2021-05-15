@@ -23,10 +23,19 @@ export const formatDate = (date) => {
 };
 
 export const formatDate2 = (date) => {
-	const month = [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc' ];
+	const month = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];	
 	if (date) {
 		const d = new Date(date);
 		return `${d.getDate()} ${month[d.getMonth()]}  ${d.getFullYear()}`;
+	}
+};
+
+export const formatDate3 = (date) => {
+	const month = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];
+	const week = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+	if (date) {
+		const d = new Date(date);
+		return `${week[d.getDay()]} le ${d.getDate()} ${month[d.getMonth()]}  ${d.getFullYear()} à ${d.getHours()}:${d.getMinutes()}`;
 	}
 };
 

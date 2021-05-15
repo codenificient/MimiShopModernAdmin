@@ -1,8 +1,7 @@
 .c-message-headers {
-	width: 100%;
 	display: block;
 	justify-content: space-between;
-    position: relative;
+	position: relative;
 }
 
 .unread {
@@ -10,5 +9,60 @@
 }
 
 .read {
-	color: #ebedef;;
+	color: #ebedef;
+}
+
+
+.emailActions {
+	float: left;
+	position: relative;
+	padding: 0 20px 20px 10px;
+}
+
+.emailContainer {
+	margin: -1.5rem 0 -1.5rem 250px;
+	border-left: 5px solid #323b44;
+	padding: 1.5rem 0 1.5rem 25px;
+}
+
+.emailActions::before {
+	border-right: 5px solid #323b44;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -15px;
+	bottom: -1.5rem;
+}
+
+.cards-body {
+	flex: 1 1;
+	padding: 0.8rem;
+}
+
+.cardTwo {
+	width: 220px;
+	margin-bottom: 24px;
+	box-shadow: 0 0.75rem 6rem rgb(56, 65, 74 / 3%);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	word-wrap: break-word;
+	background-color: #36404a;
+	border: 1px solid #36404a;
+	border-radius: .25rem;
+}
+
+hr {
+	transform: translateY(50px);
+	background: #ebedef;
+	width: 60%;
+}
+
+.email-title {
+	background-color: blueviolet;
+}
+
+.email-body {
+	padding: 2rem;
 }

@@ -1,0 +1,21 @@
+.c-message-headers {
+	display: block;
+	justify-content: space-between;
+	position: relative;
+}
+
+.unread {
+	color: #1693a5;
+}
+
+.read {
+	color: #ebedef;
+}
+
+.emailActions {
+	width: 240px;
+	float: left;
+	position: relative;
+	padding: 0 20px 20px 10px;
+}
+

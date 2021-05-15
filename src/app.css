@@ -63,19 +63,29 @@ h5 {
 
 .floatRight {
 	right: 3rem;
-	padding-top: 1rem;
 	position: absolute;
 }
 .floatLeft {
 	position: absolute;
-	padding-top: 1rem;
 	left: 4rem;
+}
+
+.right {
+	float: right;
+}
+
+.floatCenter38 {
+	position: absolute;
+	left: 38%;
 }
 
 .floatCenter {
 	position: absolute;
+	left: 29%;
+}
+
+.paddingTop1 {
 	padding-top: 1rem;
-	left: 38%;
 }
 
 .anchorLeft {
@@ -90,4 +100,72 @@ h5 {
 
 .accent {
 	color: #1693a5;
+}
+
+.emailGreyFg {
+	background-color: #36404a;
+}
+.emailGreyBg {
+	background-color: #323c44;
+}
+
+.darkerBg {
+	background-color: #191919;
+}
+
+.rd1 {
+	right: .3rem;
+}
+
+.ld1 {
+	left: .3rem;
+}
+
+.r1 {
+	right: 1rem;
+}
+
+.posa {
+	position: absolute;
+	margin-bottom: 1rem;
+}
+
+.l1 {
+	left: 1rem;
+}
+
+.secondary {
+	color: #ced2d8;
+}
+
+.dark {
+	color: #636f83;
+}
+
+.light {
+	color: #ebedef;
+}
+.primary {
+	color: #321fdb;
+}
+
+.violet {
+	color: blueviolet;
+}
+.success {
+	color: #2eb85c;
+}
+
+.info {
+	color: #39f;
+}
+.warning {
+	color: #f9b115;
+}
+.danger {
+	color: #e55353;
+}
+
+.w100 {
+	width: 100%;
 }
