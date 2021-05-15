@@ -1,8 +1,14 @@
 import CIcon from '@coreui/icons-react';
 import { CBadge } from '@coreui/react';
 import React from 'react';
+import { Button, ButtonGroup } from 'react-bootstrap';
+import Attachment from 'src/components/UI/Email/Attachments';
+import EmailActions from 'src/components/UI/Email/EmailActions';
+import IconList from 'src/components/UI/Email/IconList';
+import EmailTitle from 'src/components/UI/Email/Title';
 import { formatDate3 } from 'src/urlConfig';
 import { msgs } from '../Inbox/userEmails';
+import './style.css';
 
 function EmailDetails(props) {
 	const msg = msgs.find((msg) => msg.id.toString() === props.match.params.id);
@@ -71,69 +77,60 @@ function EmailDetails(props) {
 		}
 	];
 
+	const iconList = [
+		'cil-envelope-closed',
+		'cil-star',
+		'cil-bookmark',
+		'cil-share',
+		'cil-share-all',
+		'cil-trash',
+		'cil-tags',
+		'cil-settings'
+	];
+
 	return (
 		<React.Fragment>
 			<div className="row p-2 darkerBg">
-				<div className="cardTwo">
+				<EmailActions />
+
+				<div className="col-sm-9 ">
 					<div className="cards-body normalBg">
-						<div className="emailActions pl-2 pt-3 pb-3">
-							{inboxActions &&
-								inboxActions.map((action, index) => (
-									<div key={index} className="mt-2">
-										<div className={`c-message-actions mb-2 p-2 secondary`}>
-											<span className={`mr-3 ${action.color}`}>
-												{<CIcon size={'l'} name={action.icon} />}
-											</span>
-											<span className="">{action.action}</span>
-											<span className="right pl-3">
-												{
-													<CBadge shape="pill" color={action.color}>
-														{action.count}
-													</CBadge>
-												}
-											</span>
+						<div className="pt-3 pl-3 textLight">
+							<IconList iconList={iconList} style={{ width: '55%', padding: '13px' }} />
+						</div>
+						<div className="email-title mt-2 mb-5">
+							<EmailTitle subject={msg.subject} />
+						</div>
+						<div className="emailContainer mb-4">
+							<div className="flexRow m-4 bold email-user">
+								<div className="d-block">
+									<div className="recipient">
+										<div className="image-container">
+											<img src={msg.avatar} alt={msg.avatar} />
 										</div>
+										<span className="user-name">{msg.name}</span>
+										<br />
+										<span className="user-email">From: {msg.email}</span>
 									</div>
-								))}
-							<h6 className="textLight bold mt-5 mb-3">Labels</h6>
-							{labels &&
-								labels.map((label, index) => (
-									<div key={index} className="c-message-actions mb-2 p-2 secondary">
-										<div>
-											<span className={`mr-3 ${label.color}`}>
-												<CIcon size={'l'} name="cib-discover" />{' '}
-											</span>
-											<span>{label.label}</span>
-										</div>
-									</div>
-								))}
+								</div>
+
+								<span className="floatRight pr-4">{formatDate3(msg.date)}</span>
+							</div>
+
+							<div className="email-text p-5">{msg.body}</div>
+						</div>
+						<div>{msg.attachments && <Attachment attachments={msg.attachments} />}</div>
+						<div className="mt-4 mb-4 ml-5">
+							<ButtonGroup>
+							<Button className="mr-5" variant="info">
+								<CIcon name="cil-share-all" />&nbsp;&nbsp;Repondre
+							</Button>
+							<Button className="violetBg" >
+								<CIcon name="cil-transfer" />&nbsp;&nbsp;Forward
+							</Button>
+						</ButtonGroup>
 						</div>
 					</div>
-				</div>
-
-				<div className="col-md-9">
-						<div className="cards-body normalBg">
-							<div className="emailContainer">
-								<div className="email-title m-4 bold accent">
-									<span className="floatLeft">
-										{props.direction} {msg.name}
-									</span>
-									<span className="floatCenter">Sujet: {msg.subject}</span>
-									<span className="floatRight">{formatDate3(msg.date)}</span>
-								</div>
-
-								<div className="email-body p-4">{msg.body}</div>
-							</div>
-						</div>
-						<div className="cards-body normalBg">
-							<div className="emailContainer">
-								<div className="email-title m-4 bold accent">
-									
-								</div>
-
-								<div className="email-body p-4">{msg.body}</div>
-							</div>
-						</div>
 				</div>
 			</div>
 		</React.Fragment>

@@ -1,30 +1,23 @@
 import CIcon from '@coreui/icons-react';
 import React from 'react';
+import { formatDate2 } from 'src/urlConfig';
 
-function Email(props) {
+function EmaiList(props) {
 	return (
 		<React.Fragment>
-			<div className="c-message mb-4 ">
-				<span className="c-message-actions p-3 darkenBg sa">
-					{props.iconList &&
-						props.iconList.map((name, index) => (
-							<span className="mr-4 ">{<CIcon size={'l'} name={name} />}</span>
-						))}
-				</span>
-			</div>
 			{props.emails &&
 				props.emails.map((msg, index) => (
-					<a key={index} href={`/messages/emaildetails/${msg.id}`} className="c-message ">
-						<div className="c-message-details pt-2">
-							<div className="c-message-headers sa darkenBg">
-								<span className="anchorLeft">{props.icon && <CIcon name="cil-star" />}</span>
-								<span className="floatLeft bold accent">
-									{props.direction} {msg.name}
-								</span>
-								<span className="floatCenter38 bold accent">Sujet: {msg.subject}</span>
-								<span className="floatRight bold accent">{msg.date}</span>
-								<div className="flexRow p-5">{msg.body}</div>
-							</div>
+					<a key={index} href={`/messages/emaildetails/${msg.id}`} className="c-message">
+						<div className="c-message-details m-5 pt-2">
+							{props.icons &&
+								props.icons.map((icon) => (
+									<span className="left icons mr-3">
+										<CIcon name={icon} />
+									</span>
+								))}
+							<span className="left ml-3 mr-3 bold email-text ">{msg.name}</span>
+							<span className="right email-text ">{formatDate2(msg.date)}</span>
+							<span className="email-text floatCenter ml-5 mr-4">{msg.subject}</span>
 						</div>
 					</a>
 				))}
@@ -32,4 +25,4 @@ function Email(props) {
 	);
 }
 
-export default Email;
+export default EmaiList;

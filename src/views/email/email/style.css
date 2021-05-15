@@ -2,7 +2,7 @@
 	width: 100%;
 	display: block;
 	justify-content: space-between;
-    position: relative;
+	position: relative;
 }
 
 .unread {
@@ -10,5 +10,18 @@
 }
 
 .read {
-	color: #ebedef;;
+	color: #ebedef;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.c-message-details:hover,
+.c-message:hover {
+	color:chocolate;
 }

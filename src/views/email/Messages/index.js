@@ -11,47 +11,9 @@ export default function Messages(props) {
 	// console.log({ activeKey });
 
 	return (
-		<CCard>
-			<CCardHeader className="lightenBg c-header-nav-item">
-				<ul class="nav nav-tabs" style={{ borderBottom: 'none' }}>
-					<li class="nav-item">
-						<button class="nav-link btn200 active btn-info" data-toggle="tab" href="#home">
-							Boite de Reception
-						</button>
-					</li>
-					<li class="nav-item ml-3">
-						<button class="nav-link btn-success btn200" data-toggle="tab" href="#menu1">
-							Nouveau Méssage
-						</button>
-					</li>
-					<li class="nav-item ml-3">
-						<button class="nav-link btn-primary btn200" data-toggle="tab" href="#menu2">
-							Messages Envoyés
-						</button>
-					</li>
-					<li class="nav-item ml-3">
-						<button class="nav-link  btn-warning btn200" data-toggle="tab" href="#menu3">
-							Archives de Messages
-						</button>
-					</li>
-				</ul>
-			</CCardHeader>
-			<CCardBody>
-				<div class="tab-content">
-					<div id="home" class="container tab-pane active">
-						<Inbox />
-					</div>
-					<div id="menu1" class="container tab-pane fade">
-						<NewMessage />
-					</div>
-					<div id="menu2" class="container tab-pane fade">
-						<OutgoingMessages />
-					</div>
-					<div id="menu3" class="container tab-pane fade">
-						<MessageArchive />
-					</div>
-				</div>
-			</CCardBody>
-		</CCard>
+		<React.Fragment>
+			<Inbox />
+	
+		</React.Fragment>
 	);
 }

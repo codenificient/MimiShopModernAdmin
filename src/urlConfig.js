@@ -14,16 +14,25 @@ export const formatter = new Intl.NumberFormat('fr-FR', {
 	minimumFractionDigits: 0
 });
 
+function appendLeadingZeroes(n) {
+	if (n <= 9) {
+		return '0' + n;
+	}
+	return n;
+}
+
 export const formatDate = (date) => {
 	if (date) {
 		const d = new Date(date);
-		return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
+		return `${appendLeadingZeroes(d.getMonth() + 1)}-${appendLeadingZeroes(d.getDate())}-${appendLeadingZeroes(
+			d.getFullYear()
+		)}`;
 	}
 	return '';
 };
 
 export const formatDate2 = (date) => {
-	const month = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];	
+	const month = [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc' ];
 	if (date) {
 		const d = new Date(date);
 		return `${d.getDate()} ${month[d.getMonth()]}  ${d.getFullYear()}`;
@@ -31,11 +40,13 @@ export const formatDate2 = (date) => {
 };
 
 export const formatDate3 = (date) => {
-	const month = ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];
-	const week = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+	const month = [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc' ];
+	const week = [ 'Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi' ];
 	if (date) {
 		const d = new Date(date);
-		return `${week[d.getDay()]} le ${d.getDate()} ${month[d.getMonth()]}  ${d.getFullYear()} à ${d.getHours()}:${d.getMinutes()}`;
+		return `${week[d.getDay()]} le ${appendLeadingZeroes(d.getDate())} ${month[
+			d.getMonth()
+		]}  ${d.getFullYear()} à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`;
 	}
 };
 

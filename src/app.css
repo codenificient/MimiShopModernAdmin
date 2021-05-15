@@ -18,6 +18,16 @@ h5 {
 	font-weight: bold;
 }
 
+a:any-link:hover,
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.icons:hover {
+	color: #e55353;
+}
+
 .flexRow {
 	display: flex;
 }
@@ -74,6 +84,10 @@ h5 {
 	float: right;
 }
 
+.left {
+	float: left;
+}
+
 .floatCenter38 {
 	position: absolute;
 	left: 38%;
@@ -127,7 +141,6 @@ h5 {
 
 .posa {
 	position: absolute;
-	margin-bottom: 1rem;
 }
 
 .l1 {
@@ -145,27 +158,98 @@ h5 {
 .light {
 	color: #ebedef;
 }
+
+.email-text {
+	color: #acbfd2;
+}
+
 .primary {
 	color: #321fdb;
+}
+.primaryBg {
+	background: #321fdb;
+	background-color: #321fdb;
+	color: #ebedef;
+}
+
+.attach {
+	width: 500px;
+	height: 80px;
+}
+
+.c-avatar-text {
+	position: absolute;
+    width: 33px;
+    height: 25px;
+    float: left;
+    transform: translateY(20px);
+}
+
+.middleText {
+	position: absolute;
+    transform: translateY(10px);
+}
+
+.attachicon {
+	float: right;
+    transform: translateY(20px);
 }
 
 .violet {
 	color: blueviolet;
 }
+
+.violetBg {
+	background: blueviolet;
+	background-color: blueviolet;
+	color: #ebedef;
+}
+
 .success {
 	color: #2eb85c;
+}
+.successBg {
+	background: #2eb85c;
+	background-color: #2eb85c;
 }
 
 .info {
 	color: #39f;
 }
+.infoBg {
+	background: #39f;
+	background-color: #39f;
+}
 .warning {
 	color: #f9b115;
+}
+.warningBg {
+	background: #f9b115;
+	background-color: #f9b115;
 }
 .danger {
 	color: #e55353;
 }
+.dangerBg {
+	background: #e55353;
+	background-color: #e55353;
+	color: #ebedef;
+}
 
 .w100 {
 	width: 100%;
+}
+.w97 {
+	width: 97%;
+}
+
+.w90 {
+	width: 90%;
+}
+.w80 {
+	width: 80%;
+}
+
+.outline {
+	border: 1px solid #636f83;
 }

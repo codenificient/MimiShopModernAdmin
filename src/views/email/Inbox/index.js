@@ -1,46 +1,41 @@
-import { CCard, CCardBody, CCardFooter } from '@coreui/react';
+import { CCardFooter } from '@coreui/react';
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import Email from '../email';
+import EmailActions from 'src/components/UI/Email/EmailActions';
+import IconList from 'src/components/UI/Email/IconList';
+import EmaiList from '../email';
 import './style.css';
 import { msgs } from './userEmails';
 
 export default function Inbox(props) {
-	const allpages = useSelector((state) => state.page.allpages);
 	const [ read, setRead ] = useState(false);
 
-	const iconList = [
+	const icons = [ 'cil-star', 'cil-bookmark' ];
+
+  	const iconList = [
 		'cil-envelope-closed',
 		'cil-star',
-		'cil-text',
-		'cil-text-size',
-		'cil-underline',
-		'cil-underline',
 		'cil-bookmark',
 		'cil-share',
 		'cil-share-all',
 		'cil-trash',
 		'cil-tags',
-		'cil-indent-decrease',
-		'cil-indent-increase',
 		'cil-settings'
 	];
 
 	return (
 		<React.Fragment>
-			<h2 className="textLight" style={{ margin: '1rem' }}>
-				Boite de Reception
-			</h2>
+			<div className="row p-2 darkerBg">
+				<EmailActions />
 
-			<CCard>
-				<CCardBody>
-					<Email iconList={iconList} icon direction={'From: '} emails={msgs} />
-				</CCardBody>
-
-				<CCardFooter className="normalBg sb no-border" align="center">
-					Liste complete
-				</CCardFooter>
-			</CCard>
+				<div className="col-sm-9 ml-3 normalBg ">
+          <div className="cards-body">
+            <IconList style={{ width: '55%', padding: '15px' }} iconList={iconList} />
+            <div className="borderTop p15">
+						<EmaiList icons={icons} emails={msgs} />
+            </div>
+					</div>
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }

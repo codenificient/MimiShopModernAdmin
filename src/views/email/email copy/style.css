@@ -1,0 +1,22 @@
+.c-message-headers {
+	width: 100%;
+	display: block;
+	justify-content: space-between;
+	position: relative;
+}
+
+.unread {
+	color: #1693a5;
+}
+
+.read {
+	color: #ebedef;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
