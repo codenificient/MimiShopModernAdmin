@@ -15,14 +15,12 @@ import {
 } from '@coreui/react';
 import React from 'react';
 
-
-
 const Register = () => {
 	return (
 		<div className="c-app darkenBg c-default-layout flex-row align-items-center">
 			<CContainer>
 				<CRow className="welcome-text text-main">
-					<h1>Bienvenu à MimiShop Admin</h1>
+					<h1>Page de Creation Admin</h1>
 				</CRow>
 				<CRow className="justify-content-center">
 					<CCol md="10" lg="9" xl="6">

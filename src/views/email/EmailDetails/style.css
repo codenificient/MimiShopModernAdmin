@@ -6,30 +6,29 @@
 	color: #ebedef;
 }
 
-.recipient {
-	max-width: 400px;
-}
-.email-user {
+.user-email {
 	color: #b6b6b6;
 }
 
 .user-name {
-	transform: translateY(-55px);
+	transform: translateY(-47px);
 	position: absolute;
 	padding-left: 4rem;
+	font-size: larger;
 }
 
 .user-email {
 	transform: translateY(-40px);
 	position: absolute;
 	padding-left: 4rem;
+	font-size: small;
 }
 
 .image-container {
-	width: 50px;
-	height: 50px;
+	width: 48px;
+	height: 48px;
 	overflow: hidden;
-	border-radius: 25px;
+	border-radius: 24px;
 	object-fit: contain;
 	justify-content: center;
 }
@@ -53,17 +52,12 @@
 	border-radius: .25rem;
 }
 
-.email-body {
-	padding: 2rem;
-}
 
 .w90 {
 	width: 90%;	
 }
 
 .borderBtm {
-	padding: 1.5rem 0 1.5rem;
-	margin-left: 2rem;
 	border-bottom: 1px solid #636f83;
 }
 

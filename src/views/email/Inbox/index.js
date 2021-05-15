@@ -11,7 +11,7 @@ export default function Inbox(props) {
 
 	const icons = [ 'cil-star', 'cil-bookmark' ];
 
-  	const iconList = [
+	const iconList = [
 		'cil-envelope-closed',
 		'cil-star',
 		'cil-bookmark',
@@ -28,11 +28,13 @@ export default function Inbox(props) {
 				<EmailActions />
 
 				<div className="col-sm-9 ml-3 normalBg ">
-          <div className="cards-body">
-            <IconList style={{ width: '55%', padding: '15px' }} iconList={iconList} />
-            <div className="borderTop p15">
-						<EmaiList icons={icons} emails={msgs} />
-            </div>
+					<div className="cards-body">
+						<div className="ml-3">
+							<IconList style={{ width: '480px', padding: '15px' }} iconList={iconList} />
+						</div>
+						<div className="borderTop">
+							<EmaiList icons={icons} emails={msgs} />
+						</div>
 					</div>
 				</div>
 			</div>

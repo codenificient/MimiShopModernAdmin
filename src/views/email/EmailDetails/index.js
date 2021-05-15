@@ -96,7 +96,7 @@ function EmailDetails(props) {
 				<div className="col-sm-9 ">
 					<div className="cards-body normalBg">
 						<div className="pt-3 pl-3 textLight">
-							<IconList iconList={iconList} style={{ width: '55%', padding: '13px' }} />
+							<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />
 						</div>
 						<div className="email-title mt-2 mb-5">
 							<EmailTitle subject={msg.subject} />
@@ -108,16 +108,16 @@ function EmailDetails(props) {
 										<div className="image-container">
 											<img src={msg.avatar} alt={msg.avatar} />
 										</div>
-										<span className="user-name">{msg.name}</span>
+										<span className="user-name read">{msg.name}</span>
 										<br />
-										<span className="user-email">From: {msg.email}</span>
+										<span className="user-email">Email: {msg.email}</span>
 									</div>
 								</div>
 
-								<span className="floatRight pr-4">{formatDate3(msg.date)}</span>
+								<span className="floatRight textLight pr-4">{formatDate3(msg.date)}</span>
 							</div>
 
-							<div className="email-text p-5">{msg.body}</div>
+							<div className="email-body email-text pr-4 pl-4">{msg.body}</div>
 						</div>
 						<div>{msg.attachments && <Attachment attachments={msg.attachments} />}</div>
 						<div className="mt-4 mb-4 ml-5">
