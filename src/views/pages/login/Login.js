@@ -16,7 +16,7 @@ import {
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
-import { login } from 'src/actions';
+import { login } from './src/actions';
 
 const Login = () => {
 	const [ email, setEmail ] = useState('');

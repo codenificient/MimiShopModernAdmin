@@ -1,6 +1,10 @@
 //  OPTIMIZE THE BASE URL
+<<<<<<< HEAD
 const baseUrl =
 	process.env.NODE_ENV === 'production' ? 'https://mimishopbackend.herokuapp.com' : 'http://localhost:2000';
+=======
+const baseUrl = process.env.NODE_ENV === 'production' ? 'https://mimishopbackend.herokuapp.com' : 'http://localhost:2000';
+>>>>>>> master
 
 export const api = `${baseUrl}/api`;
 
@@ -14,6 +18,7 @@ export const formatter = new Intl.NumberFormat('fr-FR', {
 	minimumFractionDigits: 0
 });
 
+<<<<<<< HEAD
 function appendLeadingZeroes(n) {
 	if (n <= 9) {
 		return '0' + n;
@@ -54,3 +59,17 @@ export const shorten = (str, maxLen, separator = ' ') => {
 	if (str.length <= maxLen) return str;
 	return str.substr(0, str.lastIndexOf(separator, maxLen));
 };
+=======
+export 	const formatDate = (date) => {
+		if (date) {
+			const d = new Date(date);
+			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
+		}
+		return '';
+};
+	
+export const shorten = (str, maxLen, separator = ' ') => {
+	if (str.length <= maxLen) return str;
+	return str.substr(0, str.lastIndexOf(separator, maxLen));
+};
+>>>>>>> master

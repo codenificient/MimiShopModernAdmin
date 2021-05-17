@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updateOrderAction } from 'src/actions';
 import Card from 'src/components/Card';
 import Layout from 'src/components/Layout';
+import { formatDate } from 'src/urlConfig';
+import '../ActiveOrders/style.css'
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
@@ -20,17 +22,11 @@ export default function Orders(props) {
 		dispatch(updateOrderAction(payload));
 	};
 
-	const formatDate = (date) => {
-		if (date) {
-			const d = new Date(date);
-			return `${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()}`;
-		}
-		return '';
-	};
+
 
 	return (
 		<Layout>
-			<h1 style={{ margin: '3rem' }}>Status des Achats</h1>
+			<h1 style={{ margin: '3rem' }}>STATUS DES ACHATS</h1>
 			{order.orders.map((orderItem, index) => (
 				<Card
 				style = {{
@@ -89,7 +85,7 @@ export default function Orders(props) {
 							))}
 						</div>
 
-						{/* select input to apply order action */}
+						{/* SELECT INPUT TO APPLY ORDER ACTION */}
 						<div
 							style={{
 								paddingLeft: '50px',
@@ -111,7 +107,8 @@ export default function Orders(props) {
 								})}
 							</select>
 						</div>
-						{/* button to confirm action */}
+
+						{/* BUTTON TO CONFIRM ACTION */}
 
 						<div
 							style={{
