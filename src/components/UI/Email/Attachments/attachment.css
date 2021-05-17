@@ -1,0 +1,37 @@
+.attachment-title {
+	font-size: 11px;
+	overflow: hidden;
+}
+
+.attachment-size {
+	font-size: 13px;
+}
+
+.c-avatar-text {
+	text-transform: uppercase;
+}
+
+.attach {
+	min-width: 240px;
+	max-width: 300px;
+	height: 80px;
+	overflow: hidden;
+}
+
+.c-avatar-text {
+	position: absolute;
+	width: 33px;
+	height: 25px;
+	float: left;
+	transform: translateY(20px);
+}
+
+.middleText {
+	position: absolute;
+	transform: translateY(10px);
+}
+
+.attachicon {
+	float: right;
+	transform: translateY(20px);
+}

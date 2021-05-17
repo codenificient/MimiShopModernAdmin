@@ -11,14 +11,14 @@
 }
 
 .user-name {
-	transform: translateY(-47px);
+	transform: translateY(-48px);
 	position: absolute;
 	padding-left: 4rem;
 	font-size: larger;
 }
 
 .user-email {
-	transform: translateY(-40px);
+	transform: translateY(-22px);
 	position: absolute;
 	padding-left: 4rem;
 	font-size: small;
@@ -33,11 +33,6 @@
 	justify-content: center;
 }
 
-.cards-body {
-	flex: 1 1 auto;
-	padding: 0.8rem;
-}
-
 .card240 {
 	width: 240px;
 	margin-bottom: 24px;
@@ -47,28 +42,19 @@
 	flex-direction: column;
 	min-height: 0;
 	word-wrap: break-word;
-	background-color: #36404a;
-	border: 1px solid #36404a;
 	border-radius: .25rem;
-}
-
-
-.w90 {
-	width: 90%;	
 }
 
 .borderBtm {
 	border-bottom: 1px solid #636f83;
+	padding-bottom: 1rem;
 }
 
 .borderTop {
 	border-top: 1px solid #636f83;
+	padding-top: 1rem;
 }
 
-.ml2 {
-	margin-left: 2rem;
-}
-
-.p15 {
-	padding: 1rem 0 1rem;
+.email-body {
+	padding: 0.5rem 2.5rem 0 2.5rem;
 }

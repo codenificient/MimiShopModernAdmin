@@ -9,6 +9,10 @@
 	color: #1693a5;
 }
 
+.icons {
+	transform: translateY(-5px);
+}
+
 .read {
 	color: #ebedef;
 }
@@ -21,7 +25,22 @@ a:link {
 	text-decoration: none;
 }
 
-.c-message-details:hover,
-.c-message:hover {
-	color:chocolate;
+.emailGreyFg {
+	background-color: #36404a;
+}
+.emailGreyBg {
+	background-color: #323c44;
+}
+
+.emailDeets:hover {
+	color: #e55353;
+}
+
+.text-center {
+	position: absolute;
+	left: calc(21% + 200px);
+}
+
+.inbox-name {
+	padding-left: 1rem;
 }

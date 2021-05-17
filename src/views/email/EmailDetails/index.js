@@ -1,11 +1,8 @@
 import CIcon from '@coreui/icons-react';
-import { CBadge } from '@coreui/react';
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
 import Attachment from 'src/components/UI/Email/Attachments';
 import EmailActions from 'src/components/UI/Email/EmailActions';
-import IconList from 'src/components/UI/Email/IconList';
-import EmailTitle from 'src/components/UI/Email/Title';
 import { formatDate3 } from 'src/urlConfig';
 import { msgs } from '../Inbox/userEmails';
 import './style.css';
@@ -93,13 +90,15 @@ function EmailDetails(props) {
 			<div className="row p-2 darkerBg">
 				<EmailActions />
 
-				<div className="col-sm-9 ">
-					<div className="cards-body normalBg">
-						<div className="pt-3 pl-3 textLight">
+				<div className="col-sm-9 ml-3 normalBg outline">
+					<div className="cards-body">
+						{/* <div className="pt-3 pl-3 white">
 							<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />
-						</div>
+						</div> */}
 						<div className="email-title mt-2 mb-5">
-							<EmailTitle subject={msg.subject} />
+							<div className="w95 ml2 pt-4 mr-4 borderBtm">
+								<h5 className="email-text email-subject">{msg.subject}</h5>
+							</div>
 						</div>
 						<div className="emailContainer mb-4">
 							<div className="flexRow m-4 bold email-user">
@@ -109,26 +108,28 @@ function EmailDetails(props) {
 											<img src={msg.avatar} alt={msg.avatar} />
 										</div>
 										<span className="user-name read">{msg.name}</span>
-										<br />
-										<span className="user-email">Email: {msg.email}</span>
+
+										<span className="user-email">Couriel: {msg.email}</span>
 									</div>
 								</div>
 
 								<span className="floatRight textLight pr-4">{formatDate3(msg.date)}</span>
 							</div>
 
-							<div className="email-body email-text pr-4 pl-4">{msg.body}</div>
+							<div className="email-body email-text">
+								<p className="white">{msg.body}</p>
+							</div>
 						</div>
 						<div>{msg.attachments && <Attachment attachments={msg.attachments} />}</div>
 						<div className="mt-4 mb-4 ml-5">
 							<ButtonGroup>
-							<Button className="mr-5" variant="info">
-								<CIcon name="cil-share-all" />&nbsp;&nbsp;Repondre
-							</Button>
-							<Button className="violetBg" >
-								<CIcon name="cil-transfer" />&nbsp;&nbsp;Forward
-							</Button>
-						</ButtonGroup>
+								<Button className="mr-5" variant="info">
+									<CIcon name="cil-share-all" />&nbsp;&nbsp;Repondre
+								</Button>
+								<Button className="violetBg">
+									<CIcon name="cil-transfer" />&nbsp;&nbsp;Transférer
+								</Button>
+							</ButtonGroup>
 						</div>
 					</div>
 				</div>

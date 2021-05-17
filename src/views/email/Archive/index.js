@@ -2,7 +2,6 @@ import { CCard, CCardBody, CCardFooter } from '@coreui/react';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Input from 'src/components/UI/Input';
-import './style.css';
 
 export default function MessageArchive(props) {
 	const allpages = useSelector((state) => state.page.allpages);

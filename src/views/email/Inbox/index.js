@@ -9,7 +9,7 @@ import { msgs } from './userEmails';
 export default function Inbox(props) {
 	const [ read, setRead ] = useState(false);
 
-	const icons = [ 'cil-star', 'cil-bookmark' ];
+	const icons = [ 'cil-star'];
 
 	const iconList = [
 		'cil-envelope-closed',
@@ -27,7 +27,7 @@ export default function Inbox(props) {
 			<div className="row p-2 darkerBg">
 				<EmailActions />
 
-				<div className="col-sm-9 ml-3 normalBg ">
+				<div className="col-sm-9 ml-3 normalBg outline">
 					<div className="cards-body">
 						<div className="ml-3">
 							<IconList style={{ width: '480px', padding: '15px' }} iconList={iconList} />

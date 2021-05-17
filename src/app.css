@@ -4,6 +4,13 @@
 	letter-spacing: 1px;
 }
 
+pre {
+	font-family: 'Poppins' sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
 h1,
 h2,
 h3,
@@ -95,7 +102,7 @@ a:hover {
 
 .floatCenter {
 	position: absolute;
-	left: 29%;
+	left: 26%;
 }
 
 .paddingTop1 {
@@ -116,12 +123,7 @@ a:hover {
 	color: #1693a5;
 }
 
-.emailGreyFg {
-	background-color: #36404a;
-}
-.emailGreyBg {
-	background-color: #323c44;
-}
+
 
 .darkerBg {
 	background-color: #191919;
@@ -139,12 +141,26 @@ a:hover {
 	right: 1rem;
 }
 
+.r2 {
+	right: 2rem;
+}
+
 .posa {
 	position: absolute;
 }
 
 .l1 {
 	left: 1rem;
+}
+.l2 {
+	left: 2rem;
+}
+
+.pl1 {
+	padding-left: 1rem;
+}
+.pl2 {
+	padding-left: 2rem;
 }
 
 .secondary {
@@ -155,6 +171,7 @@ a:hover {
 	color: #636f83;
 }
 
+.white,
 .light {
 	color: #ebedef;
 }
@@ -170,29 +187,6 @@ a:hover {
 	background: #321fdb;
 	background-color: #321fdb;
 	color: #ebedef;
-}
-
-.attach {
-	width: 500px;
-	height: 80px;
-}
-
-.c-avatar-text {
-	position: absolute;
-    width: 33px;
-    height: 25px;
-    float: left;
-    transform: translateY(20px);
-}
-
-.middleText {
-	position: absolute;
-    transform: translateY(10px);
-}
-
-.attachicon {
-	float: right;
-    transform: translateY(20px);
 }
 
 .violet {
@@ -252,4 +246,13 @@ a:hover {
 
 .outline {
 	border: 1px solid #636f83;
+	border-radius: 0.25rem;
+}
+
+.p15 {
+	padding: 1.5rem 0 1.5rem;
+}
+
+.ml2 {
+	margin-left: 2rem;
 }

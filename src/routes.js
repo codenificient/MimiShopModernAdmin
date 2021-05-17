@@ -7,9 +7,14 @@ const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
 
 const Charts = React.lazy(() => import('./views/charts/Charts'));
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
+const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
+
+// MESSAGES
 const Messages = React.lazy(() => import('./views/email/Messages'));
 const EmailDetails = React.lazy(() => import('./views/email/EmailDetails'));
-const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
+const NewEmail = React.lazy(() => import('./views/email/NewMessage'));
+const EmailArchives = React.lazy(() => import('./views/email/Archive'));
+
 
 // CATEGORIES
 const AllCategories = React.lazy(() => import('./views/category/AllCategories'));
@@ -84,7 +89,9 @@ const routes = [
 
 	// MESSAGES
 	{ path: '/messages', name: 'Messages', component: Messages, exact: true },
-	{ path: '/messages/emaildetails/:id', name: 'Email Details', component: EmailDetails },
+	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
+	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
+	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
 
 	// USERS
 	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },
