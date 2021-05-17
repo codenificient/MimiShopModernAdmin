@@ -1,7 +1,6 @@
 //  OPTIMIZE THE BASE URL
 const baseUrl = process.env.NODE_ENV === 'production' ? 'https://mimishopbackend.herokuapp.com' : 'http://localhost:2000';
 
-
 export const api = `${baseUrl}/api`;
 
 export const generatePublicUrl = (filename) => {

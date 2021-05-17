@@ -1,4 +1,3 @@
-
 // const store = createStore(changeState)
 // export default store
 import { applyMiddleware, createStore } from 'redux';
