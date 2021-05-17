@@ -28,14 +28,14 @@ const styleExt = (str) => {
 
 function Attachment(props) {
 	return (
-		<div className="w95 ml2 pt-4 mr-4 borderTop">
+		<div className="w95 ml2 pt-4 mr-4">
 			<h5 className="email-text email-subject mb-4">Attachments</h5>
 			<div className="flexRow attachall">
 				{props.attachments &&
 					props.attachments.map((attachment, index) => (
 						<div key={index} className="sa outline attach p-2 mr-2">
 							<div className="mr-5 left">
-								<div className={`c-avatar-text mr-5 ${styleExt(attachment.title.split('.')[1])}`}>
+								<div className={`c-avatar-text m-1 ${styleExt(attachment.title.split('.')[1])}`}>
 									{attachment.title.split('.')[1]}
 								</div>
 							</div>

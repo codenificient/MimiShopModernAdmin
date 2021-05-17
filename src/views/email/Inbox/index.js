@@ -29,10 +29,10 @@ export default function Inbox(props) {
 
 				<div className="col-sm-9 ml-3 normalBg outline">
 					<div className="cards-body">
-						<div className="ml-3">
+						{/* <div className="ml-3">
 							<IconList style={{ width: '480px', padding: '15px' }} iconList={iconList} />
-						</div>
-						<div className="borderTop">
+						</div> */}
+						<div className="borderTop secondary">
 							<EmaiList icons={icons} emails={msgs} />
 						</div>
 					</div>

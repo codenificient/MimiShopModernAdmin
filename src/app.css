@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
 	font-family: 'Oswald';
 	font-weight: 600;
 }
@@ -48,6 +49,9 @@ a:hover {
 
 .textLight {
 	color: #b9b9b9;
+}
+.black {
+	color: black;
 }
 
 .sb {
@@ -122,8 +126,6 @@ a:hover {
 .accent {
 	color: #1693a5;
 }
-
-
 
 .darkerBg {
 	background-color: #191919;

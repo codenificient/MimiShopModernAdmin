@@ -8,7 +8,7 @@ function EmailActions(props) {
 		{
 			icon: 'cil-inbox',
 			href: '/messages',
-			action: 'Reception',
+			action: 'Réception',
 			color: 'info',
 			count: 527
 		},
@@ -39,7 +39,7 @@ function EmailActions(props) {
 			color: 'danger'
 		},
 		{
-			icon: 'cil-tag',
+			icon: 'cil-tags',
 			action: 'Important',
 			href: '/messages/important',
 			color: 'violet'
@@ -80,9 +80,9 @@ function EmailActions(props) {
 			<div className="card240">
 				<div className="cards-body normalBg outline">
 					<div className="emailActions p-3">
-						<div className="m-2 pb-4">
+						<div className="m-2 pb-4 black">
 							<a href="/messages/newemail">
-								<Button className="btn200" variant="danger">Composer</Button>
+								<Button className="btn200 " variant="danger">Composer</Button>
 								</a>
 						</div>
 						{inboxActions &&

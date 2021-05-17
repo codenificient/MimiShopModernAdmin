@@ -8,15 +8,14 @@ function EmaiList(props) {
 		<React.Fragment>
 			{props.emails &&
 				props.emails.map((msg, index) => (
-					<a key={index} href={`/messages/emaildetails/${msg.id}`} className="c-message">
-						<div className="c-message-details m-5 pt-2 flexRow">
-							<span className="mr-2">
-								<input type="checkbox" className="left" />
-							</span>
-							<span className="icons pl-1">
-								<CIcon name="cil-star" />
-							</span>
-
+					<div className="c-message-details m-5 pt-2 flexRow">
+						<span className="mr-2">
+							<input type="checkbox" className="left" />
+						</span>
+						<span className="icons pl-1">
+							<CIcon name="cil-star" />
+						</span>
+						<a key={index} href={`/messages/emaildetails/${msg.id}`} className="c-message">
 							<div className="">
 								<span className="mr-3 bold email-text pl1">
 									<CIcon name="cil-user" />&nbsp;&nbsp;{msg.name}
@@ -26,8 +25,8 @@ function EmaiList(props) {
 								</span>
 								<span className="r2 email-text posa">{formatDate2(msg.date)}</span>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
 				))}
 		</React.Fragment>
 	);

@@ -24,9 +24,9 @@ export default function NewMessage(props) {
 
 				<div className="col-sm-9 ml-3 normalBg outline">
 					<div className="cards-body ">
-						<h2 className="textLight" style={{ margin: '1rem' }}>
+						<h5 className="textLight" style={{ margin: '1rem' }}>
 							Nouveau Couriel
-						</h2>
+						</h5>
 						<div className="mt-4 dark">
 							<Input type="email" label="Destinataire" placeholder="email du destinataire" />
 							<Input type="text" label="Sujet" placeholder="sujet du couriel" />

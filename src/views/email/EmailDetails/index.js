@@ -100,7 +100,7 @@ function EmailDetails(props) {
 								<h5 className="email-text email-subject">{msg.subject}</h5>
 							</div>
 						</div>
-						<div className="emailContainer mb-4">
+						<div className="emailContainer">
 							<div className="flexRow m-4 bold email-user">
 								<div className="d-block">
 									<div className="recipient">
@@ -116,7 +116,7 @@ function EmailDetails(props) {
 								<span className="floatRight textLight pr-4">{formatDate3(msg.date)}</span>
 							</div>
 
-							<div className="email-body email-text">
+							<div className="email-body email-text w95 ml2 pb-4 mr-4 borderBtm">
 								<p className="white">{msg.body}</p>
 							</div>
 						</div>

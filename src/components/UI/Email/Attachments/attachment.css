@@ -20,10 +20,12 @@
 
 .c-avatar-text {
 	position: absolute;
-	width: 33px;
+	width: 35px;
 	height: 25px;
-	float: left;
-	transform: translateY(20px);
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: small;
+	transform: translateY(15px);
 }
 
 .middleText {

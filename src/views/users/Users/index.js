@@ -54,6 +54,7 @@ const Users = () => {
 							fields={[ { key: 'name', _classes: 'font-weight-bold' }, 'registered', 'role', 'status' ]}
 							hover
 							striped
+							editable
 							itemsPerPage={paginat}
 							activePage={page}
 							clickableRows
