@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import Input from 'src/components/UI/Input';
 
 export default function MessageArchive(props) {
-	const allpages = useSelector((state) => state.page.allpages);
 
 	return (
 		<React.Fragment>
