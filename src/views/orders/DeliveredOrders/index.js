@@ -35,7 +35,7 @@ export default function Orders(props) {
 							background: '#23242D'
 						}}
 						key={index}
-						headerLeft={`DELIVREE DE COMMANDE - ${orderItem._id}`}
+						headerLeft={`NUMÉRO DE COMMANDE - ${orderItem._id}`}
 					>
 						<div
 							style={{

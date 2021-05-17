@@ -4,11 +4,19 @@
 	letter-spacing: 1px;
 }
 
+pre {
+	font-family: 'Poppins' sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
 	font-family: 'Oswald';
 	font-weight: 600;
 }
@@ -16,6 +24,16 @@ h5 {
 .text-theme {
 	color: #1693a5;
 	font-weight: bold;
+}
+
+a:any-link:hover,
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.icons:hover {
+	color: #e55353;
 }
 
 .flexRow {
@@ -29,10 +47,214 @@ h5 {
 	margin-bottom: 7rem;
 }
 
+.textLight {
+	color: #b9b9b9;
+}
+.black {
+	color: black;
+}
+
 .sb {
 	justify-content: space-between;
 }
 
 .infoButton {
 	margin: 0 0 0 20px;
+}
+
+.sa {
+	justify-content: space-around;
+}
+
+.btn200 {
+	width: 200px;
+}
+
+.btn180 {
+	width: 180px;
+}
+
+.btn120 {
+	width: 120px;
+}
+
+.h30 {
+	height: 30px;
+}
+
+.floatRight {
+	right: 3rem;
+	position: absolute;
+}
+.floatLeft {
+	position: absolute;
+	left: 4rem;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.floatCenter38 {
+	position: absolute;
+	left: 38%;
+}
+
+.floatCenter {
+	position: absolute;
+	left: 26%;
+}
+
+.paddingTop1 {
+	padding-top: 1rem;
+}
+
+.anchorLeft {
+	position: absolute;
+	left: 2rem;
+	transform: translateY(260%);
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.accent {
+	color: #1693a5;
+}
+
+.darkerBg {
+	background-color: #191919;
+}
+
+.rd1 {
+	right: .3rem;
+}
+
+.ld1 {
+	left: .3rem;
+}
+
+.r1 {
+	right: 1rem;
+}
+
+.r2 {
+	right: 2rem;
+}
+
+.posa {
+	position: absolute;
+}
+
+.l1 {
+	left: 1rem;
+}
+.l2 {
+	left: 2rem;
+}
+
+.pl1 {
+	padding-left: 1rem;
+}
+.pl2 {
+	padding-left: 2rem;
+}
+
+.secondary {
+	color: #ced2d8;
+}
+
+.dark {
+	color: #636f83;
+}
+
+.white,
+.light {
+	color: #ebedef;
+}
+
+.email-text {
+	color: #acbfd2;
+}
+
+.primary {
+	color: #321fdb;
+}
+.primaryBg {
+	background: #321fdb;
+	background-color: #321fdb;
+	color: #ebedef;
+}
+
+.violet {
+	color: blueviolet;
+}
+
+.violetBg {
+	background: blueviolet;
+	background-color: blueviolet;
+	color: #ebedef;
+}
+
+.success {
+	color: #2eb85c;
+}
+.successBg {
+	background: #2eb85c;
+	background-color: #2eb85c;
+}
+
+.info {
+	color: #39f;
+}
+.infoBg {
+	background: #39f;
+	background-color: #39f;
+}
+.warning {
+	color: #f9b115;
+}
+.warningBg {
+	background: #f9b115;
+	background-color: #f9b115;
+}
+.danger {
+	color: #e55353;
+}
+.dangerBg {
+	background: #e55353;
+	background-color: #e55353;
+	color: #ebedef;
+}
+
+.w100 {
+	width: 100%;
+}
+.w97 {
+	width: 97%;
+}
+
+.w90 {
+	width: 90%;
+}
+.w80 {
+	width: 80%;
+}
+
+.outline {
+	border: 1px solid #636f83;
+	border-radius: 0.25rem;
+}
+
+.p15 {
+	padding: 1.5rem 0 1.5rem;
+}
+
+.ml2 {
+	margin-left: 2rem;
 }

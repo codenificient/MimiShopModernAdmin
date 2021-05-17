@@ -15,7 +15,7 @@ const getProductsAction = () => {
 					type: productConstants.GET_ALL_PRODUCT_SUCCESS,
 					payload: { products: productList }
 				});
-				console.log(res);
+				// console.log(res);
 			} else {
 				dispatch({
 					type: productConstants.GET_ALL_PRODUCT_FAILURE,
@@ -33,7 +33,7 @@ export const addProductAction = (form) => {
 		dispatch({ type: productConstants.ADD_NEW_PRODUCT_REQUEST });
 		try {
 			const res = await axiosInstance.post(`/product/create`, form);
-			console.log(res);
+			// console.log(res);
 			if (res.status === 201) {
 				dispatch({
 					type: productConstants.ADD_NEW_PRODUCT_SUCCESS

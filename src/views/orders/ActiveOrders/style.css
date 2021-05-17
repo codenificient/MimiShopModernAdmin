@@ -5,12 +5,12 @@
 	font-size: 20px;
 }
 
-.card:last-child {
+.cardOne:last-of-type {
 	margin-bottom: 10rem;
 }
 
 .orderStatus {
-	width: 33.33%;
+	width: 43.33%;
 	height: 5px;
 	background: #777;
 	position: relative;
@@ -54,16 +54,15 @@
 	text-transform: capitalize;
 }
 
-
 .status {
-	transform: translateX(37%);	
+	transform: translateX(29%) translateY(-60%);
 }
 
 .statusDate {
 	width: 170px;
 	font-size: 10px;
-	padding-top: 10px;
-	transform: translateX(34%);
+	/* padding-top: 10px; */
+	transform: translateX(40%) translateY(50%);
 }
 
 .selectStatus {

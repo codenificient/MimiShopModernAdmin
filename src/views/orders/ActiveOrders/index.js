@@ -35,7 +35,7 @@ export default function Orders(props) {
 							background: '#23242D'
 						}}
 						key={index}
-						headerLeft={`ACTIVES DE COMMANDE - ${orderItem._id}`}
+						headerLeft={`NUMÉRO DE COMMANDE - ${orderItem._id}`}
 					>
 						<div
 							style={{
@@ -70,12 +70,12 @@ export default function Orders(props) {
 						<div
 							style={{
 								boxSizing: 'border-box',
-								padding: '100px',
+								padding: '100px 80px',
 								display: 'flex',
 								alignItems: 'center'
 							}}
 						>
-							<div className="orderTrack">
+							<div className="orderTrack sa">
 								{orderItem.orderStatus.map((status) => (
 									<div className={`orderStatus ${status.isCompleted ? 'active' : ''}`}>
 										<div className={`point ${status.isCompleted ? 'active' : ''}`} />

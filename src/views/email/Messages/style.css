@@ -1,0 +1,11 @@
+.btn220 {
+	height: 50px;
+	width: 220px;
+	transform: translateY(25%);
+}
+
+.btn250 {
+	height: 50px;
+	width: 250px;
+	transform: translateY(25%);
+}

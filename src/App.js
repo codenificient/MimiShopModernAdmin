@@ -44,13 +44,8 @@ function App() {
 		<Router>
 			<React.Suspense fallback={loading}>
 				<Switch>
-					<Route
-						exact
-						path="/login"
-						name="Login Page"
-						render={(props) => <Login {...props} />}
-					/>
-					<Route
+					<Route exact path="/login" name="Login Page" render={(props) => <Login {...props} />} />
+					<PrivateRoute
 						exact
 						path="/register"
 						name="Register Page"
@@ -69,17 +64,8 @@ function App() {
 						render={(props) => <ActiveOrders {...props} />}
 					/> */}
 
-					<Route
-						exact
-						path="/500"
-						name="Page 500"
-						render={(props) => <Page500 {...props} />}
-					/>
-					<PrivateRoute
-						path="/"
-						name="Home"
-						component={(props) => <TheLayout {...props} />}
-					/>
+					<Route exact path="/500" name="Page 500" render={(props) => <Page500 {...props} />} />
+					<PrivateRoute path="/" name="Home" component={(props) => <TheLayout {...props} />} />
 				</Switch>
 			</React.Suspense>
 		</Router>

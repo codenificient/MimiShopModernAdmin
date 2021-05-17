@@ -1,0 +1,46 @@
+.c-message-headers {
+	width: 100%;
+	display: block;
+	justify-content: space-between;
+	position: relative;
+}
+
+.unread {
+	color: #1693a5;
+}
+
+.icons {
+	transform: translateY(-5px);
+}
+
+.read {
+	color: #ebedef;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.emailGreyFg {
+	background-color: #36404a;
+}
+.emailGreyBg {
+	background-color: #323c44;
+}
+
+.emailDeets:hover {
+	color: #e55353;
+}
+
+.text-center {
+	position: absolute;
+	left: calc(21% + 200px);
+}
+
+.inbox-name {
+	padding-left: 1rem;
+}

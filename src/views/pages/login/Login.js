@@ -45,7 +45,7 @@ const Login = () => {
 		<div className="c-app c-default-layout darkenBg flex-row align-items-center">
 			<CContainer>
 				<CRow className="welcome-text text-main">
-					<h1>Bienvenu à MimiShop Admin</h1>
+					<h1>Page de Connection Admin</h1>
 				</CRow>
 
 				<CRow className="justify-content-center">
