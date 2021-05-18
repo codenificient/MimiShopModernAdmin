@@ -6,12 +6,7 @@ import MainChartExample from 'src/views/charts/MainChartExample';
 import './style.css';
 
 export default function Page(props) {
-	const category = useSelector((state) => state.category);
-	const product = useSelector((state) => state.product);
 	const allpages = useSelector((state) => state.page.allpages);
-	const [ currentPage, setCurrentPage ] = useState(1);
-	const dispatch = useDispatch();
-	const totalPages = allpages.length;
 
 	const createProductList = (products, options = []) => {
 		for (let product of products) {

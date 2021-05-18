@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { formatDate, formatter, shorten } from 'src/urlConfig';
 import { updateOrderAction } from '../../../actions';
@@ -9,18 +8,6 @@ import '../ActiveOrders/style.css'
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
-	const dispatch = useDispatch();
-	const [type, setType] = useState('');
-	
-	const onOrderUpdate = (orderId) => {
-		// alert(orderId);
-		const payload = {
-			orderId,
-			type
-		};
-		dispatch(updateOrderAction(payload));
-	};
-
 
 
 	return (

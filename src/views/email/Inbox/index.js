@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import EmailActions from 'src/components/UI/Email/EmailActions';
 import EmaiList from '../email';
 import './style.css';
@@ -9,16 +9,6 @@ export default function Inbox(props) {
 
 	const icons = [ 'cil-star'];
 
-	const iconList = [
-		'cil-envelope-closed',
-		'cil-star',
-		'cil-bookmark',
-		'cil-share',
-		'cil-share-all',
-		'cil-trash',
-		'cil-tags',
-		'cil-settings'
-	];
 
 	return (
 		<React.Fragment>

@@ -23,7 +23,7 @@ const Page500 = React.lazy(() => import('./views/pages/page500/Page500'));
 
 function App() {
 	const auth = useSelector((state) => state.auth);
-	const dispatch =  useDispatch();
+	const dispatch = useDispatch();
 
 	useEffect(
 		() => {
@@ -33,7 +33,6 @@ function App() {
 			if (auth.authenticate) {
 				dispatch(getInitialDataAction());
 			}
-			// eslint-disable-next-line
 		},
 		[ auth.authenticate ]
 	);

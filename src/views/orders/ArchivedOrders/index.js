@@ -11,7 +11,7 @@ export default function Orders(props) {
 	const order = useSelector((state) => state.order);
 	const dispatch = useDispatch();
 	const [ type, setType ] = useState('');
-	let [ orderAddress, setOrderAddress ] = useState('');
+	// let [ orderAddress, setOrderAddress ] = useState('');
 
 	const onOrderUpdate = (orderId) => {
 		// alert(orderId);

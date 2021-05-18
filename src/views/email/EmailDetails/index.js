@@ -11,19 +11,6 @@ function EmailDetails(props) {
 	const msg = msgs.find((msg) => msg.id.toString() === props.match.params.id);
 
 
-
-
-	const iconList = [
-		'cil-envelope-closed',
-		'cil-star',
-		'cil-bookmark',
-		'cil-share',
-		'cil-share-all',
-		'cil-trash',
-		'cil-tags',
-		'cil-settings'
-	];
-
 	return (
 		<React.Fragment>
 			<div className="row p-2 darkerBg">

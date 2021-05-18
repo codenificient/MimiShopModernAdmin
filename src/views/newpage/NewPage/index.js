@@ -47,7 +47,7 @@ export default function Page(props) {
 
 	const onCategoryChange = (e) => {
 		// console.log(e.target.value);
-		const category = categories.find((cate) => cate.value == e.target.value);
+		const category = categories.find((cate) => cate.value === e.target.value);
 		setCategoryId(e.target.value);
 		setType(category.type);
 		// console.log(category);

@@ -5,16 +5,7 @@ import Input from 'src/components/UI/Input';
 import './style.css';
 
 export default function NewMessage(props) {
-	const iconList = [
-		'cil-envelope-closed',
-		'cil-star',
-		'cil-bookmark',
-		'cil-share',
-		'cil-share-all',
-		'cil-trash',
-		'cil-tags',
-		'cil-settings'
-	];
+
 	return (
 		<React.Fragment>
 			<div className="row p-2 darkerBg">

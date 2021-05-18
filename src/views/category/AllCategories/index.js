@@ -3,7 +3,7 @@ import * as am4plugins_forceDirected from '@amcharts/amcharts4/plugins/forceDire
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import { CCard, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './chart.css';
 
 const Category = () => {
