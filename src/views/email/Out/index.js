@@ -1,11 +1,10 @@
 import { CCard, CCardBody } from '@coreui/react';
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Email from '../email';
 import './style.css';
 
 export default function OutgoingMessages(props) {
-	const allpages = useSelector((state) => state.page.allpages);
+	// const allpages = useSelector((state) => state.page.allpages);
 
 	const msg = [
 		{

@@ -1,6 +1,5 @@
 import { CCard, CCardBody, CCardFooter } from '@coreui/react';
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Input from 'src/components/UI/Input';
 
 export default function MessageArchive(props) {
@@ -12,7 +11,6 @@ export default function MessageArchive(props) {
 			</h2>
 
 			<CCard>
-				{/* <CCardHeader>Envoyer Un Message</CCardHeader> */}
 				<CCardBody>
 					<Input type="email" label="Receiver" placeholder="email du destinataire" />
 					<Input type="text" label="Subject" placeholder="sujet du couriel" />

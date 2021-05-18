@@ -8,7 +8,6 @@ import './chart.css';
 
 const Category = () => {
 	const category = useSelector((state) => state.category);
-	const dispatch = useDispatch();
 	const [ show, setShow ] = useState(true);
 
 	const renderCategories = (categories) => {

@@ -28,7 +28,6 @@ import {
 const TheHeader = () => {
   const dispatch = useDispatch()
   const sidebarShow = useSelector(state => state.nav.sidebarShow)
-	const auth = useSelector((state) => state.auth);
 
   const logout = (e) => {
     e.preventDefault();

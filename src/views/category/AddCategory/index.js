@@ -137,7 +137,7 @@ const Category = () => {
 	const deleteCategories = () => {
 		const checkedIdsArray = checkedArray.map((item, index) => ({ _id: item.value }));
 		const expandedIdsArray = expandedArray.map((item, index) => ({ _id: item.value }));
-		const idsArray = expandedIdsArray.concat(checkedIdsArray);
+		// const idsArray = expandedIdsArray.concat(checkedIdsArray);
 		if (checkedIdsArray.length > 0) {
 			dispatch(deleteCategoriesAction(checkedIdsArray));
 			setDeleteCategoryModal(false);

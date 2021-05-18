@@ -10,9 +10,6 @@ import {
 import CIcon from '@coreui/icons-react'
 
 // IMPORT AVATARS
-import avaOne from '../assets/avatars/1.jpg'
-import avaTwo from '../assets/avatars/2.jpg'
-import avaThree from '../assets/avatars/3.jpg'
 import avaFour from '../assets/avatars/4.jpg'
 import avaFive from '../assets/avatars/5.jpg'
 import avaSix from '../assets/avatars/6.jpg'

@@ -19,13 +19,11 @@ const TheLayout = React.lazy(() => import('./containers/TheLayout'));
 const Login = React.lazy(() => import('./views/pages/login/Login'));
 const Register = React.lazy(() => import('./views/pages/register/Register'));
 const Category = React.lazy(() => import('./views/category/AddCategory'));
-const NewCategory = React.lazy(() => import('./views/category/AddCategory'));
-const ActiveOrders = React.lazy(() => import('./views/orders/ActiveOrders'));
 const Page500 = React.lazy(() => import('./views/pages/page500/Page500'));
 
 function App() {
 	const auth = useSelector((state) => state.auth);
-	const dispatch = useDispatch();
+	const dispatch =  useDispatch();
 
 	useEffect(
 		() => {

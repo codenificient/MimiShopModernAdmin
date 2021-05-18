@@ -14,14 +14,13 @@ import {
 } from '@coreui/react';
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import ChartLineSimple from 'src/views/charts/ChartLineSimple';
 import './style.css';
 
 export default function Products() {
 	const page = useSelector((state) => state.page);
-	const dispatch = useDispatch();
 
 	let colorsOptions = [ 'success', 'danger', 'warning', 'primary' ];
 

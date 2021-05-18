@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row, Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { MdAddCircle } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { createPageAction } from 'src/actions';
-import Layout from '../../../components/Layout';
 import Input from '../../../components/UI/Input';
 import NewModal from '../../../components/UI/Modal';
 import linearCategories from '../../../helpers/linearCategories';
-import { MdAddCircle } from 'react-icons/md';
 import './style.css';
 
 export default function Page(props) {

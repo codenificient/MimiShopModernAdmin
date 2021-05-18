@@ -1,8 +1,6 @@
-import { CButton, CButtonGroup, CCard, CCardBody, CCardFooter } from '@coreui/react';
+import { CButton, CButtonGroup } from '@coreui/react';
 import React from 'react';
-import { useSelector } from 'react-redux';
 import EmailActions from 'src/components/UI/Email/EmailActions';
-import IconList from 'src/components/UI/Email/IconList';
 import Input from 'src/components/UI/Input';
 import './style.css';
 

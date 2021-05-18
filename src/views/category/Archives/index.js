@@ -1,4 +1,4 @@
-import { CButton, CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react';
+import { CButton, CCard, CCardBody, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import CheckboxTree from 'react-checkbox-tree';
@@ -11,8 +11,6 @@ import {
 	IoIosCheckboxOutline
 } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
-import { TheFooter, TheHeader, TheSidebar } from 'src/containers';
-import { DocsLink } from 'src/reusable';
 import { addCategoryAction, deleteCategoriesAction, updateCategoriesAction } from '../../../actions';
 import '../style.css';
 import AddCategoriesModal from '../Subcomponents/AddCategoriesModal';
@@ -139,7 +137,7 @@ const Category = () => {
 	const deleteCategories = () => {
 		const checkedIdsArray = checkedArray.map((item, index) => ({ _id: item.value }));
 		const expandedIdsArray = expandedArray.map((item, index) => ({ _id: item.value }));
-		const idsArray = expandedIdsArray.concat(checkedIdsArray);
+		// const idsArray = expandedIdsArray.concat(checkedIdsArray);
 		if (checkedIdsArray.length > 0) {
 			dispatch(deleteCategoriesAction(checkedIdsArray));
 			setDeleteCategoryModal(false);
@@ -175,12 +173,10 @@ const Category = () => {
 
 
 	return (
-		<>
-			
+		<>			
 		<CRow>
 			<CCol xs="12">
 				<CCard>
-					
 						<CRow style={{ background: 	'#67dcbb' ,borderRadius: '5px' }}>
 							<CCol md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>

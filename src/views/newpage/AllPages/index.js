@@ -1,15 +1,8 @@
-import { cilChartLine } from '@coreui/icons';
-import { CBadge, CCard, CCardBody, CCardFooter, CCardHeader, CCol, CDataTable, CPagination, CRow } from '@coreui/react';
-import React, { useEffect, useState } from 'react';
-import { Col, Container, Row, Button } from 'react-bootstrap';
+import { CBadge, CCard, CCardBody, CCardFooter, CCardHeader, CCol, CDataTable, CRow } from '@coreui/react';
+import React, { useState } from 'react';
+import { Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { createPageAction } from 'src/actions';
-import Layout from 'src/components/Layout';
-import Input from 'src/components/UI/Input';
-import NewModal from 'src/components/UI/Modal';
-import linearCategories from 'src/helpers/linearCategories';
 import MainChartExample from 'src/views/charts/MainChartExample';
-import Users from 'src/views/users/Users';
 import './style.css';
 
 export default function Page(props) {
@@ -26,8 +19,8 @@ export default function Page(props) {
 			options.push({
 				id: _id.toString().substring(0, 9),
 				title,
-				category: category.name,				
-				description,				
+				category: category.name,
+				description,
 				banners: banners[0].img,
 				products: products[0].img
 			});
@@ -52,8 +45,7 @@ export default function Page(props) {
 	};
 
 	const renderProducts = () => {
-
-		const fields = [ 'id', 'title', 'category', 'description', 'banners', 'products'  ];
+		const fields = [ 'id', 'title', 'category', 'description', 'banners', 'products' ];
 
 		return (
 			<CRow>

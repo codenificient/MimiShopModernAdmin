@@ -10,69 +10,8 @@ import './style.css';
 function EmailDetails(props) {
 	const msg = msgs.find((msg) => msg.id.toString() === props.match.params.id);
 
-	const inboxActions = [
-		{
-			icon: 'cil-inbox',
-			action: 'Reception',
-			color: 'info',
-			count: 900
-		},
-		{
-			icon: 'cil-star',
-			action: 'Étoiles',
-			color: 'warning',
-			count: 7
-		},
-		{
-			icon: 'cil-alarm',
-			action: 'Différé',
-			color: 'dark'
-		},
-		{
-			icon: 'cil-notes',
-			action: 'Brouillons',
-			color: 'success',
-			count: 24
-		},
-		{
-			icon: 'cil-trash',
-			action: 'Supprimé',
-			color: 'danger'
-		},
-		{
-			icon: 'cil-tag',
-			action: 'Important',
-			color: 'violet'
-		},
-		{
-			icon: 'cil-warning',
-			action: 'Junk',
-			color: 'warning'
-		}
-	];
 
-	const labels = [
-		{
-			label: 'A Regler',
-			color: 'primary'
-		},
-		{
-			label: 'Rembourser',
-			color: 'danger'
-		},
-		{
-			label: 'Commandes',
-			color: 'warning'
-		},
-		{
-			label: 'Réglé',
-			color: 'success'
-		},
-		{
-			label: 'Partenaire',
-			color: 'info'
-		}
-	];
+
 
 	const iconList = [
 		'cil-envelope-closed',

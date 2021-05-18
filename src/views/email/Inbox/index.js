@@ -1,13 +1,11 @@
-import { CCardFooter } from '@coreui/react';
 import React, { useState } from 'react';
 import EmailActions from 'src/components/UI/Email/EmailActions';
-import IconList from 'src/components/UI/Email/IconList';
 import EmaiList from '../email';
 import './style.css';
 import { msgs } from './userEmails';
 
 export default function Inbox(props) {
-	const [ read, setRead ] = useState(false);
+	// const [ read, setRead ] = useState(false);
 
 	const icons = [ 'cil-star'];
 

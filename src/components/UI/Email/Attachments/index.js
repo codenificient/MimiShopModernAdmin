@@ -8,19 +8,15 @@ const styleExt = (str) => {
 		case 'MP4':
 		case 'mp4':
 			return 'warningBg';
-			break;
 		case 'MP3':
 		case 'mp3':
 			return 'secondaryBg';
-			break;
 		case 'zip':
 		case 'ZIP':
 			return 'infoBg';
-			break;
 		case 'JPG':
 		case 'jpg':
 			return 'dangerBg';
-			break;
 		default:
 			return 'primaryBg';
 	}
@@ -42,7 +38,8 @@ function Attachment(props) {
 							<div className="middleText">
 								<div className="mr-2">
 									<span className="ml-5 pt-4 attachment-title  textLight">
-										{shorten(attachment.title.split('.')[0], 21) || shorten(attachment.title.split('.')[0], 21, '_')}
+										{shorten(attachment.title.split('.')[0], 21) ||
+											shorten(attachment.title.split('.')[0], 21, '_')}
 									</span>
 
 									<div className="ml-5 light attachment-size">{attachment.size}</div>
