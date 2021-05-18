@@ -1,7 +1,7 @@
 import { CBadge, CCard, CCardBody, CCardFooter, CCardHeader, CCol, CDataTable, CRow } from '@coreui/react';
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
 import MainChartExample from 'src/views/charts/MainChartExample';
 import './style.css';
 

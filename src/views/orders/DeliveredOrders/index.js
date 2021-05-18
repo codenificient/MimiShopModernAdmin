@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import {  useSelector } from 'react-redux';
 import { formatDate, formatter, shorten } from 'src/urlConfig';
-import { updateOrderAction } from '../../../actions';
 import Card from '../../../components/Card';
 import Layout from '../../../components/Layout';
 import '../ActiveOrders/style.css'
 
 export default function Orders(props) {
 	const order = useSelector((state) => state.order);
-
 
 	return (
 		<Layout>
