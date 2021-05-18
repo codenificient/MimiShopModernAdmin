@@ -7,6 +7,18 @@ export const generatePublicUrl = (filename) => {
 	return `${baseUrl}/public/${filename}`;
 };
 
+export 	const renderCategories = (categories, options = []) => {
+		for (let category of categories) {
+			options.push({
+				name: category.name,
+			});
+			if (category.children.length > 0) {
+				renderCategories(category.children, options);
+			}
+		}
+		return options;
+};
+	
 export const formatter = new Intl.NumberFormat('fr-FR', {
 	style: 'currency',
 	currency: 'XOF',

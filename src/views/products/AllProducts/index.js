@@ -3,25 +3,14 @@ import * as am4plugins_forceDirected from '@amcharts/amcharts4/plugins/forceDire
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 import { CCard, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
-import {  useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { renderCategories } from 'src/urlConfig';
 import './chart.css';
 
 const AllProduct = () => {
 	const category = useSelector((state) => state.category);
 	const product = useSelector((state) => state.product);
 	const [ show, setShow ] = useState(true);
-
-	const renderCategories = (categories, options = []) => {
-		for (let category of categories) {
-			options.push({
-				name: category.name,
-			});
-			if (category.children.length > 0) {
-				renderCategories(category.children, options);
-			}
-		}
-		return options;
-	};
 
 	const categoryList = renderCategories(category.categories);
 
@@ -47,37 +36,34 @@ const AllProduct = () => {
 
 	// console.log({ productList });
 
+	// const createProducts = (arr = []) => {
+	// 		return productList.reduce((acc, val, ind) => {
+	// 			const index = acc.findIndex(elem => elem.category === val.category);
 
+	// 			if (index !== -1) {
+	// 				const key = Object.keys(val)[1];
+	// 				acc[index][key] = val[key];
+	// 			} else {
+	// 				acc.push(val);
+	// 			};
+	// 			return acc;
+	// 		}, [])
+	// }
 
-
-// const createProducts = (arr = []) => {
-// 		return productList.reduce((acc, val, ind) => {
-// 			const index = acc.findIndex(elem => elem.category === val.category);
-
-// 			if (index !== -1) {
-// 				const key = Object.keys(val)[1];
-// 				acc[index][key] = val[key];
-// 			} else {
-// 				acc.push(val);
-// 			};
-// 			return acc;
-// 		}, [])
-// }
-	
 	const createProductList = (arr = []) => {
 		const result = new Map();
-		arr.forEach(elem => {
+		arr.forEach((elem) => {
 			let item = result.get(elem.category) || { category: elem.category, value: 7, products: [] };
 			item.value++;
-			item.products.push({				
+			item.products.push({
 				value: 5,
-				name: elem.products			
+				name: elem.products
 			});
 			result.set(item.category, item);
-		})
+		});
 		return Array.from(result.values());
-	}
-	
+	};
+
 	const productsByCategory = createProductList(productList);
 
 	// console.log({ productsByCategory });
@@ -90,7 +76,7 @@ const AllProduct = () => {
 
 	let networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
 
-	networkSeries.data = [...productsByCategory];
+	networkSeries.data = [ ...productsByCategory ];
 
 	networkSeries.dataFields.linkWith = 'linkWith';
 	networkSeries.dataFields.name = 'category';
@@ -100,7 +86,6 @@ const AllProduct = () => {
 
 	networkSeries.nodes.template.tooltipText = '{name}';
 	networkSeries.nodes.template.fillOpacity = 1;
-
 
 	networkSeries.nodes.template.label.text = '{name}';
 	networkSeries.fontSize = 12;
@@ -129,7 +114,7 @@ const AllProduct = () => {
 						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
 							<CCol md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Tous les Produits</h1>
+									<h1 style={{ margin: '1rem', color: '#333' }}>Tous les Produits Disponibles</h1>
 								</div>
 							</CCol>
 						</CRow>
