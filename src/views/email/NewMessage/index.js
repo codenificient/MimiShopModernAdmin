@@ -5,18 +5,16 @@ import Input from 'src/components/UI/Input';
 import './style.css';
 
 export default function NewMessage(props) {
-
 	return (
 		<React.Fragment>
 			<div className="row p-2 darkerBg">
 				<EmailActions />
-
 				<div className="col-sm-9 ml-3 normalBg outline">
 					<div className="cards-body ">
-						<h5 className="textLight" style={{ margin: '1rem' }}>
-							Nouveau Couriel
+						<h5 className="textLight" style={{ margin: '1rem', textAlign: 'center' }}>
+							Composez un Nouveau Couriel
 						</h5>
-						<div className="mt-4 dark">
+						<div className="mt-4 lightGrey2">
 							<Input type="email" label="Destinataire" placeholder="email du destinataire" />
 							<Input type="text" label="Sujet" placeholder="sujet du couriel" />
 							<label>Méssage</label>

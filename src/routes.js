@@ -10,7 +10,7 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
 
 // MESSAGES
-const Messages = React.lazy(() => import('./views/email/Messages'));
+const Inbox = React.lazy(() => import('./views/email/Inbox'));
 const EmailDetails = React.lazy(() => import('./views/email/EmailDetails'));
 const NewEmail = React.lazy(() => import('./views/email/NewMessage'));
 const EmailArchives = React.lazy(() => import('./views/email/Archive'));
@@ -88,7 +88,7 @@ const routes = [
 	{ path: '/widgets', name: 'Widgets', component: Widgets },
 
 	// MESSAGES
-	{ path: '/messages', name: 'Messages', component: Messages, exact: true },
+	{ path: '/messages', name: 'Messages', component: Inbox, exact: true },
 	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
 	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },

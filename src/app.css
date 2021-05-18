@@ -259,3 +259,29 @@ a:hover {
 .ml2 {
 	margin-left: 2rem;
 }
+.mr2 {
+	margin-right: 2rem;
+}
+.pl2 {
+	padding-left: 2rem;
+}
+
+.grey1 {
+	color: #191919;
+}
+
+.grey2 {
+	color: #353535;
+}
+
+.grey3 {
+	color: #434343;
+}
+
+.lightGrey1 {
+	color: #636f83;
+}
+
+.lightGrey2 {
+	color: darkgrey;
+}

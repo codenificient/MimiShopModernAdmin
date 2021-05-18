@@ -20,12 +20,6 @@ function EmailActions(props) {
 			count: 7
 		},
 		{
-			icon: 'cil-alarm',
-			href: '/messages/delayed',
-			action: 'Différé',
-			color: 'dark'
-		},
-		{
 			icon: 'cil-notes',
 			action: 'Brouillons',
 			href: '/messages/drafts',
@@ -33,8 +27,14 @@ function EmailActions(props) {
 			count: 24
 		},
 		{
+			icon: 'cil-transfer',
+			href: '/messages/sent',
+			action: 'Envoyés',
+			color: 'secondary'
+		},
+		{
 			icon: 'cil-trash',
-			action: 'Supprimé',
+			action: 'Corbeille',
 			href: '/messages/archived',
 			color: 'danger'
 		},
@@ -46,7 +46,7 @@ function EmailActions(props) {
 		},
 		{
 			icon: 'cil-warning',
-			action: 'Junk',
+			action: 'Spams',
 			href: '/messages/junk',
 			color: 'warning'
 		}
@@ -82,8 +82,10 @@ function EmailActions(props) {
 					<div className="emailActions p-3">
 						<div className="m-2 pb-4 black">
 							<a href="/messages/newemail">
-								<Button className="btn200 " variant="danger">Composer</Button>
-								</a>
+								<Button className="btn200 " variant="danger">
+									Composer
+								</Button>
+							</a>
 						</div>
 						{inboxActions &&
 							inboxActions.map((action, index) => (

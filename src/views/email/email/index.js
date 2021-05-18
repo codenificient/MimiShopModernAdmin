@@ -23,7 +23,7 @@ function EmaiList(props) {
 								<span className="email-text text-center">
 									<CIcon name="cil-envelope-closed" />&nbsp;&nbsp;{msg.subject}
 								</span>
-								<span className="r2 email-text posa">{formatDate2(msg.date)}</span>
+								<span className="r2 email-text pl2 posa">{formatDate2(msg.date)}</span>
 							</div>
 						</a>
 					</div>
