@@ -1,8 +1,5 @@
-.c-message-headers {
-	width: 100%;
-	display: block;
-	justify-content: space-between;
-	position: relative;
+.message-details {
+	padding: 2rem;
 }
 
 .unread {
@@ -10,8 +7,36 @@
 }
 
 .icons {
+	float: left;
+	position: relative;
+	left: 2rem;
+}
+
+.icon {
+	position: absolute;
+	margin: 0 14px;
 	transform: translateY(-5px);
 }
+
+.icon:hover {
+	color: #4638c2;
+}
+
+.author {
+	left: 10%;
+	position: absolute;
+}
+
+.subject {
+	position: absolute;
+}
+
+.date {
+	float: right;
+	right: 2rem;
+	position: absolute;
+}
+
 
 .read {
 	color: #ebedef;
@@ -21,6 +46,14 @@ a:visited {
 	text-decoration: none;
 }
 
+.c-message {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.c-message,
 a:link {
 	text-decoration: none;
 }

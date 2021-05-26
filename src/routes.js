@@ -14,6 +14,7 @@ const Inbox = React.lazy(() => import('./views/email/Inbox'));
 const EmailDetails = React.lazy(() => import('./views/email/EmailDetails'));
 const NewEmail = React.lazy(() => import('./views/email/NewMessage'));
 const EmailArchives = React.lazy(() => import('./views/email/Archive'));
+const EmailReply = React.lazy(() => import('./views/email/EmailReply'));
 
 
 // CATEGORIES
@@ -91,6 +92,7 @@ const routes = [
 	{ path: '/messages', name: 'Messages', component: Inbox, exact: true },
 	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
 	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
+	{ path: '/messages/reply/:id', name: 'Nouveau Message', component: EmailReply },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
 
 	// USERS

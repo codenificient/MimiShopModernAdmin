@@ -77,46 +77,48 @@ function EmailActions(props) {
 
 	return (
 		<React.Fragment>
-			<div className="card240">
-				<div className="cards-body normalBg outline">
-					<div className="emailActions p-3">
-						<div className="m-2 pb-4 black">
-							<a href="/messages/newemail">
-								<Button className="btn200 " variant="danger">
-									Composer
-								</Button>
-							</a>
-						</div>
-						{inboxActions &&
-							inboxActions.map((action, index) => (
-								<a href={action.href} key={index} className="pt-4">
-									<div className={`c-message-actions mb-2 p-2 secondary`}>
-										<span className={`mr-3 ${action.color}`}>
-											{<CIcon size={'l'} name={action.icon} />}
-										</span>
-										<span className="">{action.action}</span>
-										<span className="right pl-3">
-											{
-												<CBadge shape="pill" color={action.color}>
-													{action.count}
-												</CBadge>
-											}
-										</span>
-									</div>
+			<div className="leftHand">
+				<div className="card240">
+					<div className="cards-body normalBg outline">
+						<div className="emailActions p-3">
+							<div className="m-2 pb-4 black">
+								<a href="/messages/newemail">
+									<Button className="btn200 " variant="danger">
+										Composer
+									</Button>
 								</a>
-							))}
-						<h6 className="textLight bold mt-5 mb-3">Labels</h6>
-						{labels &&
-							labels.map((label, index) => (
-								<div key={index} className="c-message-actions mb-2 p-2 secondary">
-									<div>
-										<span className={`mr-3 ${label.color}`}>
-											<CIcon size={'l'} name="cib-discover" />{' '}
-										</span>
-										<span>{label.label}</span>
+							</div>
+							{inboxActions &&
+								inboxActions.map((action, index) => (
+									<a href={action.href} key={index} className="pt-4">
+										<div className={`c-message-actions mb-2 p-2 secondary`}>
+											<span className={`mr-3 ${action.color}`}>
+												{<CIcon size={'l'} name={action.icon} />}
+											</span>
+											<span className="">{action.action}</span>
+											<span className="right pl-3">
+												{
+													<CBadge shape="pill" color={action.color}>
+														{action.count}
+													</CBadge>
+												}
+											</span>
+										</div>
+									</a>
+								))}
+							<h6 className="textLight bold mt-5 mb-3">Labels</h6>
+							{labels &&
+								labels.map((label, index) => (
+									<div key={index} className="c-message-actions mb-2 p-2 secondary">
+										<div>
+											<span className={`mr-3 ${label.color}`}>
+												<CIcon size={'l'} name="cib-discover" />{' '}
+											</span>
+											<span>{label.label}</span>
+										</div>
 									</div>
-								</div>
-							))}
+								))}
+						</div>
 					</div>
 				</div>
 			</div>

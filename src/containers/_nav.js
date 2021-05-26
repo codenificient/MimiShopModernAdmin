@@ -124,6 +124,47 @@ const _nav = [
 			text: 'NEW'
 		}
 	},
+	{
+		_tag: 'CSidebarNavDivider'
+	},
+	{
+		_tag: 'CSidebarNavTitle',
+		_children: [ 'COMMANDES' ]
+	},
+	{
+		_tag: 'CSidebarNavDropdown',
+		name: 'Achats',
+		route: '/orders',
+		icon: 'cil-cart',
+		_children: [
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'En Transite',
+				to: '/orders/activeorders'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Achats Livrés',
+				to: '/orders/delivered'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Remboursements',
+				to: '/orders/refunds'
+			}
+		]
+	},
+
+	{
+		_tag: 'CSidebarNavItem',
+		name: 'Revenues',
+		to: '/orders/revenue',
+		icon: 'cil-dollar',
+		badge: {
+			color: 'success',
+			text: 'NEW'
+		}
+	},
 
 	{
 		_tag: 'CSidebarNavTitle',

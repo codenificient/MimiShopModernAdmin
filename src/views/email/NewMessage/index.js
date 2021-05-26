@@ -7,9 +7,11 @@ import './style.css';
 export default function NewMessage(props) {
 	return (
 		<React.Fragment>
-			<div className="row p-2 darkerBg">
-				<EmailActions />
-				<div className="col-sm-9 ml-3 normalBg outline">
+					<div className="flexRowMsg p-2 darkerBg">
+		<div className="leftHand">
+					<EmailActions />
+				</div>
+			<div className="rightHand ml-2 normalBg outline mb-5">
 					<div className="cards-body ">
 						<h5 className="textLight" style={{ margin: '1rem', textAlign: 'center' }}>
 							Composez un Nouveau Couriel
@@ -40,7 +42,7 @@ export default function NewMessage(props) {
 							</CButtonGroup>
 						</div>
 					</div>
-				</div>
+			</div>
 			</div>
 		</React.Fragment>
 	);

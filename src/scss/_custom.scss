@@ -12,10 +12,8 @@
 	color: #d16767;
 }
 
-
 .c-header,
-.c-header-nav-item
- {
+.c-header-nav-item {
 	background-color: #157b80;
 	color: #ebedef;
 }
@@ -33,6 +31,19 @@ thead .thead-light,
 
 .c-main {
 	background-color: #121212;
+	padding-top: 15px;
+}
+
+.container-fluid > .c-main {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .darkenBg {
@@ -46,8 +57,6 @@ thead .thead-light,
 .normalBg {
 	background-color: #23242d;
 }
-
-
 
 .card {
 	border: none;
@@ -77,12 +86,12 @@ thead .thead-light,
 }
 
 table {
-    background: #23242d;
-    color: #ffffff;
+	background: #23242d;
+	color: #ffffff;
 }
 
 table th .thead-light {
-    background-color: #157b80;
+	background-color: #157b80;
 }
 
 .no-border {

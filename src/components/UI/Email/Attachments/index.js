@@ -25,7 +25,7 @@ const styleExt = (str) => {
 function Attachment(props) {
 	return (
 		<div className="w95 ml2 pt-4 mr-4">
-			<h5 className="email-text email-subject mb-4">Attachments</h5>
+			<h5 className="email-text email-subject mb-4">Pièces Jointes</h5>
 			<div className="flexRow attachall">
 				{props.attachments &&
 					props.attachments.map((attachment, index) => (
