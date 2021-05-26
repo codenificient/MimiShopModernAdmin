@@ -16,10 +16,10 @@ function EmailDetails(props) {
 
 	return (
 		<React.Fragment>
-			<div className="flexRowMsg p-1 darkerBg">
+			<div className="flexRowMsg darkerBg">
 				<EmailActions />
 
-				<div className="rightHand ml-2 mb-5 normalBg outline">
+				<div className="rightHand ml-2 mb-1 normalBg outline">
 					<div className="cards-body">
 						{/* <div className="pt-3 pl-3 white">
 							<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />

@@ -306,7 +306,7 @@ button .btn-outline .accent {
 	.c-main > .container-lg,
 	.c-main > .container-xl,
 	.c-main > .container-xxl {
-		padding-right: 5px;
-		padding-left: 5px;
+		padding-right: 2px;
+		padding-left: 2px;
 	}
 }

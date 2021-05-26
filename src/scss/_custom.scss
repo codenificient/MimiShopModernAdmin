@@ -29,21 +29,13 @@ thead .thead-light,
 	color: #157b80;
 }
 
+.c-body,
 .c-main {
 	background-color: #121212;
-	padding-top: 15px;
 }
 
-.container-fluid > .c-main {
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-	padding-left: 5px;
-	padding-right: 5px;
+.c-main {
+	padding: 8px;
 }
 
 .darkenBg {

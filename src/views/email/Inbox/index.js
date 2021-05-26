@@ -11,9 +11,9 @@ export default function Inbox(props) {
 
 	return (
 		<React.Fragment>
-			<div className="flexRowMsg p-2 darkerBg">
+			<div className="flexRowMsg darkerBg">
 				<EmailActions />
-				<div className="rightHand ml-3 normalBg outline mb-5">
+				<div className="rightHand ml-2 normalBg outline mb-2">
 					<EmaiList icons={icons} emails={msgs} />
 				</div>
 
