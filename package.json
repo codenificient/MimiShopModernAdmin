@@ -1,7 +1,7 @@
 {
-	"name": "coreui-free-react-admin-template",
+	"name": "mimishop-modern-admin",
 	"version": "3.2.0",
-	"description": "CoreUI React Open Source Bootstrap 4 Admin Template",
+	"description": "Admin site for the MimiShop Ouaga store. Based on a React template by CoreUI team",
 	"contributors": [
 		{
 			"name": "CoreUI Team",
@@ -62,19 +62,9 @@
 	"eslintConfig": {
 		"extends": "react-app"
 	},
-	"browserslist": [
-		">0.2%",
-		"not dead",
-		"not ie <= 10",
-		"not op_mini all"
-	],
+	"browserslist": [ ">0.2%", "not dead", "not ie <= 10", "not op_mini all" ],
 	"jest": {
-		"collectCoverageFrom": [
-			"src/**/*.{js,jsx}",
-			"!**/*index.js",
-			"!src/serviceWorker.js",
-			"!src/polyfill.js"
-		]
+		"collectCoverageFrom": [ "src/**/*.{js,jsx}", "!**/*index.js", "!src/serviceWorker.js", "!src/polyfill.js" ]
 	},
 	"engines": {
 		"node": "16.x",
