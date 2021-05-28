@@ -11,7 +11,7 @@ export default function NewMessage(props) {
 				<div className="leftHand">
 					<EmailActions />
 				</div>
-				<div className="rightHand ml-2 normalBg outline mb-1">
+				<div className="rightHand ml-2 normalBg outline">
 					<div className="">
 						<h5 className="textLight mt-1" style={{ textAlign: 'center' }}>
 							Composez un Nouveau Couriel

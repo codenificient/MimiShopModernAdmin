@@ -299,14 +299,3 @@ button .btn-outline .accent {
 	color: darkgrey;
 }
 
-@media (min-width: 768px) {
-	.c-main > .container-fluid,
-	.c-main > .container-sm,
-	.c-main > .container-md,
-	.c-main > .container-lg,
-	.c-main > .container-xl,
-	.c-main > .container-xxl {
-		padding-right: 2px;
-		padding-left: 2px;
-	}
-}

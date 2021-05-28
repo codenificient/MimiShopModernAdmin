@@ -89,3 +89,22 @@ table th .thead-light {
 .no-border {
 	border: none;
 }
+
+.c-subheader,
+.c-header .c-subheader {
+	margin-top: -1px;
+	border-top: none;
+	border-bottom: none;
+}
+
+@media (min-width: 768px) {
+	.c-main > .container-fluid,
+	.c-main > .container-sm,
+	.c-main > .container-md,
+	.c-main > .container-lg,
+	.c-main > .container-xl,
+	.c-main > .container-xxl {
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+}

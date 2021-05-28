@@ -30,28 +30,3 @@ textarea:focus {
 .user-email {
 	color: #b6b6b6;
 }
-
-.card240 {
-	width: 240px;
-	margin-bottom: 4px;
-	box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 3%);
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
-	word-wrap: break-word;
-	border-radius: .25rem;
-}
-
-.flexRowMsg {
-	display: flex;
-	flex-direction: row;
-}
-
-.leftHand {
-	flex: 1;
-}
-
-.rightHand {
-	flex: 10;
-}

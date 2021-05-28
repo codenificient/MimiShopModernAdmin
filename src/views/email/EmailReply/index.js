@@ -25,7 +25,7 @@ function EmailDetails(props) {
 							<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />
 						</div> */}
 						<div className="email-title mt-2 mb-5">
-							<div className="w95 ml2 pt-4 mr-4 borderBtm lightGrey2">
+							<div className="w97 ml2 pt-4 mr-4 borderBtm lightGrey2">
 								<Input
 									type="email"
 									label="Destinataire"
@@ -45,7 +45,7 @@ function EmailDetails(props) {
 								type="text"
 								label="Subject"
 								rows="20"
-								style={{ padding: '15px', margin: '2px 30px', width: '94%' }}
+								style={{ padding: '15px', margin: '2px 30px', width: '97%' }}
 								placeholder="Contenu de votre message"
 							/>
 						</div>

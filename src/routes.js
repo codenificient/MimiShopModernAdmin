@@ -30,6 +30,7 @@ const User = React.lazy(() => import('./views/users/User'));
 const AjouterClient = React.lazy(() => import('./views/users/AjouterClient'));
 const ModifierClient = React.lazy(() => import('./views/users/ModifierClient'));
 const ArchivesClient = React.lazy(() => import('./views/users/ArchivesClient'));
+
 // PRODUCTS
 const ModifyProduct = React.lazy(() => import('./views/products/ModifyProduct'));
 const AddProduct = React.lazy(() => import('./views/products/AddProduct'));
@@ -92,8 +93,8 @@ const routes = [
 	{ path: '/messages', name: 'Messages', component: Inbox, exact: true },
 	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
 	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
-	{ path: '/messages/reply/:id', name: 'Nouveau Message', component: EmailReply },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
+	{ path: '/messages/reply/:id', name: 'Nouveau Message', component: EmailReply },
 
 	// USERS
 	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },

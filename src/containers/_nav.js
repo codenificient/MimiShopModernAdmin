@@ -129,37 +129,37 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavTitle',
-		_children: [ 'COMMANDES' ]
+		_children: [ 'MESSAGES' ]
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Achats',
-		route: '/orders',
-		icon: 'cil-cart',
+		name: 'Messages',
+		route: '/messages',
+		icon: 'cil-envelope-open',
 		_children: [
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'En Transite',
-				to: '/orders/activeorders'
+				name: 'Boite de Reception',
+				to: '/messages'
 			},
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Achats Livrés',
-				to: '/orders/delivered'
+				name: 'Composer',
+				to: '/messages/newemail'
 			},
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Remboursements',
-				to: '/orders/refunds'
+				name: 'Envoyes',
+				to: '/messages/sent'
 			}
 		]
 	},
 
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Revenues',
+		name: 'Conversations',
 		to: '/orders/revenue',
-		icon: 'cil-dollar',
+		icon: 'cil-chat',
 		badge: {
 			color: 'success',
 			text: 'NEW'

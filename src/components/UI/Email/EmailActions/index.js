@@ -2,6 +2,7 @@ import CIcon from '@coreui/icons-react';
 import { CBadge } from '@coreui/react';
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import './style.css';
 
 function EmailActions(props) {
 	const inboxActions = [
