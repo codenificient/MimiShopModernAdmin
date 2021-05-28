@@ -50,14 +50,17 @@ function EmailDetails(props) {
 						<div>{msg.attachments && <Attachment attachments={msg.attachments} />}</div>
 						<div className="mt-4 mb-4 ml-5">
 							<ButtonGroup>
-								<a href={`/messages/reply/${msg.id}`}>
+								<Link href={`/messages/reply/${msg.id}`}>
 									<Button className="btn mr-3" variant="outline-info">
 										<CIcon name="cil-share-all" />&nbsp;&nbsp;Répondre
 									</Button>
-								</a>
-								<Button className="btn" variant="outline-secondary">
-									<CIcon name="cil-transfer" />&nbsp;&nbsp;Transférer
-								</Button>
+								</Link>
+								
+								<Link>
+									<Button className="btn" variant="outline-secondary">
+										<CIcon name="cil-transfer" />&nbsp;&nbsp;Transférer
+									</Button>
+								</Link>
 							</ButtonGroup>
 						</div>
 					</div>

@@ -1,5 +1,6 @@
 import CIcon from '@coreui/icons-react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { formatDate2 } from 'src/urlConfig';
 import './style.css';
 
@@ -17,7 +18,7 @@ function EmaiList(props) {
 								<CIcon name="cil-star" />
 							</span>
 						</div>
-						<a key={index} href={`/messages/emaildetails/${msg.id}`} className="c-message email-text">
+						<Link key={index} to={`/messages/emaildetails/${msg.id}`} className="c-message email-text">
 							<div className="author">
 								<span className="">
 									<CIcon name="cil-user" />&nbsp;&nbsp;{msg.name}
@@ -33,7 +34,7 @@ function EmaiList(props) {
 							<div className="date">
 								<span className="">{formatDate2(msg.date)}</span>
 							</div>
-						</a>
+						</Link>
 					</div>
 				))}
 		</React.Fragment>

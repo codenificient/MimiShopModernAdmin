@@ -2,6 +2,7 @@ import CIcon from '@coreui/icons-react';
 import { CBadge } from '@coreui/react';
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 function EmailActions(props) {
@@ -52,7 +53,6 @@ function EmailActions(props) {
 			color: 'warning'
 		}
 	];
-
 	const labels = [
 		{
 			label: 'A Regler',
@@ -83,15 +83,15 @@ function EmailActions(props) {
 					<div className="cards-body normalBg outline">
 						<div className="emailActions p-3">
 							<div className="m-2 pb-4 black">
-								<a href="/messages/newemail">
+								<Link to="/messages/newemail">
 									<Button className="btn200 " variant="danger">
 										Composer
 									</Button>
-								</a>
+								</Link>
 							</div>
 							{inboxActions &&
 								inboxActions.map((action, index) => (
-									<a href={action.href} key={index} className="pt-4">
+									<Link to={action.href} key={index} className="pt-4">
 										<div className={`c-message-actions mb-2 p-2 secondary`}>
 											<span className={`mr-3 ${action.color}`}>
 												{<CIcon size={'l'} name={action.icon} />}
@@ -105,7 +105,7 @@ function EmailActions(props) {
 												}
 											</span>
 										</div>
-									</a>
+									</Link>
 								))}
 							<h6 className="textLight bold mt-5 mb-3">Labels</h6>
 							{labels &&
