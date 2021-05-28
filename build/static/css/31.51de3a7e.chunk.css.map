@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/views/newpage/AllPages/style.css"],"names":[],"mappings":"AAIA,sCACC,aACD","file":"31.51de3a7e.chunk.css","sourcesContent":[".listImagesContainer .row {\n\tdisplay: block;\n}\n\n.listImages {\n\tdisplay: block;\n}\n"]}
