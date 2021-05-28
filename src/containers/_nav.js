@@ -149,7 +149,7 @@ const _nav = [
 			},
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Envoyes',
+				name: 'Envoyés',
 				to: '/messages/sent'
 			}
 		]

@@ -1,13 +1,13 @@
 import React from 'react';
 
+// BASE COMPONENTS
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
-
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'));
 const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
-
 const Charts = React.lazy(() => import('./views/charts/Charts'));
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Modals = React.lazy(() => import('./views/notifications/modals/Modals'));
+const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 
 // MESSAGES
 const Inbox = React.lazy(() => import('./views/email/Inbox'));
@@ -15,14 +15,12 @@ const EmailDetails = React.lazy(() => import('./views/email/EmailDetails'));
 const NewEmail = React.lazy(() => import('./views/email/NewMessage'));
 const EmailArchives = React.lazy(() => import('./views/email/Archive'));
 const EmailReply = React.lazy(() => import('./views/email/EmailReply'));
-
+const OutgoingMessages = React.lazy(() => import('./views/email/Out'));
 
 // CATEGORIES
 const AllCategories = React.lazy(() => import('./views/category/AllCategories'));
 const AddCategory = React.lazy(() => import('./views/category/AddCategory'));
 const ArchivedCategory = React.lazy(() => import('./views/category/Archives'));
-
-const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 
 // USERS
 const Users = React.lazy(() => import('./views/users/Users'));
@@ -93,16 +91,17 @@ const routes = [
 	{ path: '/messages', name: 'Messages', component: Inbox, exact: true },
 	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
 	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
+	{ path: '/messages/sent', name: 'Messages Envoyés', component: OutgoingMessages },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
 	{ path: '/messages/reply/:id', name: 'Nouveau Message', component: EmailReply },
 
 	// USERS
 	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },
 	{ path: '/users/allusers', name: 'Tous les Clients', component: Users },
-	{ path: '/users/adduser',  name: 'Ajouter un Client', component: AjouterClient },
-	{ path: '/users/edituser/:id',  name: 'Modifer Client', component: ModifierClient },
-	{ path: '/users/:id',  name: 'Détailles de Client', component: User },
-	{ path: '/users/archives', name: 'Archives de Client', component: ArchivesClient },
+	{ path: '/users/adduser', name: 'Ajouter un Client', component: AjouterClient },
+	{ path: '/users/edituser/:id', name: 'Modifer Client', component: ModifierClient },
+	{ path: '/users/:id', name: 'Détailles de Client', component: User },
+	{ path: '/users/archives', name: 'Archives de Client', component: ArchivesClient }
 ];
 
 export default routes;
