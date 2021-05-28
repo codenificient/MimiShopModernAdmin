@@ -1,6 +1,5 @@
 import CIcon from '@coreui/icons-react';
 import React from 'react';
-import IconList from 'src/components/UI/Email/IconList';
 import { formatDate3 } from 'src/urlConfig';
 
 function Email(props) {
@@ -27,3 +26,9 @@ function Email(props) {
 }
 
 export default Email;
+
+{
+	/* <div className="pt-3 pl-3 white">
+	<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />
+</div> */
+}

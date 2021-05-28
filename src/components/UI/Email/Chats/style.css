@@ -1,0 +1,61 @@
+.card350 {
+	width: 350px;
+	box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 3%);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	word-wrap: break-word;
+	border-radius: .25rem;
+}
+
+.chat-user-container {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	overflow: hidden;
+}
+
+.flexRowMsg {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftHand {
+	flex: 1;
+}
+
+.rightHand {
+	flex: 19;
+}
+
+.chats {
+	color: #acbfd2;
+}
+
+.image-container {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	overflow: hidden;
+	object-fit: contain;
+	justify-content: center;
+	position: relative;
+}
+
+.chat-user {
+	color: aliceblue;
+	font-weight: 600;
+}
+
+.chat-date {
+	float: right;
+	right: .8rem;
+	position: absolute;
+	font-size: 11px;
+}
+
+.chat-preview {
+	display: block;
+	font-size: 11px;
+	transform: translateX(70px) translateY(-38px);
+}

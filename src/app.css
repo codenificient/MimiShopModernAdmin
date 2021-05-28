@@ -67,6 +67,22 @@ a:hover {
 	justify-content: space-around;
 }
 
+.btn220 {
+	width: 220px;
+}
+
+.h50 {
+	height: 50px;
+}
+
+.try25 {
+	transform: translateY(25%);
+}
+
+.btn250 {
+	width: 250px;
+}
+
 .btn200 {
 	width: 200px;
 }
@@ -178,8 +194,29 @@ button .btn-outline .accent {
 	padding-left: 2rem;
 }
 
+.pt2 {
+	padding-top: 2rem;
+}
+.pb2 {
+	padding-bottom: 2rem;
+}
+
+.mt2 {
+	margin-top: 2rem;
+}
+
+.mb2 {
+	margin-bottom: 2rem;
+}
+
 .secondary {
 	color: #ced2d8;
+}
+
+.vcenter {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .dark {
@@ -291,10 +328,12 @@ button .btn-outline .accent {
 	color: #434343;
 }
 
+.lightgrey1,
 .lightGrey1 {
 	color: #636f83;
 }
 
+.lightgrey2,
 .lightGrey2 {
 	color: darkgrey;
 }

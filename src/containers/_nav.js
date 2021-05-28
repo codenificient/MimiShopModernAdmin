@@ -133,7 +133,7 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Messages',
+		name: 'Méssages',
 		route: '/messages',
 		icon: 'cil-envelope-open',
 		_children: [
@@ -163,8 +163,8 @@ const _nav = [
 	{
 		_tag: 'CSidebarNavItem',
 		name: 'Conversations',
-		to: '/orders/revenue',
-		icon: 'cil-chat',
+		to: '/messages/chats',
+		icon: 'cib-whatsapp',
 		badge: {
 			color: 'success',
 			text: 'NEW'

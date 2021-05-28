@@ -1,15 +1,11 @@
 import CIcon from '@coreui/icons-react';
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import Attachment from 'src/components/UI/Email/Attachments';
 import EmailActions from 'src/components/UI/Email/EmailActions';
-import EmaiList from '../email';
-import NewMessage from '../NewMessage';
-import OutgoingMessages from '../Out';
+import Input from 'src/components/UI/Input';
 import { formatDate3 } from 'src/urlConfig';
 import { msgs } from '../Inbox/userEmails';
 import './style.css';
-import Input from 'src/components/UI/Input';
 
 function EmailDetails(props) {
 	const msg = msgs.find((msg) => msg.id.toString() === props.match.params.id);

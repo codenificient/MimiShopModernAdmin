@@ -17,6 +17,9 @@ const EmailArchives = React.lazy(() => import('./views/email/Archive'));
 const EmailReply = React.lazy(() => import('./views/email/EmailReply'));
 const OutgoingMessages = React.lazy(() => import('./views/email/Out'));
 const Drafts = React.lazy(() => import('./views/email/Drafts'));
+const Spam = React.lazy(() => import('./views/email/Spam'));
+const ChatDetail = React.lazy(() => import('./views/email/ChatDetails'));
+const Chats = React.lazy(() => import('./views/email/Chats'));
 
 // CATEGORIES
 const AllCategories = React.lazy(() => import('./views/category/AllCategories'));
@@ -89,13 +92,16 @@ const routes = [
 	{ path: '/widgets', name: 'Widgets', component: Widgets },
 
 	// MESSAGES
-	{ path: '/messages', name: 'Messages', component: Inbox, exact: true },
+	{ path: '/messages', name: 'Méssages', component: Inbox, exact: true },
 	{ path: '/messages/emaildetails/:id', name: 'Détailles de Couriel', component: EmailDetails },
-	{ path: '/messages/newemail', name: 'Nouveau Message', component: NewEmail },
-	{ path: '/messages/sent', name: 'Messages Envoyés', component: OutgoingMessages },
-	{ path: '/messages/drafts', name: 'Brouillons des Messages', component: Drafts },
+	{ path: '/messages/newemail', name: 'Nouveau Méssage', component: NewEmail },
+	{ path: '/messages/sent', name: 'Méssages Envoyés', component: OutgoingMessages },
+	{ path: '/messages/drafts', name: 'Brouillons des Méssages', component: Drafts },
+	{ path: '/messages/junk', name: 'Méssages Indésirés', component: Spam },
+	{ path: '/messages/chates', name: 'Méssages Instantanée', component: Chats },
+	{ path: '/messages/chats', name: 'Méssagérie Instantanée', component: ChatDetail },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
-	{ path: '/messages/reply/:id', name: 'Nouveau Message', component: EmailReply },
+	{ path: '/messages/reply/:id', name: 'Répondre à un Méssage', component: EmailReply },
 
 	// USERS
 	{ path: '/users', exact: true, name: 'Tous les Clients', component: Users },

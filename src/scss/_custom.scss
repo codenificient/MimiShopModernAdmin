@@ -68,10 +68,6 @@ thead .thead-light,
 	background-color: #09eaf2;
 }
 
-// .c-sidebar .c-sidebar-brand .c-icon {
-// 	// background-color: #ebedef;
-// 	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png');
-// }
 .c-header .c-header-nav-item {
 	border-bottom: none;
 	color: #eee;
@@ -90,11 +86,13 @@ table th .thead-light {
 	border: none;
 }
 
-.c-subheader,
-.c-header .c-subheader {
-	margin-top: -1px;
-	border-top: none;
+.c-header {
 	border-bottom: none;
+}
+
+.c-header .c-subheader {
+	margin-top: 0;
+	border-top: none;
 }
 
 @media (min-width: 768px) {

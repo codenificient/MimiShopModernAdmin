@@ -1,0 +1,12 @@
+.flexRowChat {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftHand {
+	flex: 1;
+}
+
+.rightHand {
+	flex: 19;
+}

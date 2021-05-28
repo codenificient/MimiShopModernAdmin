@@ -60,6 +60,24 @@ export const formatDate3 = (date) => {
 		]}  ${d.getFullYear()} à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`;
 	}
 };
+export const formatDate4 = (date) => {
+	const week = [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ];
+	if (date) {
+		const d = new Date(date);
+		return `${week[d.getDay()]} à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`;
+	}
+};
+
+export const formatDate5 = (date) => {
+	const week = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+	if (date) {
+		const d = new Date(date);
+		const whichDay = Math.ceil(new Date() - d) < 86400000 ? `${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}` : Math.ceil(new Date() - d) < 172800000 ? `Hier à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`  : `${appendLeadingZeroes(d.getMonth() + 1)}/${appendLeadingZeroes(d.getDate())}/${appendLeadingZeroes(
+			d.getFullYear()
+		)}`;
+		return whichDay;
+	}
+};
 
 export const shorten = (str, maxLen, separator = ' ') => {
 	if (str.length <= maxLen) return str;

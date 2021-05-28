@@ -20,9 +20,6 @@ function EmailDetails(props) {
 
 				<div className="rightHand ml-2 normalBg outline mb-1">
 					<div className="cards-body">
-						{/* <div className="pt-3 pl-3 white">
-							<IconList iconList={iconList} style={{ width: '480px', padding: '13px' }} />
-						</div> */}
 						<div className="email-title mt-2 mb-5">
 							<div className="w95 ml2 pt-4 mr-4 borderBtm">
 								<h5 className="email-text email-subject">{msg.subject}</h5>
