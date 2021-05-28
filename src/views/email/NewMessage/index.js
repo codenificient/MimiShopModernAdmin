@@ -8,9 +8,7 @@ export default function NewMessage(props) {
 	return (
 		<React.Fragment>
 			<div className="flexRowMsg darkerBg">
-				<div className="leftHand">
 					<EmailActions />
-				</div>
 				<div className="rightHand ml-2 normalBg outline">
 					<div className="">
 						<h5 className="textLight mt-1" style={{ textAlign: 'center' }}>

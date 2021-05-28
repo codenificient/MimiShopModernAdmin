@@ -139,13 +139,18 @@ const _nav = [
 		_children: [
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Boite de Reception',
+				name: 'Boite de Réception',
 				to: '/messages'
 			},
 			{
 				_tag: 'CSidebarNavItem',
 				name: 'Composer',
 				to: '/messages/newemail'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Brouillons',
+				to: '/messages/drafts'
 			},
 			{
 				_tag: 'CSidebarNavItem',

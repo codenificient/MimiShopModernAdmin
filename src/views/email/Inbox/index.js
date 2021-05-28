@@ -16,20 +16,6 @@ export default function Inbox(props) {
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					<EmaiList icons={icons} emails={msgs} />
 				</div>
-
-				{/* <div className="row p-2 darkerBg">
-				<EmailActions />
-				<div className="col-sm-9 ml-3 normalBg outline">
-					<div className="cards-body">
-						<div className="ml-3">
-							<IconList style={{ width: '480px', padding: '15px' }} iconList={iconList} />
-						</div>
-						<div className="borderTop secondary">
-							<EmaiList icons={icons} emails={msgs} />
-						</div>
-					</div>
-				</div>
-			</div> */}
 			</div>
 		</React.Fragment>
 	);

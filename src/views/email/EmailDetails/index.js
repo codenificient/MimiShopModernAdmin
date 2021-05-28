@@ -1,6 +1,7 @@
 import CIcon from '@coreui/icons-react';
 import React from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Attachment from 'src/components/UI/Email/Attachments';
 import EmailActions from 'src/components/UI/Email/EmailActions';
 import { formatDate3 } from 'src/urlConfig';
@@ -50,12 +51,12 @@ function EmailDetails(props) {
 						<div>{msg.attachments && <Attachment attachments={msg.attachments} />}</div>
 						<div className="mt-4 mb-4 ml-5">
 							<ButtonGroup>
-								<Link href={`/messages/reply/${msg.id}`}>
+								<Link to={`/messages/reply/${msg.id}`}>
 									<Button className="btn mr-3" variant="outline-info">
 										<CIcon name="cil-share-all" />&nbsp;&nbsp;Répondre
 									</Button>
 								</Link>
-								
+
 								<Link>
 									<Button className="btn" variant="outline-secondary">
 										<CIcon name="cil-transfer" />&nbsp;&nbsp;Transférer

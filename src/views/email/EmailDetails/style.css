@@ -33,18 +33,6 @@
 	justify-content: center;
 }
 
-.card240 {
-	width: 240px;
-	margin-bottom: 24px;
-	box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 3%);
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	min-height: 0;
-	word-wrap: break-word;
-	border-radius: .25rem;
-}
-
 .borderBtm {
 	border-bottom: 1px solid #636f83;
 	padding-bottom: 1rem;
@@ -57,17 +45,4 @@
 
 .email-body {
 	padding: 0.5rem 2.5rem 0 2.5rem;
-}
-
-.flexRowMsg {
-	display: flex;
-	flex-direction: row;
-}
-
-.leftHand {
-	flex: 1;
-}
-
-.rightHand {
-	flex: 19;
 }
