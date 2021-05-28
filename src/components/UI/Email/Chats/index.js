@@ -27,10 +27,10 @@ function ChatList(props) {
 											</div>
 											<div className="chat-user-date">
 												<span className="chat-user mt-1">{action.name}</span>
-												<span className="chat-date">{formatDate5(action.time)}</span>
+												<span className="chat-date">{formatDate5(action.messages[key].i)}</span>
 											</div>
 										</div>
-										<span className="chat-preview">{shorten(action.messages[0].o, 35)}</span>
+										<span className="chat-preview">{shorten(action.messages[key].r, 35)}</span>
 									</Link>
 								))
 							) : (

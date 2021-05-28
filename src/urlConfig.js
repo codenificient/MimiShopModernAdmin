@@ -79,6 +79,13 @@ export const formatDate5 = (date) => {
 	}
 };
 
+export const formatDate6 = (date) => {
+	if (date) {
+		const d = new Date(date);
+		return `${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`;
+	}
+};
+
 export const shorten = (str, maxLen, separator = ' ') => {
 	if (str.length <= maxLen) return str;
 	return str.substr(0, str.lastIndexOf(separator, maxLen));

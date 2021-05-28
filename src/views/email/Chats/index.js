@@ -1,5 +1,4 @@
 import React from 'react';
-import ChatBody from 'src/components/UI/Email/ChatBody';
 import ChatList from 'src/components/UI/Email/Chats';
 import './style.css';
 import { contacts } from './userChats';
@@ -12,10 +11,10 @@ export default function Chats(props) {
 			<div className="flexRowChat darkerBg">
 				<ChatList contacts={contacts} />
 				<div className="rightHand ml-2 normalBg outline mb-2">
-					<h1>Chats</h1>
-					<ChatBody />
+					<p className="chat-container ml2 mt2">Selectionner une Conversation</p>
 				</div>
 			</div>
 		</React.Fragment>
 	);
 }
+

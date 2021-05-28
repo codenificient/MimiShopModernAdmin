@@ -98,8 +98,8 @@ const routes = [
 	{ path: '/messages/sent', name: 'Méssages Envoyés', component: OutgoingMessages },
 	{ path: '/messages/drafts', name: 'Brouillons des Méssages', component: Drafts },
 	{ path: '/messages/junk', name: 'Méssages Indésirés', component: Spam },
-	{ path: '/messages/chates', name: 'Méssages Instantanée', component: Chats },
-	{ path: '/messages/chats', name: 'Méssagérie Instantanée', component: ChatDetail },
+	{ path: '/messages/chats/:id', name: 'Méssagérie Instantanée', component: ChatDetail },
+	{ path: '/messages/chats', name: 'Méssages Instantanée', component: Chats },
 	{ path: '/messages/archive', name: 'Email Archives', component: EmailArchives },
 	{ path: '/messages/reply/:id', name: 'Répondre à un Méssage', component: EmailReply },
 

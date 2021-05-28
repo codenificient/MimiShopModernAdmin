@@ -9,7 +9,7 @@ import './style.css';
 export default function ChatDetails(props) {
 	const contact = contacts.find((contact) => contact.id === props.location.pathname.split('/')[3]);
 
-	console.log(`From ChatDetails`, { contacts });
+	// console.log(`From ChatDetails`, { contacts });
 	console.log({ contact });
 	return (
 		<React.Fragment>
@@ -17,25 +17,25 @@ export default function ChatDetails(props) {
 				<ChatList contacts={contacts} />
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					{contact ? (
-						<div className="flexRow">
-							<div className="m-3 image-container">
-								<img src={contact.avatar} alt="" />
+						<div className="chat-container">
+							<div className="flexRow">
+								<div className="m-3 image-container">
+									<img src={contact.avatar} alt="" />
+								</div>
+								<span className="user light mt-3 ft2 bold">{contact.name}</span>
 							</div>
-							<span className="light mt-3 ft2 bold">{contact.name}</span>
+							<div className="chat-messages mb-5">
+								<ChatBody msgs={contact.messages} />
+							</div>
 						</div>
 					) : (
 						<p className="vcenter">Selectioner une Conversation</p>
 					)}
-					<div>
-						{contact &&
-							contact.messages.map((msg) => {
-								<ChatBody msg={msg} />;
-							})}
-					</div>
-					<div className="posa chat-input-box">
-						<Input placeholder="écrire un méssage" />
-						<CButton className="chat-send" color="outline-danger">
-							Send
+
+					<div className="lightGrey2 flexRow sb">
+						<Input type="text" placeholder="écrire un méssage" />
+						<CButton className="chat-send" variant="outline" color="info">
+							Envoyer
 						</CButton>
 					</div>
 				</div>
