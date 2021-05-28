@@ -36,7 +36,7 @@
 	flex-direction: row;
 }
 
-.form-control {
+.chatapp .form-control {
 	width: 98%;
 	position: absolute;
 	margin-left: .5rem;

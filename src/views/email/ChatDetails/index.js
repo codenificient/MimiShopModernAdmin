@@ -32,7 +32,7 @@ export default function ChatDetails(props) {
 						<p className="vcenter">Selectioner une Conversation</p>
 					)}
 
-					<div className="lightGrey2 flexRow sb">
+					<div className="lightGrey2 flexRow chatapp">
 						<Input type="text" placeholder="écrire un méssage" />
 						<CButton className="chat-send" variant="outline" color="info">
 							Envoyer
