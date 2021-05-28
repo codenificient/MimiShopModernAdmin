@@ -32,6 +32,11 @@
 	color: #acbfd2;
 }
 
+.chat-user:hover,
+.chats:hover {
+	color: #d16767;
+}
+
 .image-container {
 	width: 48px;
 	height: 48px;
@@ -57,5 +62,8 @@
 .chat-preview {
 	display: block;
 	font-size: 11px;
+	width: 265px;
 	transform: translateX(70px) translateY(-38px);
+	word-wrap: break-word;
+	word-break: keep-all;
 }

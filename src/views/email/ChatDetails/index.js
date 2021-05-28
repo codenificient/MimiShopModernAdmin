@@ -13,7 +13,7 @@ export default function ChatDetails(props) {
 	console.log({ contact });
 	return (
 		<React.Fragment>
-			<div className="flexRowMsg darkerBg">
+			<div className="flexRowChat darkerBg">
 				<ChatList contacts={contacts} />
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					{contact ? (
@@ -29,12 +29,12 @@ export default function ChatDetails(props) {
 							</div>
 						</div>
 					) : (
-						<p className="vcenter">Selectioner une Conversation</p>
+						<p className="vcenter light p-3">Selectioner une Conversation</p>
 					)}
 
-					<div className="lightGrey2 flexRow chatapp">
+					<div className="dark flexRow chatapp">
 						<Input type="text" placeholder="écrire un méssage" />
-						<CButton className="chat-send" variant="outline" color="info">
+						<CButton className="chat-send" variant="outline">
 							Envoyer
 						</CButton>
 					</div>

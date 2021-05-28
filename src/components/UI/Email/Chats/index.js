@@ -9,9 +9,8 @@ function ChatList(props) {
 		<React.Fragment>
 			<div className="leftHand">
 				<div className="card350">
-					<div className="cards-body normalBg outline">
-						<div className="emailActions p-3">
-							<div className="vcenter pt-3 mb2">
+					<div className="cards-body normalBg outline p-2">
+							<div className="vcenter pt-3 mb-3">
 								<Link to="/messages/chats/newchat">
 									<Button className="btn220 h50 " variant="danger">
 										Nouvelle Conversation
@@ -30,13 +29,12 @@ function ChatList(props) {
 												<span className="chat-date">{formatDate5(action.messages[key].i)}</span>
 											</div>
 										</div>
-										<span className="chat-preview">{shorten(action.messages[key].r, 35)}</span>
+										<span className="chat-preview">{shorten(action.messages[key].r, 40)}</span>
 									</Link>
 								))
 							) : (
 								<p className="vcenter">Initiez une Conversation</p>
 							)}
-						</div>
 					</div>
 				</div>
 			</div>

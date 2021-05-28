@@ -1,6 +1,7 @@
 .flexRowChat {
 	display: flex;
 	flex-direction: row;
+	max-height: 90vh;
 }
 
 .leftHand {
@@ -9,4 +10,9 @@
 
 .rightHand {
 	flex: 19;
+}
+
+.flexRowChat .leftHand,
+.flexRowChat .rightHand {
+	max-height: 90vh;
 }

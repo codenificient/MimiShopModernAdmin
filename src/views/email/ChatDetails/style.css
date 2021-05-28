@@ -30,9 +30,8 @@
 .chat-input-box {
 	position: absolute;
 	width: 100%;
-	height: 25px;
-	bottom: 0.5rem;
-	display: flex;
+	bottom: 1rem;
+	display: block;
 	flex-direction: row;
 }
 
@@ -44,6 +43,15 @@
 	margin-top: 22px;
 	padding: 1.5rem;
 	z-index: 1;
+}
+
+.chatapp button {
+	color: #d16767;
+	border: 1px solid #d16767;
+}
+.chatapp button:hover {
+	color: #eee;
+	background: #e03232;
 }
 
 .chat-send {
@@ -58,9 +66,14 @@
 
 .chat-container {
 	display: grid;
-	height: 69vh;
+	height: 81vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	background: #fff url('./chatbg.jpg') no-repeat right top;
 	background-size: cover;
+}
+
+.flexRowChat .leftHand,
+.flexRowChat .rightHand {
+	height: 91vh;
 }

@@ -10,11 +10,10 @@ export default function Chats(props) {
 		<React.Fragment>
 			<div className="flexRowChat darkerBg">
 				<ChatList contacts={contacts} />
-				<div className="rightHand ml-2 normalBg outline mb-2">
-					<p className="chat-container ml2 mt2">Selectionner une Conversation</p>
+				<div className="rightHand ml-2 normalBg outline mb-2 light">
+					<p className="chat-container p-3 black">Sélectionner une Conversation</p>
 				</div>
 			</div>
 		</React.Fragment>
 	);
 }
-
