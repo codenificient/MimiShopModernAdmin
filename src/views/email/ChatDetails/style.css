@@ -18,18 +18,26 @@
 
 .user {
 	padding-top: 8px;
+	color: #000;
+	font-weight: 600;
+}
+
+.chat-messages {
+	color: #000;
+	font-weight: 500;
 }
 
 .chat-input-box {
 	position: absolute;
 	width: 100%;
+	height: 25px;
 	bottom: 0.5rem;
 	display: flex;
 	flex-direction: row;
 }
 
 .form-control {
-	width: 95%;
+	width: 98%;
 	position: absolute;
 	margin-left: .5rem;
 	float: left;
@@ -43,14 +51,14 @@
 	right: 1.4rem;
 	margin: 0 .5rem;
 	float: right;
-	margin: 30px 10px;
+	margin: 30px 12px;
 	flex: 1;
 	z-index: 20;
 }
 
 .chat-container {
 	display: grid;
-	height: 68vh;
+	height: 69vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	background: #fff url('./chatbg.jpg') no-repeat right top;
