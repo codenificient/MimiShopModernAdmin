@@ -12,7 +12,11 @@
 	flex: 19;
 }
 
-.flexRowChat .leftHand,
-.flexRowChat .rightHand {
+.flexRowChat > .leftHand > .card400,
+.flexRowChat > .rightHand {
 	max-height: 90vh;
+}
+
+.flexRowChat > .rightHand {
+	max-height: 91vh;
 }

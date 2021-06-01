@@ -1,24 +1,24 @@
 import { CButton } from '@coreui/react';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ChatBody from 'src/components/UI/Email/ChatBody';
 import ChatList from 'src/components/UI/Email/Chats';
 import Input from 'src/components/UI/Input';
-import axiosInstance from 'src/helpers/axios';
+import { conversations } from '../Chats/chatList';
 import './style.css';
 
 export default function ChatDetails(props) {
-	const [ messages, setMessages ] = useState([]);
+	// const [ messages, setMessages ] = useState(msgs);
 
-	useEffect(async () => {
-		const msg = await axiosInstance.get('https://my.api.mockaroo.com/user_chats_schema.json?key=37f692d0');
-		await setMessages(msg.data);
-		// console.log({ msg });
-	}, []);
+	// useEffect(async () => {
+	// 	const msg = await axiosInstance.get('https://my.api.mockaroo.com/user_chats_schema.json?key=37f692d0');
+	// 	await setMessages(msg.data);
+	// 	// console.log({ msg });
+	// }, []);
 
-	let msgId = props.location.pathname.split('/')[3];
-	// console.log({ msgId });
+	// let msgId = props.location.pathname.split('/')[3];
+	// // console.log({ msgId });
 
-	const contact = messages.find((contact) => contact.id === props.location.pathname.split('/')[3]);
+	const contact = conversations.find((contact) => contact.id === props.location.pathname.split('/')[3]);
 
 	// console.log(`From ChatDetails`, { contacts });
 	// console.log({ contact });
@@ -26,7 +26,7 @@ export default function ChatDetails(props) {
 	return (
 		<React.Fragment>
 			<div className="flexRowChat darkerBg">
-				<ChatList contacts={messages} />
+				<ChatList contacts={conversations} />
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					{contact ? (
 						<div className="chat-container">

@@ -6,6 +6,9 @@
 	flex-direction: column;
 	word-wrap: break-word;
 	border-radius: .25rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 91vh;
 }
 
 .chat-user-container {
@@ -34,7 +37,8 @@
 
 .chats {
 	color: #acbfd2;
-	overflow: hidden;
+
+	max-height: 90vh;
 }
 
 .image-container {

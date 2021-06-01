@@ -18,18 +18,22 @@ function ChatList(props) {
 							</Link>
 						</div>
 						{props.contacts ? (
-							props.contacts.map((action, key) => (
-								<Link to={`/messages/chats/${action.id}`} key={key} className="pt-2 chats">
+							props.contacts.map((action, index) => (
+								<Link to={`/messages/chats/${action.id}`} key={index} className="pt-2 chats">
 									<div className={`chat-user-container mb-2 p-2 secondary`}>
 										<div className="mr-3 image-container">
-											{<img size={'l'} src={action.avatar} />}
+											{<img size={'xl'} src={action.avatar} />}
 										</div>
 										<div className="chat-user-date">
 											<span className="chat-user mt-1">{action.name}</span>
-											<span className="chat-date">{formatDate5(action.messages[key].i)}</span>
+											<span className="chat-date">
+												{formatDate5(action.messages[index % 10].i)}
+											</span>
 										</div>
 									</div>
-									<span className="chat-preview">{shorten(action.messages[key].r, 45)}...</span>
+									<span className="chat-preview">
+										{shorten(action.messages[index % 10].r, 45)}...
+									</span>
 								</Link>
 							))
 						) : (

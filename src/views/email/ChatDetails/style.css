@@ -73,7 +73,7 @@
 	background-size: cover;
 }
 
-.flexRowChat .leftHand,
-.flexRowChat .rightHand {
-	height: 91vh;
+.flexRowChat > .leftHand > .card400,
+.flexRowChat > .rightHand {
+	max-height: 90vh;
 }

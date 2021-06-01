@@ -1,7 +1,7 @@
 import React from 'react';
 import ChatList from 'src/components/UI/Email/Chats';
+import { conversations } from './chatList';
 import './style.css';
-import msgs from './userChats';
 
 export default function Chats(props) {
 	const icons = [ 'cil-star' ];
@@ -22,7 +22,7 @@ export default function Chats(props) {
 	return (
 		<React.Fragment>
 			<div className="flexRowChat darkerBg">
-				<ChatList contacts={msgs} />
+				<ChatList contacts={conversations} />
 				<div className="rightHand ml-2 normalBg outline mb-2 light">
 					<p className="chat-container p-3 black">Sélectionner une Conversation</p>
 				</div>
