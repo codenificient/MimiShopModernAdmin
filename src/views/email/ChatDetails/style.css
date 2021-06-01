@@ -3,12 +3,26 @@
 	flex-direction: row;
 }
 
+.chat-container {
+	display: grid;
+	height: 81vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: #fff url('./chatbg.jpg') no-repeat right top;
+	background-size: cover;
+}
+
+.flexRowChat > .leftHand > .card400,
+.flexRowChat > .rightHand {
+	max-height: 80vh;
+}
+
 .leftHand {
 	flex: 1;
 }
 
 .rightHand {
-	flex: 19;
+	flex: 9;
 	position: relative;
 }
 
@@ -62,18 +76,4 @@
 	margin: 30px 12px;
 	flex: 1;
 	z-index: 20;
-}
-
-.chat-container {
-	display: grid;
-	height: 81vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	background: #fff url('./chatbg.jpg') no-repeat right top;
-	background-size: cover;
-}
-
-.flexRowChat > .leftHand > .card400,
-.flexRowChat > .rightHand {
-	max-height: 90vh;
 }

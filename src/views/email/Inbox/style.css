@@ -33,7 +33,6 @@
 	justify-content: center;
 }
 
-
 .borderBtm {
 	border-bottom: 1px solid #636f83;
 	padding-bottom: 1rem;
@@ -47,4 +46,3 @@
 .email-body {
 	padding: 0.5rem 2.5rem 0 2.5rem;
 }
-

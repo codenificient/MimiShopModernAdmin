@@ -18,6 +18,12 @@
 	overflow: hidden;
 }
 
+.chat-user-container::selection,
+.chat-user-container:active {
+	background: cadetblue;
+	color: brown;
+}
+
 .chat-user-container:hover {
 	color: #d16767;
 }
@@ -37,9 +43,19 @@
 
 .chats {
 	color: #acbfd2;
-
 	max-height: 90vh;
 }
+
+a:any-link .chats:visited,
+a:any-link .chats:active {
+	background-color: cadetblue;
+	color: brown;
+}
+
+/* .chats.chats::active {
+	background-color: cadetblue;
+	color: brown;
+} */
 
 .image-container {
 	width: 48px;

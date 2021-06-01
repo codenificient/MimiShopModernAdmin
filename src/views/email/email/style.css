@@ -1,3 +1,13 @@
+.flexRowChat > .rightHand {
+	max-height: 87vh;
+}
+
+/* .rightHand {
+    max-height: 86vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+} */
+
 .message-details {
 	padding: 2rem;
 }
@@ -36,7 +46,6 @@
 	right: 2rem;
 	position: absolute;
 }
-
 
 .read {
 	color: #ebedef;
