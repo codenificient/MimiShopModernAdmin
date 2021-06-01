@@ -7,6 +7,7 @@ import {
 	CCol,
 	CContainer,
 	CForm,
+	CImg,
 	CInput,
 	CInputGroup,
 	CInputGroupPrepend,
@@ -14,11 +15,24 @@ import {
 	CRow
 } from '@coreui/react';
 import React from 'react';
+import Logo7 from 'src/assets/icons/shopLogo7.png';
 
 const Register = () => {
 	return (
 		<div className="c-app darkenBg c-default-layout flex-row align-items-center">
 			<CContainer>
+				<div
+					style={{
+						height: '200px',
+						maxWidth: '500px',
+						textAlign: 'center',
+						margin: '1rem auto',
+						objectFit: 'contain',
+						overflow: 'hidden'
+					}}
+				>
+					<CImg src={Logo7} alt={Logo7} style={{ width: '100%' }} />
+				</div>
 				<CRow className="welcome-text text-main">
 					<h1>Page de Creation Admin</h1>
 				</CRow>
