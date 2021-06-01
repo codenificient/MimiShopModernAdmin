@@ -7,6 +7,7 @@ import {
 	CCol,
 	CContainer,
 	CForm,
+	CImg,
 	CInput,
 	CInputGroup,
 	CInputGroupPrepend,
@@ -17,6 +18,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 import { login } from 'src/actions';
+import Logo7 from 'src/assets/icons/shopLogo7.png';
 
 const Login = () => {
 	const [ email, setEmail ] = useState('');
@@ -44,6 +46,18 @@ const Login = () => {
 	return (
 		<div className="c-app c-default-layout darkenBg flex-row align-items-center">
 			<CContainer>
+				<div
+					style={{
+						height: '200px',
+						maxWidth: '500px',
+						textAlign: 'center',
+						margin: '1rem auto',
+						objectFit: 'contain',
+						overflow: 'hidden'
+					}}
+				>
+					<CImg src={Logo7} alt={Logo7} style={{ width: '100%' }} />
+				</div>
 				<CRow className="welcome-text text-main">
 					<h1>Page de Connection Admin</h1>
 				</CRow>
