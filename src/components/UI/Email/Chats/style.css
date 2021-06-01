@@ -1,8 +1,8 @@
-.card350 {
-	width: 350px;
+.card400 {
+	width: 400px;
 	box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 3%);
 	position: relative;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	word-wrap: break-word;
 	border-radius: .25rem;
@@ -13,6 +13,10 @@
 	flex-direction: row;
 	text-align: center;
 	overflow: hidden;
+}
+
+.chat-user-container:hover {
+	color: #d16767;
 }
 
 .flexRowMsg {
@@ -30,11 +34,7 @@
 
 .chats {
 	color: #acbfd2;
-}
-
-.chat-user:hover,
-.chats:hover {
-	color: #d16767;
+	overflow: hidden;
 }
 
 .image-container {
@@ -48,8 +48,12 @@
 }
 
 .chat-user {
-	color: aliceblue;
+	/* color: aliceblue; */
 	font-weight: 600;
+}
+
+:any-link:hover {
+	color: #d16767;
 }
 
 .chat-date {
@@ -62,7 +66,7 @@
 .chat-preview {
 	display: block;
 	font-size: 11px;
-	width: 265px;
+	width: 320px;
 	transform: translateX(70px) translateY(-38px);
 	word-wrap: break-word;
 	word-break: keep-all;

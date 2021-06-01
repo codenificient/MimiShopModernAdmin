@@ -1,20 +1,32 @@
 import { CButton } from '@coreui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ChatBody from 'src/components/UI/Email/ChatBody';
 import ChatList from 'src/components/UI/Email/Chats';
 import Input from 'src/components/UI/Input';
-import { contacts } from '../Chats/userChats';
+import axiosInstance from 'src/helpers/axios';
 import './style.css';
 
 export default function ChatDetails(props) {
-	const contact = contacts.find((contact) => contact.id === props.location.pathname.split('/')[3]);
+	const [ messages, setMessages ] = useState([]);
+
+	useEffect(async () => {
+		const msg = await axiosInstance.get('https://my.api.mockaroo.com/user_chats_schema.json?key=37f692d0');
+		await setMessages(msg.data);
+		// console.log({ msg });
+	}, []);
+
+	let msgId = props.location.pathname.split('/')[3];
+	// console.log({ msgId });
+
+	const contact = messages.find((contact) => contact.id === props.location.pathname.split('/')[3]);
 
 	// console.log(`From ChatDetails`, { contacts });
-	console.log({ contact });
+	// console.log({ contact });
+
 	return (
 		<React.Fragment>
 			<div className="flexRowChat darkerBg">
-				<ChatList contacts={contacts} />
+				<ChatList contacts={messages} />
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					{contact ? (
 						<div className="chat-container">

@@ -3,7 +3,7 @@ import { formatDate6 } from 'src/urlConfig';
 import './style.css';
 
 export default function ChatBody(props) {
-	console.log({ props });
+	// console.log({ props });
 	return (
 		<React.Fragment>
 				{props.msgs &&

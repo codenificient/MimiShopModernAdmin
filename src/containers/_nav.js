@@ -11,7 +11,7 @@ const _nav = [
 
 	{
 		_tag: 'CSidebarNavTitle',
-		_children: [ 'CATEGORIES' ]
+		_children: [ 'CATÉGORIES' ]
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
@@ -129,13 +129,13 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavTitle',
-		_children: [ 'MESSAGES' ]
+		_children: [ 'MÉSSAGES' ]
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
 		name: 'Méssages',
 		route: '/messages',
-		icon: 'cil-envelope-open',
+		icon: 'cil-speech',
 		_children: [
 			{
 				_tag: 'CSidebarNavItem',
@@ -256,9 +256,9 @@ const _nav = [
 
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Nos Revendeurs',
+		name: 'Nos Révendeurs',
 		to: '/widgets',
-		icon: 'cil-credit-card',
+		icon: 'cil-money',
 		badge: {
 			color: 'warning',
 			text: 'NEW'
