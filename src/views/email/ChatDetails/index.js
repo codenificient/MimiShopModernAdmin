@@ -30,12 +30,23 @@ export default function ChatDetails(props) {
 				<div className="rightHand ml-2 normalBg outline mb-2">
 					{contact ? (
 						<div className="chat-container">
-							<div className="flexRow">
-								<div className="m-3 image-container">
-									<img src={contact.avatar} alt="" />
+							<div className="user-container d-flex black">
+								<div className="m-3 image-container avatar-one">
+									<img src={contact.avatar} alt="" className="avatar-one-img" />
 								</div>
-								<span className="user light mt-3 ft2 bold">{contact.name}</span>
+								<span className="user mt-3 ft2 bold">{contact.name}</span>							
 							</div>
+								<div className="user-status d-flex">
+									<span className={`avatar-status ${contact.status ? contact.status : 'danger'}`} />
+									<span className="connection-string">
+										&nbsp;{contact.connect ? contact.connect : `hors ligne`}
+									</span>
+								</div>
+							{/* <div className="c-avatar flexRow">
+								<CImg src={contact.avatar} className="c-avatar-img-one" alt={contact.avatar} />
+								<span className="user ml-2 ft2 bold">{contact.name}</span>
+								<span className="c-avatar-status avatus bg-danger" />
+							</div> */}
 							<div className="chat-messages mb-5">
 								<ChatBody msgs={contact.messages} />
 							</div>

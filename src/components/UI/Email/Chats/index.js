@@ -31,8 +31,8 @@ function ChatList(props) {
 											</span>
 										</div>
 									</div>
-									<span className="chat-preview">
-										{shorten(action.messages[index % 10].r, 45)}...
+									<span className="chat-preview text-truncate">
+										{action.messages[index % 10].r}
 									</span>
 								</Link>
 							))
