@@ -258,7 +258,7 @@ const _nav = [
 		_tag: 'CSidebarNavItem',
 		name: 'Nos Révendeurs',
 		to: '/widgets',
-		icon: 'cil-money',
+		icon: 'cil-cash',
 		badge: {
 			color: 'warning',
 			text: 'NEW'

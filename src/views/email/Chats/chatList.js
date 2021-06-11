@@ -2,10 +2,10 @@ export const conversations = [
 	{
 		id: 'KNAFT4A2XA5277409',
 		name: 'Con Blenkiron',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '122-191-1847',
 		connect: 'en ligne',
-		status: 'primary',
+		status: 'success',
 		messages: [
 			{
 				i: '2020-09-04 19:13:36',
@@ -89,7 +89,7 @@ export const conversations = [
 	{
 		id: 'WBABS53402J163305',
 		name: 'Curran Breitling',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '916-796-2563',
 		messages: [
 			{
@@ -174,7 +174,7 @@ export const conversations = [
 	{
 		id: 'WBA3D5C57FK183929',
 		name: 'Clarissa Trahair',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '862-672-0409',
 		messages: [
 			{
@@ -259,7 +259,7 @@ export const conversations = [
 	{
 		id: '3VWJP7AT8CM294683',
 		name: 'Sasha Kingcott',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '777-646-8474',
 		messages: [
 			{
@@ -344,7 +344,7 @@ export const conversations = [
 	{
 		id: 'SAJWA4DC8AM679398',
 		name: 'Lira Remer',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '202-573-9607',
 		messages: [
 			{
@@ -429,7 +429,7 @@ export const conversations = [
 	{
 		id: 'WAUDL64F45N645526',
 		name: 'Laney Carine',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '927-125-8244',
 		messages: [
 			{
@@ -514,7 +514,7 @@ export const conversations = [
 	{
 		id: '1C6RD7LP4CS770487',
 		name: 'Ferdie Redwood',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '241-826-4137',
 		messages: [
 			{
@@ -599,7 +599,7 @@ export const conversations = [
 	{
 		id: '1FTWX3A53AE032699',
 		name: 'Ahmed Pratton',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '476-335-2511',
 		messages: [
 			{
@@ -684,7 +684,7 @@ export const conversations = [
 	{
 		id: '1FTWW3B52AE356003',
 		name: 'Barclay Tant',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '951-514-4369',
 		messages: [
 			{
@@ -769,7 +769,7 @@ export const conversations = [
 	{
 		id: 'JTJBARBZ8F2974423',
 		name: 'Philippe Atherton',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '102-886-9141',
 		messages: [
 			{
@@ -854,7 +854,7 @@ export const conversations = [
 	{
 		id: 'WBSDE93452B556410',
 		name: 'Jaynell Greenhalf',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '225-588-3477',
 		messages: [
 			{
@@ -939,7 +939,7 @@ export const conversations = [
 	{
 		id: '1B3CB5HA8AD361604',
 		name: 'Therine Staden',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '890-581-8093',
 		messages: [
 			{
@@ -1024,7 +1024,7 @@ export const conversations = [
 	{
 		id: '1D7RV1GT0AS558585',
 		name: 'Appolonia Aggis',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '111-608-6994',
 		messages: [
 			{
@@ -1109,7 +1109,7 @@ export const conversations = [
 	{
 		id: '1FTMF1CW5AK570830',
 		name: 'Jemima Grice',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '273-449-3645',
 		messages: [
 			{
@@ -1194,7 +1194,7 @@ export const conversations = [
 	{
 		id: 'WBANW1C55AC729447',
 		name: 'Kyla Ives',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '770-245-9855',
 		messages: [
 			{
@@ -1279,7 +1279,7 @@ export const conversations = [
 	{
 		id: 'WAUHE78P18A495004',
 		name: 'Walker Siemon',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '778-108-7075',
 		messages: [
 			{
@@ -1364,7 +1364,7 @@ export const conversations = [
 	{
 		id: 'WA1CGAFE6FD614970',
 		name: 'Martica Sonschein',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '715-677-8491',
 		messages: [
 			{
@@ -1449,7 +1449,7 @@ export const conversations = [
 	{
 		id: '3VWKX7AJ4AM929575',
 		name: 'Jenny Kneal',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '435-812-8846',
 		messages: [
 			{
@@ -1534,7 +1534,7 @@ export const conversations = [
 	{
 		id: 'JN1CV6EK3CM415602',
 		name: 'Ros Mebius',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '906-947-2029',
 		messages: [
 			{
@@ -1619,7 +1619,7 @@ export const conversations = [
 	{
 		id: 'WP0AA2A9XAS383896',
 		name: 'Constantin Burger',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '136-840-7925',
 		messages: [
 			{
@@ -1704,7 +1704,7 @@ export const conversations = [
 	{
 		id: 'TRURD28N361211306',
 		name: 'Willi Ridge',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '401-425-1784',
 		messages: [
 			{
@@ -1789,7 +1789,7 @@ export const conversations = [
 	{
 		id: '5XYKT3A13CG360192',
 		name: 'Ricca Harryman',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '342-605-2756',
 		messages: [
 			{
@@ -1874,7 +1874,7 @@ export const conversations = [
 	{
 		id: '4JGCB2FB9AA786786',
 		name: 'Elliot Lestrange',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '216-404-8867',
 		messages: [
 			{
@@ -1959,7 +1959,7 @@ export const conversations = [
 	{
 		id: 'WBADT43492G687730',
 		name: 'Aeriel Vido',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '699-130-6792',
 		messages: [
 			{
@@ -2044,7 +2044,7 @@ export const conversations = [
 	{
 		id: 'WA1YD54B34N358390',
 		name: 'Joey Robart',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '500-299-6529',
 		messages: [
 			{
@@ -2129,7 +2129,7 @@ export const conversations = [
 	{
 		id: '1G6DK8EY5B0031081',
 		name: 'Sheree Lethieulier',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '668-820-5909',
 		messages: [
 			{
@@ -2214,7 +2214,7 @@ export const conversations = [
 	{
 		id: 'WAUEFAFL9BN301834',
 		name: 'Alyce Scowcroft',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '542-512-5887',
 		messages: [
 			{
@@ -2299,7 +2299,7 @@ export const conversations = [
 	{
 		id: 'NM0KS6BN4AT627098',
 		name: 'Worthy Cobon',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '443-616-3356',
 		messages: [
 			{
@@ -2384,7 +2384,7 @@ export const conversations = [
 	{
 		id: 'JH4DB76571S636443',
 		name: 'Ranna Kennion',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '566-286-0505',
 		messages: [
 			{
@@ -2469,7 +2469,7 @@ export const conversations = [
 	{
 		id: '3C63D3LL9CG282283',
 		name: 'Ellswerth Reily',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '358-786-4078',
 		messages: [
 			{
@@ -2554,7 +2554,7 @@ export const conversations = [
 	{
 		id: 'JN1CV6EK0FM120798',
 		name: 'Candida Callander',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '205-249-4993',
 		messages: [
 			{
@@ -2639,7 +2639,7 @@ export const conversations = [
 	{
 		id: '1GYS3HEF7DR591418',
 		name: 'Barbe Wankling',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '733-341-2716',
 		messages: [
 			{
@@ -2724,7 +2724,7 @@ export const conversations = [
 	{
 		id: '3GYFK66N06G079565',
 		name: 'Maribelle Gainsborough',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '847-456-2244',
 		messages: [
 			{
@@ -2809,7 +2809,7 @@ export const conversations = [
 	{
 		id: 'WAUXG74F29N797009',
 		name: 'Guy Bilborough',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '303-510-6370',
 		messages: [
 			{
@@ -2894,7 +2894,7 @@ export const conversations = [
 	{
 		id: '1HGCP2E89AA271378',
 		name: 'Gabriell Howells',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '360-741-3117',
 		messages: [
 			{
@@ -2979,7 +2979,7 @@ export const conversations = [
 	{
 		id: 'KL4CJDSB0DB889144',
 		name: 'Joan Pluthero',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '626-458-7326',
 		messages: [
 			{
@@ -3064,7 +3064,7 @@ export const conversations = [
 	{
 		id: '1FTWW3CY5AE184283',
 		name: 'Ferd Mogie',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '317-316-9110',
 		messages: [
 			{
@@ -3149,7 +3149,7 @@ export const conversations = [
 	{
 		id: 'WAURV78T39A776661',
 		name: 'Clint Dulwich',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '462-869-5752',
 		messages: [
 			{
@@ -3234,7 +3234,7 @@ export const conversations = [
 	{
 		id: 'KNADM4A38D6080654',
 		name: 'Frans Fishbourne',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '677-343-4351',
 		messages: [
 			{
@@ -3319,7 +3319,7 @@ export const conversations = [
 	{
 		id: 'SAJWA4GB6FL683434',
 		name: 'Lowe Stote',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '861-553-4230',
 		messages: [
 			{
@@ -3404,7 +3404,7 @@ export const conversations = [
 	{
 		id: 'WBAPK7G57BN997679',
 		name: 'Mina Harpham',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '509-746-6220',
 		messages: [
 			{
@@ -3489,7 +3489,7 @@ export const conversations = [
 	{
 		id: '2C3CDXFG2EH816178',
 		name: 'Arron Kill',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '465-617-0366',
 		messages: [
 			{
@@ -3574,7 +3574,7 @@ export const conversations = [
 	{
 		id: '1YVHZ8BHXA5457343',
 		name: 'Gerhard Rhucroft',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '611-147-2760',
 		messages: [
 			{
@@ -3659,7 +3659,7 @@ export const conversations = [
 	{
 		id: '2B3CA9CV1AH772690',
 		name: 'Flossi Khilkov',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '914-280-0538',
 		messages: [
 			{
@@ -3744,7 +3744,7 @@ export const conversations = [
 	{
 		id: 'WAULT54B03N552518',
 		name: 'Sutherlan Langforth',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '274-679-8239',
 		messages: [
 			{
@@ -3829,7 +3829,7 @@ export const conversations = [
 	{
 		id: '5UXFE83547L092481',
 		name: 'Dyanna Winthrop',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '823-507-2708',
 		messages: [
 			{
@@ -3914,7 +3914,7 @@ export const conversations = [
 	{
 		id: '1G6AB5SX2F0131674',
 		name: 'Gene Towey',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '151-217-3156',
 		messages: [
 			{
@@ -3999,7 +3999,7 @@ export const conversations = [
 	{
 		id: 'YV4952CF6C1878855',
 		name: 'Misha Waszkiewicz',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '549-269-3235',
 		messages: [
 			{
@@ -4084,7 +4084,7 @@ export const conversations = [
 	{
 		id: 'WBA3N7C58EF984613',
 		name: 'Dniren Clewarth',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '793-725-3847',
 		messages: [
 			{
@@ -4169,7 +4169,7 @@ export const conversations = [
 	{
 		id: '3GYFNCE3XES369507',
 		name: 'Luca Pracy',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '717-971-0804',
 		messages: [
 			{
@@ -4254,7 +4254,7 @@ export const conversations = [
 	{
 		id: 'WA1VMBFE3DD849203',
 		name: 'Austina Daid',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '852-840-0393',
 		messages: [
 			{
@@ -4339,7 +4339,7 @@ export const conversations = [
 	{
 		id: 'WAUGVAFR2CA279555',
 		name: 'Catriona Bear',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '529-815-4526',
 		messages: [
 			{
@@ -4424,7 +4424,7 @@ export const conversations = [
 	{
 		id: 'WAUAF78E55A734076',
 		name: 'Jaquenetta Budleigh',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '266-472-1904',
 		messages: [
 			{
@@ -4509,7 +4509,7 @@ export const conversations = [
 	{
 		id: '1FTEX1E82AK198749',
 		name: 'Shayna Antony',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '123-223-4891',
 		messages: [
 			{
@@ -4594,7 +4594,7 @@ export const conversations = [
 	{
 		id: 'WA1CM94L99D888967',
 		name: 'Mart Bodley',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '644-381-4827',
 		messages: [
 			{
@@ -4679,7 +4679,7 @@ export const conversations = [
 	{
 		id: 'WDBWK5EA1AF846718',
 		name: 'Tammie Burress',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '481-424-5285',
 		messages: [
 			{
@@ -4764,7 +4764,7 @@ export const conversations = [
 	{
 		id: '1D7RB1GT9AS754436',
 		name: 'Roz Lesaunier',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '615-775-7748',
 		messages: [
 			{
@@ -4849,7 +4849,7 @@ export const conversations = [
 	{
 		id: 'WA1CYAFE2AD212417',
 		name: 'Odessa Brockherst',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '604-291-1566',
 		messages: [
 			{
@@ -4934,7 +4934,7 @@ export const conversations = [
 	{
 		id: '1YVHZ8BH0C5209492',
 		name: 'Wheeler Tiernan',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '563-175-4468',
 		messages: [
 			{
@@ -5019,7 +5019,7 @@ export const conversations = [
 	{
 		id: '1C6RD7GP9CS027480',
 		name: 'Rene Nobes',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '892-995-5678',
 		messages: [
 			{
@@ -5104,7 +5104,7 @@ export const conversations = [
 	{
 		id: 'WBAPK53509A887147',
 		name: 'Kerby Le Huquet',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '764-165-1406',
 		messages: [
 			{
@@ -5189,7 +5189,7 @@ export const conversations = [
 	{
 		id: '1GD12ZCG8CF995684',
 		name: 'Rodie MacParlan',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '443-523-6401',
 		messages: [
 			{
@@ -5274,7 +5274,7 @@ export const conversations = [
 	{
 		id: 'WAULT68E23A083577',
 		name: 'Edwina Nobles',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '477-393-3605',
 		messages: [
 			{
@@ -5359,7 +5359,7 @@ export const conversations = [
 	{
 		id: '1G6DL8ED8B0304301',
 		name: 'Raimondo Bilt',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '353-522-1868',
 		messages: [
 			{
@@ -5444,7 +5444,7 @@ export const conversations = [
 	{
 		id: '1GD312CG7DF548008',
 		name: 'Faber Sapseed',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '947-526-9884',
 		messages: [
 			{
@@ -5529,7 +5529,7 @@ export const conversations = [
 	{
 		id: 'WAUDG58E55A024738',
 		name: 'Caryl Dreigher',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '735-533-7308',
 		messages: [
 			{
@@ -5614,7 +5614,7 @@ export const conversations = [
 	{
 		id: '3VW4A7AT5DM172797',
 		name: 'Jeremiah Sign',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '853-313-5179',
 		messages: [
 			{
@@ -5699,7 +5699,7 @@ export const conversations = [
 	{
 		id: 'WVWED7AJ4BW967236',
 		name: 'Dore Tripcony',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '109-322-2218',
 		messages: [
 			{
@@ -5784,7 +5784,7 @@ export const conversations = [
 	{
 		id: 'WAUGL58E55A575177',
 		name: 'Binni Earey',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '187-272-7098',
 		messages: [
 			{
@@ -5869,7 +5869,7 @@ export const conversations = [
 	{
 		id: '1FTSW2A51AE362255',
 		name: 'Deb Braisted',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '705-979-9808',
 		messages: [
 			{
@@ -5954,7 +5954,7 @@ export const conversations = [
 	{
 		id: 'WBANU53529C905007',
 		name: 'Chelsie Theunissen',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '179-588-3909',
 		messages: [
 			{
@@ -6039,7 +6039,7 @@ export const conversations = [
 	{
 		id: '2HNYD2H21DH007978',
 		name: 'Josey Mc Elory',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '953-271-3857',
 		messages: [
 			{
@@ -6124,7 +6124,7 @@ export const conversations = [
 	{
 		id: '1G4GE5ED6BF671211',
 		name: 'Lemmie Baraja',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '161-777-1046',
 		messages: [
 			{
@@ -6209,7 +6209,7 @@ export const conversations = [
 	{
 		id: 'JM1NC2PF1E0263799',
 		name: 'Marco Byram',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '153-190-2487',
 		messages: [
 			{
@@ -6294,7 +6294,7 @@ export const conversations = [
 	{
 		id: 'YV1960AS6A1406005',
 		name: 'Hervey Sanson',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '328-998-1285',
 		messages: [
 			{
@@ -6379,7 +6379,7 @@ export const conversations = [
 	{
 		id: 'WBA6B2C58FD892858',
 		name: 'Faydra Renouf',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '224-139-8025',
 		messages: [
 			{
@@ -6464,7 +6464,7 @@ export const conversations = [
 	{
 		id: '1G4HP54K234928764',
 		name: 'Eli Joul',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '467-880-6588',
 		messages: [
 			{
@@ -6549,7 +6549,7 @@ export const conversations = [
 	{
 		id: 'JH4CL95848C016492',
 		name: 'Sherye Gauson',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '676-946-5079',
 		messages: [
 			{
@@ -6634,7 +6634,7 @@ export const conversations = [
 	{
 		id: '1FTSW3B55AE940233',
 		name: 'Gordy Schimank',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '336-379-8544',
 		messages: [
 			{
@@ -6719,7 +6719,7 @@ export const conversations = [
 	{
 		id: 'WBA3B3C57DJ840600',
 		name: 'Andrej Moraleda',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '363-184-0461',
 		messages: [
 			{
@@ -6804,7 +6804,7 @@ export const conversations = [
 	{
 		id: '2G4WB52K431878907',
 		name: 'Rudolph McKendry',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '742-309-1068',
 		messages: [
 			{
@@ -6889,7 +6889,7 @@ export const conversations = [
 	{
 		id: 'JN8AZ1MU8DW149356',
 		name: 'Donella Cradock',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '794-508-4883',
 		messages: [
 			{
@@ -6974,7 +6974,7 @@ export const conversations = [
 	{
 		id: 'KNADM5A33D6278628',
 		name: 'Remy Royds',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '122-178-5807',
 		messages: [
 			{
@@ -7059,7 +7059,7 @@ export const conversations = [
 	{
 		id: 'WAUPL68E34A824774',
 		name: 'Clayton Clissett',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '946-494-2773',
 		messages: [
 			{
@@ -7144,7 +7144,7 @@ export const conversations = [
 	{
 		id: 'WAUXL68E95A671707',
 		name: 'Caritta Smullin',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '808-892-1448',
 		messages: [
 			{
@@ -7229,7 +7229,7 @@ export const conversations = [
 	{
 		id: 'WBAVL1C50FV968098',
 		name: 'Benn Bowart',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '261-794-0828',
 		messages: [
 			{
@@ -7314,7 +7314,7 @@ export const conversations = [
 	{
 		id: 'WBABW53444P514141',
 		name: 'Candie Rens',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '363-813-1708',
 		messages: [
 			{
@@ -7399,7 +7399,7 @@ export const conversations = [
 	{
 		id: '1FMJK1H55BE141004',
 		name: 'Nevile Attwooll',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '435-651-6234',
 		messages: [
 			{
@@ -7484,7 +7484,7 @@ export const conversations = [
 	{
 		id: 'WDDHH8JB3FB286732',
 		name: 'Darline Jindra',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '663-832-9041',
 		messages: [
 			{
@@ -7569,7 +7569,7 @@ export const conversations = [
 	{
 		id: 'SCFAD02A37G278800',
 		name: 'Timmy Simmank',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '226-964-6076',
 		messages: [
 			{
@@ -7654,7 +7654,7 @@ export const conversations = [
 	{
 		id: '1FTEW1CM2DF411635',
 		name: 'Eirena Pikhno',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '525-142-1502',
 		messages: [
 			{
@@ -7739,7 +7739,7 @@ export const conversations = [
 	{
 		id: 'WBAKP9C52FD232078',
 		name: 'Maegan Cohane',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '863-821-2982',
 		messages: [
 			{
@@ -7824,7 +7824,7 @@ export const conversations = [
 	{
 		id: 'WA1EY94L37D567856',
 		name: 'Rochell Stout',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '363-731-5934',
 		messages: [
 			{
@@ -7909,7 +7909,7 @@ export const conversations = [
 	{
 		id: 'KL4CJDSBXFB832811',
 		name: 'Denver Batcheldor',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '639-235-5662',
 		messages: [
 			{
@@ -7994,7 +7994,7 @@ export const conversations = [
 	{
 		id: '3C63D3LL0CG136693',
 		name: 'Issie Chandlar',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '666-699-9200',
 		messages: [
 			{
@@ -8079,7 +8079,7 @@ export const conversations = [
 	{
 		id: '2LMDJ6JK7EB695021',
 		name: 'Haleigh Paffett',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '970-737-6514',
 		messages: [
 			{
@@ -8164,7 +8164,7 @@ export const conversations = [
 	{
 		id: 'WBAUN13588V954734',
 		name: 'Kristo Aldhous',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '914-939-8879',
 		messages: [
 			{
@@ -8249,7 +8249,7 @@ export const conversations = [
 	{
 		id: 'JN8AZ1FY7EW360730',
 		name: 'Cornelle Quirke',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '134-468-7761',
 		messages: [
 			{
@@ -8334,7 +8334,7 @@ export const conversations = [
 	{
 		id: '1FMEU7EE9AU331010',
 		name: 'Noami Mylechreest',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '301-857-2367',
 		messages: [
 			{
@@ -8419,7 +8419,7 @@ export const conversations = [
 	{
 		id: 'KMHTC6ADXCU635762',
 		name: 'Sella Tilmouth',
-		avatar: 'https://picsum.photos/60/60',
+		avatr: 'https://picsum.photos/60/60',
 		phone: '264-308-6778',
 		messages: [
 			{

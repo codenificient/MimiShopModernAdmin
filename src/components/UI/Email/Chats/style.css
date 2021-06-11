@@ -1,6 +1,5 @@
 .card400 {
 	width: 400px;
-	box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 3%);
 	position: relative;
 	display: block;
 	flex-direction: column;
@@ -8,7 +7,7 @@
 	border-radius: .25rem;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 89vh;
+	max-height: 89.5vh;
 }
 
 .card400::-webkit-scrollbar {
@@ -47,7 +46,6 @@
 
 .chats {
 	color: #acbfd2;
-	max-height: 93vh;
 }
 
 a:any-link .chats:visited,
@@ -83,6 +81,7 @@ a:any-link .chats:active {
 .chat-date {
 	float: right;
 	right: .8rem;
+	margin-top: 2px;
 	position: absolute;
 	font-size: 11px;
 }

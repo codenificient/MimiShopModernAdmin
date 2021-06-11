@@ -36,7 +36,6 @@ a:hover {
 	color: #e55353;
 }
 
-
 .flexRow {
 	display: flex;
 }
@@ -303,6 +302,13 @@ button .btn-outline .accent {
 	border-radius: 0.25rem;
 }
 
+.outline-scroll {
+	border: 1px solid #636f83;
+	border-radius: 0.25rem;
+	border-bottom: 5px solid #1693a5;
+	border-top: 5px solid #1693a5;
+}
+
 .p15 {
 	padding: 1.5rem 0 1.5rem;
 }
@@ -338,4 +344,3 @@ button .btn-outline .accent {
 .lightGrey2 {
 	color: darkgrey;
 }
-

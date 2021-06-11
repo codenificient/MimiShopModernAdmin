@@ -1,13 +1,18 @@
 .flexRowChat {
 	display: flex;
 	flex-direction: row;
+	height: 89.71vh;
+}
+
+.flexRowChat .rightHand {
+	max-height: 93vh;
 }
 
 .chat-container {
 	display: grid;
-	height: 83vh;
+	height: 85vh;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 	background: #444 url('./chatbg.jpg') no-repeat right top;
 	background-size: cover;
 }
@@ -110,22 +115,23 @@
 	width: 100%;
 	bottom: 1rem;
 	display: block;
-	flex-direction: row;
 }
 
 .chatapp .form-control {
-	width: 98%;
+	width: 98.9%;
 	position: absolute;
 	margin-left: .5rem;
 	float: left;
-	margin-top: 22px;
+	margin: 12px;
 	padding: 1.5rem;
 	z-index: 1;
 }
 
 .chatapp button {
 	color: #d16767;
-	border: 1px solid #d16767;
+	border: 3px solid #d16767;
+	width: 110px;
+	/* right: 1rem; */
 }
 .chatapp button:hover {
 	color: #eee;
@@ -134,10 +140,9 @@
 
 .chat-send {
 	position: absolute;
-	right: 1.4rem;
+	right: 1rem;
 	margin: 0 .5rem;
 	float: right;
-	margin: 30px 12px;
-	flex: 1;
+	margin: 18px 12px;
 	z-index: 20;
 }

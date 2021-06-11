@@ -21,27 +21,27 @@ export default function ChatDetails(props) {
 	const contact = conversations.find((contact) => contact.id === props.location.pathname.split('/')[3]);
 
 	// console.log(`From ChatDetails`, { contacts });
-	// console.log({ contact });
+	console.log({ contact });
 
 	return (
 		<React.Fragment>
 			<div className="flexRowChat darkerBg">
 				<ChatList contacts={conversations} />
-				<div className="rightHand ml-2 normalBg outline mb-2">
+				<div className="rightHand ml-2 normalBg outline">
 					{contact ? (
 						<div className="chat-container">
 							<div className="user-container d-flex black">
 								<div className="m-3 image-container avatar-one">
-									<img src={contact.avatar} alt="" className="avatar-one-img" />
+									<img src={contact.avatr} alt="" className="avatar-one-img" />
 								</div>
-								<span className="user mt-3 ft2 bold">{contact.name}</span>							
+								<span className="user mt-3 ft2 bold">{contact.name}</span>
 							</div>
-								<div className="user-status d-flex">
-									<span className={`avatar-status ${contact.status ? contact.status : 'danger'}`} />
-									<span className="connection-string">
-										&nbsp;{contact.connect ? contact.connect : `hors ligne`}
-									</span>
-								</div>
+							<div className="user-status d-flex">
+								<span className={`avatar-status ${contact.status ? contact.status : 'danger'}`} />
+								<span className="connection-string">
+									&nbsp;{contact.connect ? contact.connect : `hors ligne`}
+								</span>
+							</div>
 							{/* <div className="c-avatar flexRow">
 								<CImg src={contact.avatar} className="c-avatar-img-one" alt={contact.avatar} />
 								<span className="user ml-2 ft2 bold">{contact.name}</span>
@@ -52,7 +52,7 @@ export default function ChatDetails(props) {
 							</div>
 						</div>
 					) : (
-						<p className="vcenter light p-3">Selectioner une Conversation</p>
+						<p className="vcenter light p-3">Selectioner une Conversation pour continuer</p>
 					)}
 
 					<div className="dark flexRow chatapp">

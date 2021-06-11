@@ -1,5 +1,6 @@
 //  OPTIMIZE THE BASE URL
-const baseUrl = process.env.NODE_ENV === 'production' ? 'https://mimishopbackend.herokuapp.com' : 'http://localhost:2000';
+const baseUrl =
+	process.env.NODE_ENV === 'production' ? 'https://mimishopbackend.herokuapp.com' : 'http://localhost:2000';
 
 export const api = `${baseUrl}/api`;
 
@@ -7,18 +8,18 @@ export const generatePublicUrl = (filename) => {
 	return `${baseUrl}/public/${filename}`;
 };
 
-export 	const renderCategories = (categories, options = []) => {
-		for (let category of categories) {
-			options.push({
-				name: category.name,
-			});
-			if (category.children.length > 0) {
-				renderCategories(category.children, options);
-			}
+export const renderCategories = (categories, options = []) => {
+	for (let category of categories) {
+		options.push({
+			name: category.name
+		});
+		if (category.children.length > 0) {
+			renderCategories(category.children, options);
 		}
-		return options;
+	}
+	return options;
 };
-	
+
 export const formatter = new Intl.NumberFormat('fr-FR', {
 	style: 'currency',
 	currency: 'XOF',
@@ -69,12 +70,16 @@ export const formatDate4 = (date) => {
 };
 
 export const formatDate5 = (date) => {
-	const week = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
 	if (date) {
 		const d = new Date(date);
-		const whichDay = Math.ceil(new Date() - d) < 86400000 ? `${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}` : Math.ceil(new Date() - d) < 172800000 ? `Hier à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`  : `${appendLeadingZeroes(d.getMonth() + 1)}/${appendLeadingZeroes(d.getDate())}/${appendLeadingZeroes(
-			d.getFullYear()
-		)}`;
+		const whichDay =
+			Math.ceil(new Date() - d) < 86400000
+				? `${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`
+				: Math.ceil(new Date() - d) < 172800000
+					? `Hier à ${appendLeadingZeroes(d.getHours())}:${appendLeadingZeroes(d.getMinutes())}`
+					: `${appendLeadingZeroes(d.getMonth() + 1)}/${appendLeadingZeroes(d.getDate())}/${appendLeadingZeroes(
+							d.getFullYear()
+						)}`;
 		return whichDay;
 	}
 };
