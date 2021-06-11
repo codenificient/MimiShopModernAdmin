@@ -1,7 +1,6 @@
 .flexRowChat {
 	display: flex;
 	flex-direction: row;
-	max-height: 89.71vh;
 }
 
 .flexRowChat .rightHand {
@@ -10,16 +9,9 @@
 
 .chat-container {
 	display: grid;
-	height: 85vh;
-	max-height: 85vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	height: 84vh;
 	background: #444 url('./chatbg.jpg') no-repeat right top;
 	background-size: cover;
-}
-
-.chat-container::-webkit-scrollbar {
-	display: none;
 }
 
 /* .flexRowChat > .leftHand > .card400,
@@ -108,7 +100,13 @@
 .chat-messages {
 	color: #313131;
 	font-weight: 500;
-	/* margin-top: 1rem; */
+	margin-top: -2.3rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.chat-messages::-webkit-scrollbar {
+	display: none;
 }
 
 .chat-input-box {

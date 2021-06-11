@@ -71,10 +71,6 @@ a:hover {
 	width: 220px;
 }
 
-.h50 {
-	height: 50px;
-}
-
 .try25 {
 	transform: translateY(25%);
 }
@@ -105,6 +101,10 @@ a:hover {
 
 .h30 {
 	height: 30px;
+}
+
+.h50 {
+	height: 50px;
 }
 
 .floatRight {
@@ -217,6 +217,7 @@ button .btn-outline .accent {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .dark {

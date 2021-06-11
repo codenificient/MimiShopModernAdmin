@@ -9,19 +9,10 @@ import './style.css';
 export default function ChatDetails(props) {
 	// const [ messages, setMessages ] = useState(msgs);
 
-	// useEffect(async () => {
-	// 	const msg = await axiosInstance.get('https://my.api.mockaroo.com/user_chats_schema.json?key=37f692d0');
-	// 	await setMessages(msg.data);
-	// 	// console.log({ msg });
-	// }, []);
-
-	// let msgId = props.location.pathname.split('/')[3];
-	// // console.log({ msgId });
-
 	const contact = conversations.find((contact) => contact.id === props.location.pathname.split('/')[3]);
 
 	// console.log(`From ChatDetails`, { contacts });
-	console.log({ contact });
+	// console.log({ contact });
 
 	return (
 		<React.Fragment>
@@ -31,7 +22,7 @@ export default function ChatDetails(props) {
 					{contact ? (
 						<div className="chat-container">
 							<div className="user-container d-flex black">
-								<div className="m-3 image-container avatar-one">
+								<div className="image-container m-3 avatar-one">
 									<img src={contact.avatr} alt="" className="avatar-one-img" />
 								</div>
 								<span className="user mt-3 ft2 bold">{contact.name}</span>
@@ -47,7 +38,7 @@ export default function ChatDetails(props) {
 								<span className="user ml-2 ft2 bold">{contact.name}</span>
 								<span className="c-avatar-status avatus bg-danger" />
 							</div> */}
-							<div className="chat-messages mb-5">
+							<div className="chat-messages mb-1">
 								<ChatBody msgs={contact.messages} />
 							</div>
 						</div>
