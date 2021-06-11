@@ -1,7 +1,7 @@
 .flexRowChat {
 	display: flex;
 	flex-direction: row;
-	height: 89.71vh;
+	max-height: 89.71vh;
 }
 
 .flexRowChat .rightHand {
@@ -11,6 +11,7 @@
 .chat-container {
 	display: grid;
 	height: 85vh;
+	max-height: 85vh;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	background: #444 url('./chatbg.jpg') no-repeat right top;
