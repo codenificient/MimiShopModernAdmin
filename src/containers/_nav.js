@@ -8,10 +8,9 @@ const _nav = [
 		to: '/dashboard',
 		icon: <CIcon name="cil-view-quilt" customClasses="c-sidebar-nav-icon" />
 	},
-
 	{
 		_tag: 'CSidebarNavTitle',
-		_children: [ 'CATÉGORIES' ]
+		_children: [ 'ARTICLES' ]
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
@@ -36,6 +35,117 @@ const _nav = [
 				to: '/category/archives'
 			}
 		]
+	},
+
+	{
+		_tag: 'CSidebarNavDropdown',
+		name: 'Page',
+		route: '/page',
+		icon: 'cil-layers',
+		_children: [
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Toutes les Pages',
+				to: '/page/allpages'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Ajouter Page',
+				to: '/page/addpage'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Modifier Pages',
+				to: '/page/editpage'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Creer une Promotion',
+				to: '/page/createpromotion'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Archives des Pages',
+				to: '/page/archives'
+			}
+		]
+	},
+	{
+		_tag: 'CSidebarNavDropdown',
+		name: 'Produit',
+		route: '/product',
+		icon: 'cil-sitemap',
+		_children: [
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Tous les Produits',
+				to: '/product/allproducts'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Ajouter Produit',
+				to: '/product/addproduct'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Modifier Produit',
+				to: '/product/editproduct'
+			},
+
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Archives des Produits',
+				to: '/product/archives'
+			}
+		]
+	},
+	{
+		_tag: 'CSidebarNavTitle',
+		_children: [ 'BOUTIQUES' ]
+	},
+	{
+		_tag: 'CSidebarNavDropdown',
+		name: 'Boutiques',
+		route: '/category',
+		icon: 'cil-list-rich',
+		_children: [
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Toutes les Catégories',
+				to: '/category/allcategory'
+			},
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Ajouter et Modifier',
+				to: '/category/addcategory'
+			},
+
+			{
+				_tag: 'CSidebarNavItem',
+				name: 'Archives des Catégories',
+				to: '/category/archives'
+			}
+		]
+	},
+	{
+		_tag: 'CSidebarNavItem',
+		name: 'Nos Révendeurs',
+		to: '/widgets',
+		icon: 'cil-credit-card',
+		badge: {
+			color: 'warning',
+			text: 'NEW'
+		}
+	},
+	{
+		_tag: 'CSidebarNavItem',
+		name: 'Publicités',
+		to: '/promotions',
+		icon: 'cil-image',
+		badge: {
+			color: 'primary',
+			text: 'NEW'
+		}
 	},
 
 	{
@@ -71,25 +181,6 @@ const _nav = [
 			}
 		]
 	},
-
-	{
-		_tag: 'CSidebarNavItem',
-		name: 'Statistiques',
-		to: '/widgets',
-		icon: 'cil-address-book',
-		badge: {
-			color: 'warning',
-			text: 'NEW'
-		}
-	},
-
-	{
-		_tag: 'CSidebarNavDivider'
-	},
-	{
-		_tag: 'CSidebarNavTitle',
-		_children: [ 'COMMANDES' ]
-	},
 	{
 		_tag: 'CSidebarNavDropdown',
 		name: 'Achats',
@@ -116,21 +207,34 @@ const _nav = [
 
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Revenues',
-		to: '/orders/revenue',
-		icon: 'cil-dollar',
+		name: 'Statistiques',
+		to: '/widgets',
+		icon: 'cil-address-book',
+		badge: {
+			color: 'warning',
+			text: 'NEW'
+		}
+	},
+
+	{
+		_tag: 'CSidebarNavDivider'
+	},
+
+	{
+		_tag: 'CSidebarNavTitle',
+		_children: [ 'DIVERS' ]
+	},
+	{
+		_tag: 'CSidebarNavItem',
+		name: 'Conversations',
+		to: '/messages/chats',
+		icon: 'cib-whatsapp',
 		badge: {
 			color: 'success',
 			text: 'NEW'
 		}
 	},
-	{
-		_tag: 'CSidebarNavDivider'
-	},
-	{
-		_tag: 'CSidebarNavTitle',
-		_children: [ 'MÉSSAGES' ]
-	},
+
 	{
 		_tag: 'CSidebarNavDropdown',
 		name: 'Méssages',
@@ -159,27 +263,11 @@ const _nav = [
 			}
 		]
 	},
-
-	{
-		_tag: 'CSidebarNavItem',
-		name: 'Conversations',
-		to: '/messages/chats',
-		icon: 'cib-whatsapp',
-		badge: {
-			color: 'success',
-			text: 'NEW'
-		}
-	},
-
-	{
-		_tag: 'CSidebarNavTitle',
-		_children: [ 'PAGES' ]
-	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Toutes les Pages',
-		route: '/page',
-		icon: 'cil-layers',
+		name: 'Tâches',
+		route: '/tasks',
+		icon: 'cil-check',
 		_children: [
 			{
 				_tag: 'CSidebarNavItem',
@@ -208,36 +296,20 @@ const _nav = [
 			}
 		]
 	},
-
-	{
-		_tag: 'CSidebarNavItem',
-		name: 'Promotions',
-		to: '/promotions',
-		icon: 'cil-image',
-		badge: {
-			color: 'primary',
-			text: 'NEW'
-		}
-	},
-
-	{
-		_tag: 'CSidebarNavTitle',
-		_children: [ 'PRODUITS' ]
-	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Tous les Produits',
-		route: '/product',
-		icon: 'cil-sitemap',
+		name: 'Revenue',
+		route: '/revenue',
+		icon: 'cil-cash',
 		_children: [
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Tous les Produits',
+				name: 'Tous les Achats',
 				to: '/product/allproducts'
 			},
 			{
 				_tag: 'CSidebarNavItem',
-				name: 'Ajouter Produit',
+				name: 'Archives',
 				to: '/product/addproduct'
 			},
 			{
@@ -252,17 +324,6 @@ const _nav = [
 				to: '/product/archives'
 			}
 		]
-	},
-
-	{
-		_tag: 'CSidebarNavItem',
-		name: 'Nos Révendeurs',
-		to: '/widgets',
-		icon: 'cil-cash',
-		badge: {
-			color: 'warning',
-			text: 'NEW'
-		}
 	}
 ];
 

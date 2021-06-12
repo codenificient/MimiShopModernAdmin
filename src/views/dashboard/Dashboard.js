@@ -1,19 +1,16 @@
-import React, { lazy } from 'react'
+import CIcon from '@coreui/icons-react'
 import {
   CBadge,
   CButton,
-  CButtonGroup,
-  CCard,
+  CButtonGroup, CCallout, CCard,
   CCardBody,
   CCardFooter,
   CCardHeader,
   CCol,
   CProgress,
-  CRow,
-  CCallout
+  CRow
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-
+import React, { lazy } from 'react'
 // IMPORT AVATARS
 import avaOne from '../../assets/avatars/1.jpg'
 import avaTwo from '../../assets/avatars/2.jpg'
@@ -21,8 +18,9 @@ import avaThree from '../../assets/avatars/3.jpg'
 import avaFour from '../../assets/avatars/4.jpg'
 import avaFive from '../../assets/avatars/5.jpg'
 import avaSix from '../../assets/avatars/6.jpg'
-
 import MainChartExample from '../charts/MainChartExample.js'
+
+
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
@@ -36,7 +34,7 @@ const Dashboard = () => {
           <CRow>
             <CCol sm="5">
               <h4 id="traffic" className="card-title mb-0">TRAFFIC</h4>
-              <div className="small text-muted">November 2017</div>
+              <div className="small text-muted">Novembre 2021</div>
             </CCol>
             <CCol sm="7" className="d-none d-md-block">
               <CButton color="primary" className="float-right">
@@ -63,8 +61,8 @@ const Dashboard = () => {
         <CCardFooter>
           <CRow className="text-center">
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Visits</div>
-              <strong>29.703 Users (40%)</strong>
+              <div className="text-muted">Visites</div>
+              <strong className="dark">29.703 Users (40%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -73,8 +71,8 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Unique</div>
-              <strong>24.093 Users (20%)</strong>
+              <div className="text-muted">Uniques</div>
+              <strong className="dark">24.093 Users (20%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -83,8 +81,8 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">Pageviews</div>
-              <strong>78.706 Views (60%)</strong>
+              <div className="text-muted">Pages vues</div>
+              <strong className="dark">78.706 Views (60%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -93,8 +91,8 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0">
-              <div className="text-muted">New Users</div>
-              <strong>22.123 Users (80%)</strong>
+              <div className="text-muted">Nouveaux Usagers</div>
+              <strong className="dark">22.123 Users (80%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -103,8 +101,8 @@ const Dashboard = () => {
               />
             </CCol>
             <CCol md sm="12" className="mb-sm-2 mb-0 d-md-down-none">
-              <div className="text-muted">Bounce Rate</div>
-              <strong>Average Rate (40.15%)</strong>
+              <div className="text-muted">Taux de Rebond</div>
+              <strong className="dark">Average Rate (40.15%)</strong>
               <CProgress
                 className="progress-xs mt-2"
                 precision={1}
@@ -121,7 +119,7 @@ const Dashboard = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              Traffic {' & '} Sales
+              Traffique et Ventes
             </CCardHeader>
             <CCardBody>
               <CRow>
@@ -130,14 +128,14 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm="6">
                       <CCallout color="info">
-                        <small className="text-muted">New Clients</small>
+                        <small className="text-muted">Nouveaux Clients</small>
                         <br />
                         <strong className="h4">9,123</strong>
                       </CCallout>
                     </CCol>
                     <CCol sm="6">
                       <CCallout color="danger">
-                        <small className="text-muted">Recurring Clients</small>
+                        <small className="text-muted"> Clients Recurrents</small>
                         <br />
                         <strong className="h4">22,643</strong>
                       </CCallout>
@@ -149,7 +147,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                        Monday
+                        Lundi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -160,7 +158,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Tuesday
+                      Mardi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -171,7 +169,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Wednesday
+                      Mercredi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -182,7 +180,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Thursday
+                      Jeudi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -193,7 +191,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Friday
+                      Vendredi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -204,7 +202,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Saturday
+                      Samedi
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -215,7 +213,7 @@ const Dashboard = () => {
                   <div className="progress-group mb-4">
                     <div className="progress-group-prepend">
                       <span className="progress-group-text">
-                      Sunday
+                      Dimanche
                       </span>
                     </div>
                     <div className="progress-group-bars">
@@ -225,17 +223,16 @@ const Dashboard = () => {
                   </div>
                   <div className="legend text-center">
                     <small>
-                      <sup className="px-1"><CBadge shape="pill" color="info">&nbsp;</CBadge></sup>
-                      New clients
+                      <sup className="px-2"><CBadge shape="pill" color="info">&nbsp;</CBadge></sup>
+                      Nouveaux clients
                       &nbsp;
-                      <sup className="px-1"><CBadge shape="pill" color="danger">&nbsp;</CBadge></sup>
-                      Recurring clients
+                      <sup className="px-2"><CBadge shape="pill" color="danger">&nbsp;</CBadge></sup>
+                      Clients Recurrents
                     </small>
                   </div>
                 </CCol>
 
                 <CCol xs="12" md="6" xl="6">
-
                   <CRow>
                     <CCol sm="6">
                       <CCallout color="warning">
@@ -332,11 +329,11 @@ const Dashboard = () => {
                 <thead className="thead-light">
                   <tr>
                     <th className="text-center"><CIcon name="cil-people" /></th>
-                    <th>User</th>
-                    <th className="text-center">Country</th>
+                    <th>Client</th>
+                    <th className="text-center">Pays</th>
                     <th>Usage</th>
-                    <th className="text-center">Payment Method</th>
-                    <th>Activity</th>
+                    <th className="text-center">Méthode Paiement</th>
+                    <th>Activité</th>
                   </tr>
                 </thead>
                 <tbody>
