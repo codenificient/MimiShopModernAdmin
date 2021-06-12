@@ -105,7 +105,7 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Boutiques',
+		name: 'Boutique',
 		route: '/category',
 		icon: 'cil-list-rich',
 		_children: [
@@ -129,8 +129,8 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Nos Révendeurs',
-		to: '/widgets',
+		name: 'Parténaire',
+		to: '/partners',
 		icon: 'cil-credit-card',
 		badge: {
 			color: 'warning',
@@ -139,7 +139,7 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Publicités',
+		name: 'Publicité',
 		to: '/promotions',
 		icon: 'cil-image',
 		badge: {
@@ -154,7 +154,7 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Clients',
+		name: 'Client',
 		route: '/users',
 		icon: 'cil-people',
 		_children: [
@@ -183,7 +183,7 @@ const _nav = [
 	},
 	{
 		_tag: 'CSidebarNavDropdown',
-		name: 'Achats',
+		name: 'Achat',
 		route: '/orders',
 		icon: 'cil-cart',
 		_children: [
@@ -207,7 +207,7 @@ const _nav = [
 
 	{
 		_tag: 'CSidebarNavItem',
-		name: 'Statistiques',
+		name: 'Statistique',
 		to: '/widgets',
 		icon: 'cil-address-book',
 		badge: {

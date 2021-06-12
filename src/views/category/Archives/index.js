@@ -17,8 +17,6 @@ import AddCategoriesModal from '../Subcomponents/AddCategoriesModal';
 import DeleteCategoriesModal from '../Subcomponents/DeleteCategoriesModal';
 import UpdateCategoriesModal from '../Subcomponents/UpdateCategoriesModal';
 
-
-
 const Category = () => {
 	const category = useSelector((state) => state.category);
 	const dispatch = useDispatch();
@@ -170,13 +168,12 @@ const Category = () => {
 
 	const categoryList = createCategoryList(category.categories);
 
-
 	return (
-		<>			
-		<CRow>
-			<CCol xs="12">
-				<CCard>
-						<CRow style={{ background: 	'#67dcbb' ,borderRadius: '5px' }}>
+		<React.Fragment>
+			<CRow>
+				<CCol xs="12">
+					<CCard>
+						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
 							<CCol md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
 									<h1 style={{ margin: '1rem', color: '#333' }}>Les Archives des Cate&#769;gories</h1>
@@ -217,8 +214,6 @@ const Category = () => {
 								/>
 							</CCol>
 						</CRow>
-					
-					
 
 						<AddCategoriesModal
 							show={show}
@@ -269,13 +264,11 @@ const Category = () => {
 							expandedArray={expandedArray}
 							checkedArray={checkedArray}
 						/>
-					<CCardBody />
-				</CCard>
-			</CCol>
-
-		</CRow>
-
-</>
+						<CCardBody />
+					</CCard>
+				</CCol>
+			</CRow>
+		</React.Fragment>
 	);
 };
 

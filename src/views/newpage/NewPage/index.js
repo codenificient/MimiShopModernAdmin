@@ -190,12 +190,14 @@ export default function Page(props) {
 	};
 
 	return (
-		<>
-			<h1  style={{ margin: '3rem', color: 'white' }}>Cre&#769;er une nouvelle page</h1>
+		<React.Fragment>
+			<h1 style={{ margin: '3rem', color: 'white' }}>Cre&#769;er une nouvelle page</h1>
 			{renderCreatePageModal()}
 
-			<Button variant="success" className="addButton" onClick={() => setCreateModal(true)}><MdAddCircle /> Cre&#769;er une Page</Button>
+			<Button variant="success" className="addButton" onClick={() => setCreateModal(true)}>
+				<MdAddCircle /> Cre&#769;er une Page
+			</Button>
 			{props.children}
-		</>
+		</React.Fragment>
 	);
 }

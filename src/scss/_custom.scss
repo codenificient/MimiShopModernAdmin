@@ -33,12 +33,8 @@ thead .thead-light,
 	color: #157b80;
 }
 
-.c-body,
 .c-main {
 	background-color: #121212;
-}
-
-.c-main {
 	padding: 8px;
 }
 
@@ -113,4 +109,10 @@ table th .thead-light {
 
 .c-sidebar .c-sidebar-nav-title {
 	color: #157b80;
+}
+
+.c-sidebar .c-sidebar-minimizer {
+	margin: 0;
+	background-color: #157b80;
+	border: 3px solid #555;
 }

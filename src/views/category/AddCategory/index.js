@@ -1,4 +1,4 @@
-import { CButton, CCard, CCardBody, CCol, CRow } from '@coreui/react';
+import { CButton, CCol, CRow } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import CheckboxTree from 'react-checkbox-tree';
@@ -16,8 +16,6 @@ import '../style.css';
 import AddCategoriesModal from '../Subcomponents/AddCategoriesModal';
 import DeleteCategoriesModal from '../Subcomponents/DeleteCategoriesModal';
 import UpdateCategoriesModal from '../Subcomponents/UpdateCategoriesModal';
-
-
 
 const Category = () => {
 	const category = useSelector((state) => state.category);
@@ -170,116 +168,104 @@ const Category = () => {
 
 	const categoryList = createCategoryList(category.categories);
 
-
 	return (
-		<>
-			
-		<CRow>
-			<CCol xs="12">
-				<CCard>
-			
-						<CRow style={{ background: 	'#67dcbb',borderRadius: '5px' }}>
-							<CCol md={12}>
-								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Ajouter ou Modifier les Cate&#769;gories</h1>
-								</div>
-							</CCol>
-						</CRow>
-						
-						<CRow className="mt-5">
-							<CCol md={12}>
-								<CButton className="btn-pill btn-warning ml-5" onClick={handleShow}>
-									<FaPlusCircle style={{ fontSize: '27px' }} /> <span>Ajouter Cate&#769;gorie</span>
-								</CButton>
-								<Button onClick={updateCategory} className="btn-pill btn-info" variant="info">
-									<FaCloudUploadAlt style={{ fontSize: '27px' }} />{' '}
-									<span>Modifier Cate&#769;gorie</span>
-								</Button>
-								<Button onClick={deleteCategory} className="btn-pill btn-danger" variant="danger">
-									<FaRegTrashAlt style={{ fontSize: '27px' }} />{' '}
-									<span>Supprimer Cate&#769;gorie</span>
-								</Button>
-							</CCol>
-						</CRow>
+		<React.Fragment>
+			<CRow className="normalBg">
+				<CCol xs="12">
+					<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
+						<CCol md={12}>
+							<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+								<h3 className="py-2">Ajouter ou Modifier Cate&#769;gorie</h3>
+							</div>
+						</CCol>
+					</CRow>
 
-						<CRow className="showCats ml-5">
-							<CCol md={12}>
-								<CheckboxTree
-									nodes={renderCategories(category.categories)}
-									checked={checked}
-									expanded={expanded}
-									onCheck={(checked) => setChecked(checked)}
-									onExpand={(expanded) => setExpanded(expanded)}
-									icons={{
-										check: <IoIosCheckbox />,
-										uncheck: <IoIosCheckboxOutline />,
-										halfCheck: <IoIosCheckboxOutline />,
-										expandClose: <IoIosArrowDroprightCircle />,
-										expandOpen: <IoIosArrowDropdownCircle />
-									}}
-								/>
-							</CCol>
-						</CRow>
-					
-					
+					<CRow className="mt-5">
+						<CCol md={12}>
+							<CButton className="btn-pill btn-warning ml-5" onClick={handleShow}>
+								<FaPlusCircle style={{ fontSize: '27px' }} /> <span>Ajouter Cate&#769;gorie</span>
+							</CButton>
+							<Button onClick={updateCategory} className="btn-pill btn-info" variant="info">
+								<FaCloudUploadAlt style={{ fontSize: '27px' }} /> <span>Modifier Cate&#769;gorie</span>
+							</Button>
+							<Button onClick={deleteCategory} className="btn-pill btn-danger" variant="danger">
+								<FaRegTrashAlt style={{ fontSize: '27px' }} /> <span>Supprimer Cate&#769;gorie</span>
+							</Button>
+						</CCol>
+					</CRow>
 
-						<AddCategoriesModal
-							show={show}
-							handleClose={handleClose}
-							modalTitle={`Ajouter Nouvelle Catégorie`}
-							size="lg"
-							handleShow={handleShow}
-							handleSubmit={handleSubmit}
-							categoryName={categoryName}
-							setParentCategoryId={(e) => setParentCategoryId(e.target.value)}
-							parentCategoryId={parentCategoryId}
-							setCategoryName={(e) => setCategoryName(e.target.value)}
-							categoryImage={categoryImage}
-							handleCategoryImage={handleCategoryImage}
-							categoryList={categoryList}
-						/>
+					<CRow className="showCats ml-5">
+						<CCol md={12}>
+							<CheckboxTree
+								nodes={renderCategories(category.categories)}
+								checked={checked}
+								expanded={expanded}
+								onCheck={(checked) => setChecked(checked)}
+								onExpand={(expanded) => setExpanded(expanded)}
+								icons={{
+									check: <IoIosCheckbox />,
+									uncheck: <IoIosCheckboxOutline />,
+									halfCheck: <IoIosCheckboxOutline />,
+									expandClose: <IoIosArrowDroprightCircle />,
+									expandOpen: <IoIosArrowDropdownCircle />
+								}}
+							/>
+						</CCol>
+					</CRow>
 
-						<UpdateCategoriesModal
-							show={updateCategoryModal}
-							handleClose={() => setUpdateCategoryModal(false)}
-							modalTitle={`Modifier Catégories`}
-							handleShow={updateCategoryModal}
-							handleSubmit={updateCategoriesForm}
-							size="xl"
-							expandedArray={expandedArray}
-							checkedArray={checkedArray}
-							handleCategoryInput={handleCategoryInput}
-							categoryList={categoryList}
-						/>
-						{/* {renderDeleteCategoryModal()} */}
+					<AddCategoriesModal
+						show={show}
+						handleClose={handleClose}
+						modalTitle={`Ajouter Nouvelle Catégorie`}
+						size="lg"
+						handleShow={handleShow}
+						handleSubmit={handleSubmit}
+						categoryName={categoryName}
+						setParentCategoryId={(e) => setParentCategoryId(e.target.value)}
+						parentCategoryId={parentCategoryId}
+						setCategoryName={(e) => setCategoryName(e.target.value)}
+						categoryImage={categoryImage}
+						handleCategoryImage={handleCategoryImage}
+						categoryList={categoryList}
+					/>
 
-						<DeleteCategoriesModal
-							show={deleteCategoryModal}
-							modalTitle="Confirmer Supprimer Catégories"
-							handleClose={() => setDeleteCategoryModal(false)}
-							buttons={[
-								{
-									label: 'No',
-									color: 'primary',
-									onClick: () => setDeleteCategoryModal(false)
-								},
-								{
-									label: 'Yes',
-									color: 'danger',
-									onClick: deleteCategories
-								}
-							]}
-							size="lg"
-							expandedArray={expandedArray}
-							checkedArray={checkedArray}
-						/>
-					<CCardBody />
-				</CCard>
-			</CCol>
+					<UpdateCategoriesModal
+						show={updateCategoryModal}
+						handleClose={() => setUpdateCategoryModal(false)}
+						modalTitle={`Modifier Catégories`}
+						handleShow={updateCategoryModal}
+						handleSubmit={updateCategoriesForm}
+						size="xl"
+						expandedArray={expandedArray}
+						checkedArray={checkedArray}
+						handleCategoryInput={handleCategoryInput}
+						categoryList={categoryList}
+					/>
+					{/* {renderDeleteCategoryModal()} */}
 
-		</CRow>
-
-</>
+					<DeleteCategoriesModal
+						show={deleteCategoryModal}
+						modalTitle="Confirmer Supprimer Catégories"
+						handleClose={() => setDeleteCategoryModal(false)}
+						buttons={[
+							{
+								label: 'No',
+								color: 'primary',
+								onClick: () => setDeleteCategoryModal(false)
+							},
+							{
+								label: 'Yes',
+								color: 'danger',
+								onClick: deleteCategories
+							}
+						]}
+						size="lg"
+						expandedArray={expandedArray}
+						checkedArray={checkedArray}
+					/>
+				</CCol>
+			</CRow>
+		</React.Fragment>
 	);
 };
 

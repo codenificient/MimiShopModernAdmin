@@ -66,25 +66,7 @@ const Category = () => {
 
 	return (
 		<React.Fragment>
-			<CRow>
-				<CCol xs="12">
-					<CCard>
-						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
-							<CCol md={12}>
-								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Toutes les Cate&#769;gories</h1>
-								</div>
-							</CCol>
-						</CRow>
-
-						<CRow>
-							<CCol md={12}>
-								<div id="chartdiv" />
-							</CCol>
-						</CRow>
-					</CCard>
-				</CCol>
-			</CRow>
+			<div className="flexRow normalBg" id="chartdiv" />
 		</React.Fragment>
 	);
 };
