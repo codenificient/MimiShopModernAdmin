@@ -48,10 +48,9 @@ const Login = () => {
 			<CContainer>
 				<div
 					style={{
-						height: '200px',
-						maxWidth: '500px',
+						maxWidth: '300px',
 						textAlign: 'center',
-						margin: '1rem auto',
+						margin: '2rem auto',
 						objectFit: 'contain',
 						overflow: 'hidden'
 					}}
