@@ -26,7 +26,6 @@ const Register = () => {
 	const [ firstName, setFirstName ] = useState('');
 	const [ lastName, setLastName ] = useState('');
 
-
 	// eslint-disable-next-line
 	const [ error, setError ] = useState('');
 	const auth = useSelector((state) => state.auth);
@@ -51,11 +50,10 @@ const Register = () => {
 		<div className="c-app darkenBg c-default-layout flex-row align-items-center">
 			<CContainer>
 				<div
-					style={{
-						height: '200px',
-						maxWidth: '500px',
+						style={{
+						maxWidth: '300px',
 						textAlign: 'center',
-						margin: '1rem auto',
+						margin: '2rem auto',
 						objectFit: 'contain',
 						overflow: 'hidden'
 					}}
