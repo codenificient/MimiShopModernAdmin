@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { getInitialDataAction, isUserLoggedIn } from './actions';
-import './app.css';
-import PrivateRoute from './components/HOC/PrivateRoute';
-import './scss/style.scss';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { getInitialDataAction, isUserLoggedIn } from './actions'
+import './app.css'
+import PrivateRoute from './components/HOC/PrivateRoute'
+import './scss/style.scss'
 
 const loading = (
 	<div className="pt-3 text-center">
@@ -42,7 +42,7 @@ function App() {
 			<React.Suspense fallback={loading}>
 				<Switch>
 					<Route exact path="/login" name="Login Page" render={(props) => <Login {...props} />} />
-					<PrivateRoute
+					<Route
 						exact
 						path="/register"
 						name="Register Page"
