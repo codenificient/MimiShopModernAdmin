@@ -37,7 +37,8 @@ const Register = () => {
 			firstName,
 			lastName,
 			email,
-			password: passwordOne
+			password: passwordOne,
+			password_confirm: passwordTwo
 		};
 		dispatch(signup(user));
 	};

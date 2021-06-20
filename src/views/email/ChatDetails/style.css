@@ -28,9 +28,6 @@
 	position: relative;
 }
 
-.c-avatar {
-	transform: translateX(70px) translateY(40px);
-}
 
 .avatar-one {
 	height: 60px;
