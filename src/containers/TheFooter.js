@@ -10,7 +10,7 @@ const TheFooter = () => {
           CodenificienT
         </a>
         <span className="ml-1">
-          &copy; 2019 - {currentYear} * All Rights Reserved
+          &copy; 2019 - {currentYear} * Tous Droits Reservés
         </span>
       </div>
       <div className="mfs-auto">
