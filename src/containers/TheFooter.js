@@ -14,7 +14,7 @@ const TheFooter = () => {
         </span>
       </div>
       <div className="mfs-auto">
-        <span className="mr-1">Reviser notre</span>
+        <span className="mr-1">MimiShop Ouaga LLC</span>
         <a
           href="https://mimishopouaga.herokuapp.com/"
           target="_blank"
