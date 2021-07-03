@@ -170,18 +170,17 @@ const Category = () => {
 
 	return (
 		<React.Fragment>
-			<CRow>
-				<CCol xs="12">
-					<CCard>
-						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
-							<CCol md={12}>
+				<div xs="12">
+					<div>
+						<driv style={{ background: '#67dcbb', borderRadius: '5px' }}>
+							<div md={12}>
 								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Les Archives des Cate&#769;gories</h1>
+									<h1 style={{ margin: '0.1rem', color: '#333' }}>Les Archives des Cate&#769;gories</h1>
 								</div>
-							</CCol>
-						</CRow>
-						<CRow className="mt-4">
-							<CCol md={12}>
+							</div>
+						</driv>
+						<div className="mt-4">
+							<div md={12}>
 								<CButton className="btn-pill btn-warning ml-5" onClick={handleShow}>
 									<FaPlusCircle style={{ fontSize: '27px' }} /> <span>Ajouter Cate&#769;gorie</span>
 								</CButton>
@@ -193,8 +192,8 @@ const Category = () => {
 									<FaRegTrashAlt style={{ fontSize: '27px' }} />{' '}
 									<span>Supprimer Cate&#769;gorie</span>
 								</Button>
-							</CCol>
-						</CRow>
+							</div>
+						</div>
 
 						<CRow className="showCats ml-5">
 							<CCol md={12}>
@@ -265,9 +264,8 @@ const Category = () => {
 							checkedArray={checkedArray}
 						/>
 						<CCardBody />
-					</CCard>
-				</CCol>
-			</CRow>
+					</div>
+				</div>
 		</React.Fragment>
 	);
 };

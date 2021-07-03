@@ -7,8 +7,24 @@
 	border-radius: .25rem;
 }
 
+
+
 .card400::-webkit-scrollbar {
 	display: none;
+}
+
+.search-contact {
+	height: 20px;
+	width: 20px;
+	color: #fff;
+	transform: translateX(160px) translateY(28px);
+}
+
+.contact-lookup-container .form-control {
+	color: #fff;
+	background: #454545;
+	border-radius: 30px;
+	text-align: center;
 }
 
 .chat-user-container {

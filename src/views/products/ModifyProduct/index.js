@@ -12,16 +12,20 @@ const ModifyProduct = () => {
 		for (let product of products) {
 			let { _id, name, price, quantity, category } = product;
 			options.push({
-				ID: _id.toString().substring(0, 9),
-				NAME: name,
-				PRICE: price,
-				QUANTITY: quantity,
-				CATEGORY: category.name,
-				STATUS:
-					quantity % 3 === 1
-						? 'Active'
-						: quantity % 2 === 1 ? 'Inactive' : quantity % 5 === 0 ? 'Archived' : 'Pending'
-			});
+        id: _id.toString().substring(0, 9),
+        nom: name,
+        prix: price,
+        quantité: quantity,
+        catégorie: category.name,
+        status:
+          quantity % 3 === 1
+            ? "Active"
+            : quantity % 2 === 1
+            ? "Inactive"
+            : quantity % 5 === 0
+            ? "Archived"
+            : "Pending",
+      });
 			// console.table({ options });
 		}
 		return options;
@@ -43,7 +47,7 @@ const ModifyProduct = () => {
 	};
 
 	const renderProducts = () => {
-		const fields = [ 'ID', 'NAME', 'PRICE', 'QUANTITY', 'CATEGORY', 'status' ];
+		const fields = [ 'id', 'nom', 'prix', 'quantité', 'catégorie', 'status' ];
 
 		return (
 			<CRow>
@@ -59,7 +63,7 @@ const ModifyProduct = () => {
 								scopedSlots={{
 									status: (item) => (
 										<td>
-											<CBadge color={getBadge(item.STATUS)}>{item.STATUS}</CBadge>
+											<CBadge color={getBadge(item.status)}>{item.status}</CBadge>
 										</td>
 									)
 								}}

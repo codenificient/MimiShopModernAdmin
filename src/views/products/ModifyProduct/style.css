@@ -30,3 +30,7 @@
 .productBtn {
 	margin: 3rem;
 }
+
+thead {
+	text-transform: uppercase ;
+}

@@ -108,25 +108,25 @@ const AllProduct = () => {
 
 	return (
 		<React.Fragment>
-			<CRow>
-				<CCol xs="12">
-					<CCard>
-						<CRow style={{ background: '#67dcbb', borderRadius: '5px' }}>
-							<CCol md={12}>
-								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
-									<h1 style={{ margin: '1rem', color: '#333' }}>Tous les Produits Disponibles</h1>
+			<div>
+				<div xs="12">
+					<div>
+						<div style={{ background: '#67dcbb', borderRadius: '5px' }}>
+							<div md={12}>
+								<div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '5px' }}>
+									<h3 style={{ margin: '0.1rem', color: '#333' }}>Tous les Produits Disponibles</h3>
 								</div>
-							</CCol>
-						</CRow>
+							</div>
+						</div>
 
-						<CRow>
-							<CCol md={12}>
+						<div>
+							<div className="normalBg" md={12}>
 								<div id="chartdiv" />
-							</CCol>
-						</CRow>
-					</CCard>
-				</CCol>
-			</CRow>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</React.Fragment>
 	);
 };
